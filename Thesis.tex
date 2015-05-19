@@ -1,0 +1,68 @@
+\documentclass[11pt]{report}
+
+\usepackage{./packages/penndiss2}
+\usepackage{times}
+\usepackage{tabularx}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{theorem} 
+\usepackage{multirow}
+\usepackage{./packages/doublespace}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{url}
+\usepackage{gloss}
+
+\usepackage[top=1.2in,right=1.2in,left=1.5in,bottom=1.4in]{geometry} %needed to get margins right
+
+\renewcommand\glossheading[1]{%
+\stopglosslist
+\subsection*{{{{\large \em \bf || #1 ||}}}}}
+\makegloss %to make a glossary
+
+\newcommand{\comment}[1]{}
+
+\begin{document}
+
+\title{Clinical Applications of Diffuse Optical Tomography in Breast Cancer Imaging}
+\author{Han Yong Ban}
+\submitdate{August 2013} \dept{Physics and Astronomy}
+\superviser{Arjun G. Yodh, James M. Skinner Professor of Science, Professor of Physics} 
+\supervisor{Arjun G. Yodh} 
+\groupchair{Maria Drndic, Professor of Physics}
+\memberA{Frank Moscatelli, Professor of Physics}
+\memberB{TBD, Professor of Physics}
+\memberC{TBD, Professor of Physics}
+\memberD{TBD, Professor of Physics}
+
+\figurespagetrue
+\tablespagetrue
+
+\beforepreface
+%\dedicationsection{./front/dedication}
+%\acknowlsection{./front/acknowledgement}
+
+%\clearpage
+%\pagebreak
+
+%\abstractsection{./front/abstract}
+\afterpreface
+
+\input{./Chapters/1_Introduction}
+\input{./Chapters/2_Theory}
+\input{./Chapters/3_Chestwall}
+\input{./Chapters/4_Gen3}
+\input{./Chapters/5_Summary_and_Conclusion}
+
+%\chapter{Benchtop Imaging Experiments}
+%\input{./sections/chestwall}
+%\input{./sections/appendix} 
+
+\printgloss{../../../bibtexdatabase/glossarymastercopy}
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plain}
+\bibliography{Thesis_HB}
+
+\end{document}

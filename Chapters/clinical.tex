@@ -1,0 +1,32 @@
+\section{Introduction}
+Our breast imaging efforts have been focused on translating DOT techniques into the clinical setting. The previous clinical DOT device (Gen2)  has been successfully used in previous studies [CITATIONS] and we have been working to build on this success with improved capabilities in our current (Gen3) device. The primary upgrades in features are 1) frequency domain measurements in the transmission geometry using heterodyne measurement techniques, 2) addition of a profilometry system for enhanced breast segmentation for reconstruction, and 3) improved clinical patient interface. In this chapter, I will provide an overview of the new features and initial results.
+
+\section{Previous Breast Imaging Device (Gen2)}
+The Gen2 DOT imaging device [FIGURE] take data in the parallel-plate compression geometry. It measures multispectral continuous-wave (CW) measurements in the transmission geometry. In addition, it takes frequency-domain measurements in the remission geometry to determine bulk optical property values. The patient lies prone on a flat bed with her breast inserted inside a recessed box with a grid of fiber sources on one side (source plate) and a anti-reflection coated window on the other side (detector plate). The source plate is moved axially to softly compress the breast against the detector plate with the distance between the parallel plates varying from 5 to 7 cm. The box is filled with a matching fluid with optical properties similar to average human breast tissue. The matching fluid consists of water, india ink (for absorption) and intralipid (for scattering).
+
+The source plate has 45 fiber positions arranged in a 9x5 square grid with a spacing of 1.6 cm between nearest neighbors. The sources are measured in series using cascading optical switches (DiCon Fiber Optics, Richmond, CA). At each source position six measurements are made at varying wavelengths (650, 690, 750, 785, 830, 905 nm) using fiber-coupled laser diodes. On the detection side, a CCD camera (Roper Scientific, Trenton, NJ, VersArray:1300F) collects the light that exits in the transmission geometry focused on the detection window. A image is obtained for for each source + laser combination with an exposure time of 500 ms. From each image a  A 24$\times$41 grid of 984  decimated set is selected from the CCD after 2x2 hardware binning of the pixels. For the frequency-domain remission measurements, four out of the six lasers are modulated at 70MHz. At these wavelengths measurements are made with additional grid of 3mm detector fibers arranged on the source plate in a 3x3 grid with 1.6 cm spacing. The light from these fibers are collected by an avalanche photodiode for homodyne frequency-domain measurements.
+
+\section{The DOT Breast Imager (Gen3)}
+Our DOT imaging system is based around CCD detection which allows for the acquisition of large source-detector pairs for optical tomography. Our group has shown that large number or source detector pairs improve the image resolution. With the previous Gen2 system, these large data sets only contain CW information which make it difficult to separate the absorption and scattering contributions to the detected DC signal. While the Gen2 system obtains remission FD, the small number of source-detector pairs only allow for the determination of bulk values over a large spatial region.
+
+It is difficult to use the CCD for frequency-domain measurements because its exposure time is much larger than the time scale of the phase delay of the diffusing photon density waves. Although frequency-domain measurements using large grid of avalanche photodiodes is the most obvious choice it is extremely cost prohibitive. We combine the advantage of large number of source-detector pairs of a CCD system and FD detection by using a gain modulated image intensifier (Lambert Instrument II18MD) mounted on a CCD (Andor Technology, iXon DV887-ECS-UV CCD) using heterodyne detection to be discuss later in this section.
+
+The system is currently located at the Perelman Center for Advanced Medicine at the University of Pennsylvania Hospital measuring human cancer patients.
+
+\subsection{Instrumentation}
+\subsubsection{DOT Source System}
+The laser system consists of of a fiber-coupled laser diodes at five wavelengths (660, 690, 785, 808, 830nm) that are temperature controlled using a thermo-electric cooler (TEC). The TEC control and DC current is controlled with a ILX laser driver mainframe which uses active proportional-integral-derivative (PID) feedback circuits for temperature and power stability. The lasers are frequency-modulated at 70MHz using a sinusoidal signal generator (Rhode and Scwhartz, SMA100) and RF amplifiers which is added to the DC signal. The lasers are then coupled with a 6x1 optical-piezo switch [PiezoJenna INFO] which switches through the wavelengths in series during the measurement. 
+
+The output of the wavelength switch is connected through an optical fiber to a custom1x209 galvo optical switch  which switches the light through the 209 source positions. Typically a cascade of piezo or prism switches or a microelectromechanical (MEM) switch could be employed, but these conventional solutions would be extremely costly, slow in switch speed, and suffer from high throughput loss of light. In contrast, we custom designed system employs galvanometer mirrors to couple a single 100 $\mu$m fiber to a bundle of 209 600 $\mu$m fibers in using freespace coupling. Light form the 100 $\mu$m fiber is collimated with lenses and directed by a pair of voltage controlled galvo mirrors at various x y positions on the face of a telecentric lens which focuses the beam into the output fiber bundle which are then connected to the the grid positions on the source plate arranged in a 9x11 square lattice with 8mm separations between nearest neighbors (4x the spatial density of the Gen2 system which had a 16mm separation). The intensity loss across the switch is about 50 percent with a switch time of 1ms.
+[PICTURE OF GALVO SWITCH]
+
+\subsubsection{DOT Detection System}
+The detection system consists of the optical window, the lightbox, the image intensifier, and the CCD.
+
+\subsubsection{Breast Profilometry}
+
+\subsection{Clinical and Patient Interface}
+
+\section{Experimental Procedure or Methods}
+
+\section{Results}

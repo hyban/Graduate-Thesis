@@ -1,0 +1,29 @@
+\section{Frequency-Domain: Homodyne detection method}
+
+[ADD Homodyne detection Figure]
+
+The homodyne technique for frequency domain measurements is used to obtain the RF amplitude $A_{\omega}$ and phase shift $\phi$ of the detected light. A 70MHz signal (from a signal generator such as [EQUIPMENT]) used to modulate the diode laser is split to serve as a reference signal for the detector unit. The reference signal is split into two with one part being shifted in phase by $\pi/2$ radians. The two parts are multiplied with the detected signal $D(t) = A_0 + A_{\omega}{\rm sin}(\omega t + \phi)$ from the avalanche diode to give us:
+
+\begin{equation}
+\label{inphase}
+I(t) = \frac{1}{2}A_rA_{\omega}{\rm cos}(\phi) + (\omega \ \ {\rm terms}) + \ \ (2\omega \ \ {\rm terms})
+\end{equation}
+
+\begin{equation}
+\label{quadrature}
+Q(t) = \frac{1}{2}A_rA_{\omega}{\rm sin}(\phi) + (\omega \ \ {\rm and}) + \ \  (2\omega \ \ {\rm terms} )\ .
+\end{equation}
+
+The resulting signal is then low-pass filtered to obtain the DC components and used to extract the amplitude and phase which is:
+
+\begin{equation}
+\label{homoamp}
+A_{\omega} \propto \sqrt{I_{DC}^2 + Q_{DC}^2}
+\end{equation}
+
+\begin{equation}
+\label{homophase}
+\phi = tan^{-1}\frac{Q_{DC}}{I_{DC}} \ .
+\end{equation}
+
+The amplitude and phase values measured for each measured separation (using the semi-infinite Green's function) is then used to calculate the bulk breast values.
