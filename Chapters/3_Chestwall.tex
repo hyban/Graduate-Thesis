@@ -1,7 +1,157 @@
 \chapter{DOT of Breast Cancer in Clinically Relevant Geometry}
 
+Diffuse optical tomography (DOT) has been employed to derive spatial maps of physiologically important chromophores in human breast, but the fidelity of these images is often compromised by boundary effects such as those due to the chest wall.  Here we explore the image quality in fast, data-intensive analytic and algebraic linear DOT reconstructions of phantoms with sub-centimeter target features and large absorptive regions mimicking the chest wall. Experiments demonstrate that the chest wall phantom can introduce severe image artifacts.  We then show how these artifacts can be mitigated by exclusion of data affected by the chest wall. We also introduce and demonstrate a linear algebraic reconstruction method well suited for very large data sets in the presence of a chest wall.
+
 \section{Introduction}
+
+Diffuse optical tomography (DOT) employs near-infrared light to probe the optical properties of highly-scattering biological tissues~\cite{arridge_99_1,boas_01_1,arridge_09_1}. DOT has shown
+promise in breast cancer imaging~\cite{colak_99_1,hawrysz_00_1,mcbride_01_1,culver_03_1,intes_03_1,li_03_1,choe_05_1,yates_05_1,corlu_07_1,cerussi_07_1,choe_09_1,durduran_10_1} because optical methods are sensitive to changes in physiological parameters such as blood volume and tissue oxygenation, alterations of which are biomarkers for cancer and other disease processes.  Typical source-detector arrangements in DOT include the ring~\cite{pogue_95_1} and slab~\cite{grosenick_05_1,pifferi_03_1,choe_09_1} geometries. In the latter case, both transmission~\cite{choe_09_1} and reflection~\cite{ge_08_1} measurements have been used, though transmission measurements provide more sensitivity for deep tissues since the detected light in this geometry is more likely to travel through all areas of interest. Recently, it has been demonstrated that the image quality in DOT~\cite{wang_05_1,konecky_08_1,bonfert-taylor_12_1}, and in other imaging modalities such as inverse diffraction~\cite{chaillat_12_1}, can be significantly improved by utilization of large data sets in the reconstruction. The plane-parallel transmission geometry is particularly well suited for utilization of larger data sets, because if offers the possibility of non-contact scanning methods~\cite{schulz_03_1,ripoll_03_2,ripoll_04_1,turner_05_1,wang_05_1} wherein a computer-controlled beam scanner on one side of the sample is used for illumination and a megapixel CCD camera is used for detection.  A characteristic feature of non-contact scanning is the availability of very large data sets with up to $\sim 10^9$ independent measurements, e.g., with $\sim 10^3$ source positions and $\sim 10^6$ CCD pixels per source. Unfortunately, utilization of data sets consisting of more than $\sim 10^5$ independent measurements presents a serious computational challenge. For this reason, we developed fast algorithms capable of reconstructing very large data sets in simple imaging geometries (including the slab)~\cite{markel_01_3,markel_02_2,markel_03_1,markel_03_2,markel_04_4}. Numerical simulations~\cite{markel_02_2} have demonstrated the full potential of these methods, but the simulations also indicate that large imaging windows are required. To obtain optimum resolution, for example, the dimensions on both sides of the slab where sources and detectors are scanned should be larger by a factor of about $3$ in both transverse directions compared to the slab width, but in practice, a somewhat smaller ratio is expected to be sufficient due to the presence of experimental
+noise and other imaging system imperfections~\cite{wang_05_1,konecky_08_1}.
+
+Unfortunately, in clinical breast imaging, the large windows described above are not achievable due to physical limitations imposed by the chest wall, and its consequences in DOT are poorly understood. To this end, we employ engineered phantoms to study the effects of the chest wall on image reconstruction.
+These tissue phantoms are similar to many that have been employed with success in the DOT community for preclinical, {\em in vitro} investigations to ascertain the utility and limitations of various image reconstruction schemes~\cite{Pogue2006,Cerussi2012,culver_03_1}. One advantage of the present phantom experiments is that we can compare reconstructions obtained under similar conditions but with different imaging windows, some of which would be physically unavailable {\em in vivo}. Based on these experimental results, we discuss and compare two approaches for reconstructing large data sets under the condition that the large imaging windows, which are required by the methods of Refs.~\cite{markel_01_3,markel_02_2,markel_03_1,markel_03_2,markel_04_4}, are unavailable; we then explore methods to ameliorate the chest wall effects.
+
+The main conclusion of this paper is that both the analytical and algebraic data-intensive linearized image reconstruction methods can produce reasonable results, provided the data points are appropriately restricted to exclude measurements that are strongly influenced by the chest wall. Under these conditions, an absorbing target with subcentimeter features can be clearly reconstructed in the middle of a $6$ cm slab, even when the chest wall is only $2$ cm from the target. Specifically, we obtain good images of the target even in the presence of a large chest wall phantom that introduces significant nonlinearities into the inverse problem due to its larger absorption coefficient compared to the background as well as due to its size. Moreover, we discovered a data restriction condition such that the presence of the chest wall phantom imposes minimal artifacts or distortions in the image. The performance of both algebraic and analytic image reconstruction methods were compared under this condition and, while
+neither method is perfect, we believe that a role for both methods in DOT exists, the choice depending upon the particular clinical application.
+
+The reminder of this paper is organized as follows. In Sec.~\ref{sec:exp}, we describe the experimental set up. Sec.~\ref{sec:rec} contains details of the image reconstruction methods. Sec.~\ref{sec:data} explains our approach to data restriction. Sec.~\ref{sec:res} presents the results and Sec.~\ref{sec:sum} contains a brief summary.
+
+\section{Methods}
+\label{sec:3_methods}
+
+The rejection of the datapoints deemed unreliable or too noisy is an established practice in   DOT~\cite{blasi_07_1,franceschini_07_1,roche-labarbe_10_1,orihuela-espina_10_1}. Here this data restriction methodology is used in a somewhat different context and with a somewhat different goal compared to previous work. In the usual approach, data points are rejected based on an {\em a priori} knowledge or a statistical model for the target without specific regard for the location of the rejected source-detector pairs. Here we reject certain data points based solely on their location. Our purpose is not to suppress noise, but rather to investigate the reconstruction effects of the imaging window restriction and the proximity of the chest wall phantom to the target. In particular, we are posing the following question: how close the sources and detectors can be placed to a chest wall to guarantee that the reconstruction of the target is not significantly distorted or contaminated by the latter.
+
+As discussed above, we denote the distance between the top of the bar target and the bottom of the chest wall phantom by $d$. We have collected the data for $d=2$, $5$, $8$, $11$, $14$, and $17\,{\rm cm}$. The various data sets are graphically illustrated in Fig.~\ref{fig:data}. In particular, in Fig.~\ref{fig:data}(c), we show with red lines the positions of the lower edge of the chest wall phantom that correspond to different values of $d$ and fall within the CCD field of view; these include $d=8$, $5$, and $3\,{\rm cm}$. In this figure, the positions of sources are shown by bright dots. The drawing is to scale and a sample reconstruction is superimposed with the drawing to indicate the target shape and position. The larger, dark blue square corresponds to the FOV of the CCD camera.
+
+The maximum available number of independent source-detector pairs is $(512\times 35)^2\simeq 3.2\times 10^8$. As discussed below, only a fraction of this data set was used in the reconstructions. Some data
+points have been eliminated by ``windowing'' (in the algebraic image reconstruction), other data points were eliminated by sampling of the detectors (in the algebraic reconstructions, every second detector was
+used and), and yet other data points have been eliminated by numerical data restriction, which is described below in this section. The maximum data set used in algebraic reconstruction consisted of $\simeq 2\times 10^7$ measurements; see more detailed information for various data restrictions in Table 1 below.
+
+We now discuss the data restriction. The latter was accomplished by removing all sources and detectors situated above one of the green lines shown in Fig.~\ref{fig:data}(c). In the case of algebraic reconstruction, these sources and detectors were simply not used, which did not amount to any additional approximation. In the case of the analytical reconstruction, it was assumed that the corresponding source-detector pairs produced zero data points $b_m$ (not zero intensity). The different data restrictions used are quantified as follows. There are 35 rows of sources. We define the quantity $NR$
+(Numerical data Restriction) as the number of the source row (counting from top to bottom) above which no sources and/or detectors are included in the reconstruction.  Thus, if $NR=5$, the data are restricted to sources and detectors lying at the level of the fifth source row and below it. For example, $NR=5$ excludes the four topmost lines of sources and all detectors that lie above the fifth line of
+sources. In the reconstructions, we have used $NR=5, 8, 9, 10$ and, for each value of $NR$, we have performed image reconstruction with all available values of $d$. Table 1 summarizes the subsets of data
+used for each value of $NR$.
+
+\begin{figure}[htbp]
+\centering\includegraphics[width=\textwidth]{Figure3.pdf}
+\caption{\label{fig:data}
+  Models for data restriction. (a) Photograph of the drained imaging tank illustrating the position the target with respect to the chest wall phantom. (b) Schematic of the imaging tank. (c) Illustration of  the various data sets used in the reconstructions. The dark blue square is the CCD FOV while the inner light blue square indicates the reconstruction region. The bright dots indicate the source positions. A sample reconstruction is superimposed with the drawing to illustrate the target shape and position. The red lines indicate the three lowest position of the chest wall phantom (other positions are outside of the CCD FOV) while the green lines illustrate the restricted data sets where all the sources and detectors situated above a given green line have been discarded.}
+\end{figure}
+
+\begin{table}[t]
+\centering\caption{Data Restriction Sizes.}
+\begin{tabular}{c|c|c}
+\hline 
+Numerical data Restriction ($NR$) & Number of sources & 
+Number of distinct \\
+&& source-detector pairs \\ \hline
+No restriction & $35\times35=1225$ & $20591492$ \\
+           $5$ & $35\times31=1085$ & $16479152$ \\
+           $8$ & $35\times28=980$  & $14661145$ \\
+           $9$ & $35\times27=945$  & $14074728$ \\
+          $10$ & $35\times26=910$  & $13457507$ \\ \hline
+\end{tabular}
+\end{table}
+
 
 \section{Experiment and Setup}
 
-\section{Results and Discussion}
+The experimental apparatus is shown schematically in Fig.~\ref{fig:schem}.  Briefly, a collimated continuous-wave $785\,{\rm nm}$ laser diode is coupled to a 2D galvanometer scanner (Thorlabs GVS012). The laser beam with a focused spot size of $0.5 mm$ is raster scanned on a $35\times 35$ square grid
+with a $4\,{\rm mm}$ spacing covering a $13.6\times 13.6\,{\rm cm}^2$ area on one side of the imaging tank (whose overall dimensions are $44\times 44\times 6\,{\rm cm}^3$). The thickness of the tank was chosen to be close to the average compression used in our previous clinical studies based on diffuse optical tomography~\cite{choe_09_1, culver_03_1}. As each source position is illuminated, data is collected from the opposite side of the tank over a $21.2\times 21.2\,{\rm cm}^2$ field of view (FOV) area with a CCD camera (Andor, DV887ECS-UV, lens $25\,{\rm mm}\ {\rm F}/0.95$). The FOV was mapped to the grid of $512\times 512$ CCD pixels. This corresponds to a rectangular grid on the surface of the tank with the spacing $p=0.416\,{\rm mm}$.
+
+\begin{figure}[t]
+\centering\includegraphics[width=7cm]{Figure1.pdf}
+\caption{\label{fig:schem}
+Schematic of the experimental setup. A collimated CW $785\,{\rm nm}$ laser source at is raster scanned on one side of the imaging tank. The transmitted light on the detection plane is collected by a CCD for each source position.}
+\end{figure}
+
+A bar target is suspended in the mid-plane of the tank ($3\,{\rm cm}$ from either surface) using monofilament fishing line. The target is made of silicon rubber (RTV-12, General Electric), titanium oxide (T-8141, Sigma-Aldrich) and carbon black (Raven 5000 Ultra Powder II), with the absorption coefficient $\mu_{\rm a}=0.2\,{\rm cm}^{-1}$ and the reduced scattering coefficient $\mu_{\rm s}^\prime = 7.5\,{\rm cm}^{-1}$.  The tank is filled with a scattering fluid ($\mu_{\rm a} = 0.05\,{\rm cm}^{-1}$ and $\mu_{\rm s}^\prime = 7.5\,{\rm cm}^{-1}$); these background optical properties are similar to those used in previous {\em in vitro} and clinical research. The contrast between the target and the surrounding fluid is purely absorptive with the ratio of about 4.
+
+A chest wall phantom (Biomimic, INO $\mu_{\rm a} = 0.1\,{\rm cm}^{-1}$ and $\mu_{\rm s}^\prime = 5.0\,{\rm cm}^{-1}$, dimensions $40\times 20\times 5.8\,{\rm cm}^3$) is suspended at various distances $d$ from the top edge of the bar target ($d=2$, $5$, $8$, $11$, $14$, $17\,{\rm cm}$). The optical properties of the chest wall phantom were chosen to mimic muscle tissue~\cite{ardeshirpour_10_1, kienle_99_1,taroni_03_1}.  Thus both absorptive and scattering contrast exists between the chest wall
+phantom and the background fluid. The bar target and the chest wall phantom are shown in Fig.~\ref{fig:targets}.  Note that the chest wall phantom almost entirely fills the imaging tank; the clearance between the chest wall phantom and the inner surfaces of the tank is $1\,{\rm mm}$ on both sides.
+
+\begin{figure}[t]
+\centering\includegraphics[width=8cm]{Figure2.pdf}
+\caption{\label{fig:targets}
+Phantoms used in the experiment. (a) $6\,{\rm mm}$ thick bar target with $\mu_{\rm a}=0.2\,{\rm cm}^{-1}$ and $\mu_{\rm s}^{\prime}=7.5\,{\rm cm}^{-1}$ has slots $48\,{\rm mm}$ tall and $9\,{\rm mm}$ wide. The outer dimensions are $60\times 50\,{\rm mm}^2$. (b) The chest wall phantom with $\mu_{\rm a}=0.1\,{\rm cm}^{-1}$ and $\mu_{\rm s}^{\prime}=5.0\,{\rm cm}^{-1}$.  }
+\end{figure}
+
+
+\section{Results}
+\label{sec:3_results}
+
+The quantity plotted in all figures of this section is $x({\bf r}) + 1 = \alpha({\bf r}) / \alpha_0$. From physical considerations, this function is nonnegative, since the medium is not amplifying.  However,
+the image reconstruction reported here utilizes various approximations. This can result in reconstructing unphysical negative values of absorption, which are shown in the figures by the color black (the same color scale is used throughout). We note that the occurrence of negative absorption can be avoided by making use of a positivity constraint in the algebraic reconstruction method. The positivity constraint can be incorporated in the conjugate-gradient descent algorithm, which was used by us to invert the matrix $A^*A$. However, we have found that the areas of negative absorption appear mostly in the case of the analytic (fast) image reconstruction method, which cannot incorporate the positivity constraint. On the other hand, the algebraic reconstructions have produced either no areas of negative absorption, or artifacts so severe (e.g., when $d=2\,{\rm cm}$ and no numerical data restriction) that the use of the
+positivity constraint was not useful. In other words, we did not encounter a situation in which the positivity constraint was simultaneously numerically feasible and useful; therefore, it has not been used for producing the images shown in this section.
+
+Reconstructions of the central slice of the medium ($3\,{\rm cm}$ from either of the slab surfaces) obtained with varying values of $d$ and various numerical data restriction ($NR$) are shown in Fig.~\ref{fig:central}. It can be seen in Fig.~\ref{fig:central}(a) that the analytical inversion with no data restriction (the topmost row of images) produces severe image artifacts when chest wall is
+$d=2\,{\rm cm}$ and $d=5\,{\rm cm}$ away from the target. Data restriction with $NR=5$ results in a reasonable, yet suboptimal, image quality when $d=5\,{\rm cm}$, but not when $d=2\,{\rm cm}$. To remove
+the artifacts associated with the chest wall completely, $NR=10$ is required.
+
+However, $NR = 8,9,10$ used in conjunction with the analytical reconstruction yields an additional image artifact, which is unrelated to the chest wall phantom. To see that this is true, consider the
+images for $d=17\,{\rm cm}$, which are not affected at all by the chest wall phantom, yet exhibit the additional artifact just mentioned. This artifact is shown as a black area where the
+reconstructed absorption coefficient is negative and, therefore, outside of the physically-allowable range. We thus conclude that reconstructing the target by the analytical reconstruction method is
+feasible with the use of the appropriate data restriction, yet it results in an additional image artifact where the absorption in underestimated. 
+
+The appearance of this artifact can be understood. As mentioned above, the data restriction used with the analytical reconstruction amounts to assuming that the truncated data points are zero. In other words, we assume that, in the presence of the target, the truncated source-detector pairs would have measured the same intensity as in the homogeneous slab, so that $I({\bf r}_d,{\bf r}_s) = I_0({\bf r}_d,{\bf r}_s)$ for the truncated source-detector pairs (see Eq.~(\ref{eq4})). The reconstruction algorithm seeks a contrast function $\delta\alpha({\bf r})$, which is compatible with this assumption.  For a purely absorbing target, however, the actual intensity $I({\bf r}_d,{\bf r}_s)$ is smaller than $I_0({\bf r}_d,{\bf r}_s)$ when at least one of the points ${\bf r}_d,{\bf r}_s$ is located not too far from the target (in the lateral direction) due to increased optical absorption. Whenever such data points are discarded, an artifact with negative $\delta\alpha$ is produced by the reconstruction algorithm to compensate for the absorption in the target. It can be seen that this artifact is located between the
+target and the region of source-detector pairs, which have been discarded. Of course, this analysis applies to the case when the position and optical contrast of the target is known.  In general, it
+may be difficult to predict the position of this artifact or to distinguish it from a true occurrence of negative $\delta\alpha$. There may also be a spatial overlap of the artifact and a true inhomogeneity.
+
+We now turn to the algebraic reconstructions [Fig.~\ref{fig:central}(b)]. For the unrestricted data set, the image quality is still poor. However, when the data restriction is gradually introduced, the artifacts disappear.  Thus, in the case $NR=10$ and $d=2\,{\rm cm}$ (the image in the bottom right corner), the target is clearly visible, and the image quality is about the same as with the
+use of the unrestricted data set and $d=17\,{\rm cm}$. Thus, introduction of the data restriction does not result in additional image artifacts or quality degradation when the algebraic method is
+used.
+
+In Figs.~\ref{fig:slices_analytical} and \ref{fig:slices_numerical}, we show slices drawn through the medium at different depths. Fig.~\ref{fig:slices_analytical} displays the results of the analytical image reconstruction for $d=5\,{\rm cm}$ and $d=2\,{\rm cm}$ and Fig.~\ref{fig:slices_numerical} displays analogous data obtained by the algebraic reconstruction. In addition, we show in the right-most column of images the reconstruction averaged over the depth of the sample (that is, over different slices). Note that all reconstructed slices were used for the purpose of averaging, not only those shown in the figures. Note that, in all cases, we have reconstructed $13$ slices separated by the distance of  $8h\approx 3.328{\rm mm}$, with the central slice located exactly in the mid-plane of the slab. The ``average'' reconstruction was obtained by computing the arithmetic average of the reconstructions in all $13$ slices.
+
+These averaged (``projection'') images correspond to the usual radiological projections obtained with a parallel beam of X-rays. The qualitative conclusions that can be drawn from Figs.~\ref{fig:slices_analytical} and \ref{fig:slices_numerical} are the same as above. The analytical reconstruction produces reasonable image quality for the smallest chest wall-target separation $d=2\,{\rm
+  cm}$ and $NR=10$ but at the cost of an additional image artifact. The algebraic reconstruction is free from this artifact, but underestimates the image contrast relative to the analytic method (see below). The depth resolution is slightly better in algebraic reconstructions but, overall, much worse than the lateral resolution. This is typical for DOT images.
+
+One interesting feature observed in both types of image reconstruction is the following. The projection images discussed above are, generally, more stable and exhibit reasonable quality even when the
+individual slices contain severe artifacts. For example, consider the $d=2\,{\rm cm}$ algebraic reconstructions without data restriction (Fig.~\ref{fig:slices_numerical}). Even though all slices drawn
+through the medium are badly corrupted by the artifacts associated with proximity of the chest wall phantom, the projection image shows the target clearly. Moreover, the edge of the chest wall phantom is
+also clearly visible at the correct location. This result is somewhat unexpected and can be useful in the situations when the depth resolution is not of essence. We emphasize that obtaining the projections still requires knowledge of the three-dimensional distribution of the absorption coefficient; the projections cannot be computed or measured directly without such knowledge.
+
+We note that, in both types of image reconstructions, we see an underestimation of the contrast for the target phantom compared to the expected value. This underestimation can be attributed to the poor
+transverse (depth) resolution of the three-dimensional reconstruction which results in the ``spreading'' of the contrast in that direction. Indeed, consider the depth-integrated contrast, $H(x,y) = \int \left[
+  \alpha(x,y,z) / \alpha_0 - 1 \right] {\rm d}z$, where $x$, $y$ are the coordinates in the plane of the slab and $z$ is the transverse (depth) coordinate. Inside the target, we have $\alpha(x,y,z) /
+\alpha_0 \simeq 4$ and the target thickness in the transverse direction is $\Delta z=0.6\,\ {\rm cm}$. Therefore, the actual value of $H$ for a line passing through the target and perpendicularly to
+the slab surface is $H\simeq 1.8\,{\rm cm}$. In the reconstructed images, the transverse thickness of the target is overestimated and is equal, approximately, to $2\,{\rm cm}$ while the quantity
+$\alpha(x,y,z)/\alpha_0$ is underestimated and is equal, approximately, to 2. By using the reconstructed values to estimate the integrated contrast, we obtain $H\simeq 2\,{\rm cm}$, which is
+reasonably close to the actual value.
+
+\begin{figure}[htbp]
+\begin{center}
+\begin{minipage}[h]{1\textwidth}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Fig_4.pdf}
+\end{center}
+\end{minipage}
+\end{center}
+\caption{\label{fig:central}
+Images of the central slice obtained by analytical (a) and algebraic (b) reconstruction methods. Different columns show data obtained with the chest wall phantoms at different distances $d$ from the bar
+target.  Different rows of images correspond to different data restrictions $NR$, as indicated.  The color bar applies to all other images shown below.}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\begin{minipage}[h]{1\textwidth}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{Fig_5.pdf}
+\end{center}
+\end{minipage}
+\end{center}
+\caption{\label{fig:slices_analytical}
+Slices through the medium drawn at different depths (from the plane of sources) as indicated. Analytical image reconstruction method with $d=5\,{\rm cm}$ and $d=2\,{\rm cm}$.}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\begin{minipage}[h]{1\textwidth}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{Fig_6.pdf}
+\end{center}
+\end{minipage}
+\end{center}
+\caption{\label{fig:slices_numerical}
+  Same as in Fig.~\ref{fig:slices_analytical} but obtained by algebraic reconstruction. }
+\end{figure}
