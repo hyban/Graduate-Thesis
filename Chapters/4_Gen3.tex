@@ -1,16 +1,12 @@
 \chapter{CCD-based Multispectral Frequency-Domain DOT of Breast Cancer}
 
 \section{Introduction}
-
+Our breast imaging efforts have been focused on translating DOT techniques into the clinical setting. The previous clinical DOT device (Gen2)  has been successfully used in previous studies [CITATIONS] and we have been working to build on this success with improved capabilities in our current (Gen3) device. The primary upgrades in features are 1) multispectral frequency domain measurements in the transmission geometry using heterodyne measurement techniques, 2) addition of a profilometry system for enhanced breast segmentation for reconstruction, and 3) improved clinical patient interface. In this chapter, I will provide an overview of the new features and initial results.
 
 \section{Previous Breast Imaging Device}
-Our breast imaging efforts have been focused on translating DOT techniques into the clinical setting. The previous clinical DOT device (Gen2)  has been successfully used in previous studies [CITATIONS] and we have been working to build on this success with improved capabilities in our current (Gen3) device. The primary upgrades in features are 1) frequency domain measurements in the transmission geometry using heterodyne measurement techniques, 2) addition of a profilometry system for enhanced breast segmentation for reconstruction, and 3) improved clinical patient interface. In this chapter, I will provide an overview of the new features and initial results.
-
-\section{Previous Breast Imaging Device (Gen2)}
 The Gen2 DOT imaging device [FIGURE] take data in the parallel-plate compression geometry. It measures multispectral continuous-wave (CW) measurements in the transmission geometry. In addition, it takes frequency-domain measurements in the remission geometry to determine bulk optical property values. The patient lies prone on a flat bed with her breast inserted inside a recessed box with a grid of fiber sources on one side (source plate) and a anti-reflection coated window on the other side (detector plate). The source plate is moved axially to softly compress the breast against the detector plate with the distance between the parallel plates varying from 5 to 7 cm. The box is filled with a matching fluid with optical properties similar to average human breast tissue. The matching fluid consists of water, india ink (for absorption) and intralipid (for scattering).
 
 The source plate has 45 fiber positions arranged in a 9x5 square grid with a spacing of 1.6 cm between nearest neighbors. The sources are measured in series using cascading optical switches (DiCon Fiber Optics, Richmond, CA). At each source position six measurements are made at varying wavelengths (650, 690, 750, 785, 830, 905 nm) using fiber-coupled laser diodes. On the detection side, a CCD camera (Roper Scientific, Trenton, NJ, VersArray:1300F) collects the light that exits in the transmission geometry focused on the detection window. A image is obtained for for each source + laser combination with an exposure time of 500 ms. From each image a  A 24$\times$41 grid of 984  decimated set is selected from the CCD after 2x2 hardware binning of the pixels. For the frequency-domain remission measurements, four out of the six lasers are modulated at 70MHz. At these wavelengths measurements are made with additional grid of 3mm detector fibers arranged on the source plate in a 3x3 grid with 1.6 cm spacing. The light from these fibers are collected by an avalanche photodiode for homodyne frequency-domain measurements.
-
 
 \section{Clinical Breast Imaging Device}
 The core features that we wanted implemented for the device was to have a diffuse optical tomography device with multispectral and frequency-domain capabilities to improve quantification and separation of absorption and scattering in our image reconstruction. That the system was CCD based allow us to also collect a large number ($10^6$) of source detector pairs in parallel for improved resolution. In addition a supplimental pair of profilometry imaging system were designed and built (discussed later in the section) to provide 3 surface information about the breast shape to improve segmentation the 3D optical reconstruction of the breast.  Finally, significant effort was made to build a clinical grade device with a patient interface that maximized comfort and minimized movement during our measurement. Software for the device was also developed to enable simple and streamlined operation by our clinical collaborators.
@@ -30,7 +26,7 @@ The output fiber from the laser system is connected in series to a custom 1x210 
 %\end{figure}
 
 \subsection{Breast Tank and Patient Bed}
-The breast imaging system is built around a modified biopsy bed. The bed allows for more of the breast to be inserted into the tank for greater breast coverage. The breast tank is located right below the hole. The tank consists a tank with a rail mounted source plate made out of black delrin. On the opposite side is an acrylic window with anti-reflective coating. The space between the window and the detection setup is covered by a light box that prevents stray signal from reaching the image intensifier and CCD.
+The breast imaging system is built around a modified biopsy bed. The bed allows for more of the breast to be inserted into the tank for greater breast coverage. The breast tank is located right below the hole. The tank consists a tank with a rail mounted source plate made out of black delrin to maintain parallel compression between the source plate and window. On the opposite side is an acrylic window with anti-reflective coating. The space between the window and the detection setup is covered by a light box that prevents stray signal from reaching the image intensifier and CCD. The tank is also mounted on ball-bearing surface which allows the breast tank, light box, and detection system to rotate 90 degrees for either sagittal or axial compression of the breast.
 
 %\begin{figure}[t]
 %\centering\includegraphics[width=7cm]{./figures/BiopsyBedPic.png}
@@ -41,32 +37,49 @@ The breast imaging system is built around a modified biopsy bed. The bed allows 
 \subsection{Image Intensifier mounted CCD}
 The detection system consists of a back-illuminated EMCCD (Andor iXon DV887, Ireland) with quantum efficiency optimized in the $500-700\,{\rm nm}$ range mounted with a gain-modulated image intensifier (Lambert Instruments, II8MD GENIII, Netherlands) with a P43 Phosphor screen with a peak emission at $545\, {\rm nm}$. The lens element in front of the image intensifier is a Xenon $25\,{\rm mm}$ $f/0.95$ C-Mount Lens for 1-Inch CCD (Schneider Optics, Germany). The $512 \times 512$ pixel CCD is cropped to a field of view of the breast tank window with a $2 \times 2$ hardware binning for an image $155 \times 200$ pixels with a dpixel of $0.33\, {\rm mm/pixel}$. The gain on the image intensifier is modulated at  $70\,{\rm MHz} + 1 {\rm Hz}$
 
-
 \subsection{Frequency-Domain Heterodyne detection}
-Our system uses the well known optical heterodyne detection scheme [cite] where the input signal $\omega_{s}$ is nonlinearly mixed with a reference signal at the same frequency which is offset by a small cross correlation frequency $\omega_{cc}$ such that $\omega_{g}=\omega_{s}+\omega_{cc}$ and the resulting beat frequency at $\omega_{cc}$ is measured.  In our system, $\omega_{s}$ and  $\omega_{g}$ are produced by a pair of phase-locked frequency generators the lasers are modulated at $70\,{\rm MHz}$ such that the light source intensity can be described as
-
+\label{sec:heterodyne}
+Our system uses the well known optical heterodyne detection scheme [cite] where the input signal $\omega_{s}$ is nonlinearly mixed with a reference signal at the same frequency which is offset by a small cross correlation frequency $\omega_{cc}$ such that $\omega_{g}=\omega_{s}+\omega_{cc}$ and the resulting beat frequency at $\omega_{cc}$ is measured.  In our system, $\omega_{s}$ and  $\omega_{g}$ are produced by a pair of phase-locked frequency generators. The lasers in the devices are modulated at $\omega_{s}=70\,{\rm MHz}$ such that the light source intensity can be described as
 \begin{equation}
-I(t) = I_o + I_{\omega} cos(\omega_s t).
+I(t) = I_{0} + I_{\omega}\cos(\omega_s t+\phi_I)
 \end{equation}
-
-Similarly, we modulate the gain of the image intensifier at $70\,{\rm MHz} + 1 {\rm Hz}$ so that the image intensifier sensitivity is
-
+where  I_{0} is the DC amplitude, I_{\omega} the AC amplitude and \phi_I is the phase offset of the laser. When the light passes through our breast tank diffusively through breast or intralipid solution the resulting transmitted light has the form
 \begin{equation}
-G(t) = G_o +GI_{\omega} cos({\omega_s+ t).
+T(t) = I_{0}A_{DC}({\bf r}) + I_{\omega}A_{AC}\cos(\omega_s t +\phi_I+ \phi({\bf r}))
 \end{equation}
-
-
-
-
-
-
-
-
-
-
+where $A_0$, $A_{AC}$, and $\phi$ are the spatially varying DC, AC, and phase information that we are measuring from the surface of our diffusive breast or intralipid solution. On the detection side, we modulate the gain of the image intensifier at $\omega_{g}=70\,{\rm MHz} + 1 {\rm Hz}$ so that the image intensifier sensitivity is
 \begin{equation}
-I 
+G(t) = G_{0} +G_{\omega} \cos((\omega_s+\omega_{cc})t+\phi_G))
 \end{equation}
+\noindent
+where  G_{0} is the DC amplitude, G_{\omega} the AC amplitude and \phi_G is the phase offset of the image intensifier gain. The signal that is detected by the CCD after the image intensifier is then
+\begin{equation}
+S = I(t) \times G(t) = (I_{0} + I_{\omega}\cos(\omega_s t+\phi_I))(G_{0} +G_{\omega}\cos((\omega_s+\omega_{cc})t+\phi_G)).
+\label{4_signal}
+\end{equation}
+The CCD measures the light intensity out of the image intensifer at rate of $10\, {\rm frames/s}$ with frame transfer mode with an exposure time $\sim100\, {\rm ms}$ which in addition to the phosphor screen response time of the image intensifier of $\sim{\rm ms}$ acts as a low pass filter on the signal. Thus (Eqn \ref{4_signal}) simplifies to
+\begin{equation}
+\label{eqn:heterodyne}
+S  = I_{0}G_{0}A_{DC}({\bf r}) + I_{\omega}G_{\omega}A_{AC}\cos(\omega_{cc}t+\phi_I-\phi_G+\phi({\bf r})).
+\end{equation}
+where we are able to measure $I_{0}G_{0}A_{DC},\,I_{\omega}G_{\omega}A_{AC}$ and $\phi_I-\phi_G+\phi$ for each pixel of the CCD.
+
+\subsection{DOT measurement and timing}
+The measurement timing is controlled using a National Instruments DAQ board (serial) which has an onboard clock as well as analog and digital I/O which can be programmed via Labview software on a computer. The DAQ board is programmed to put out two syncronized clocked TTL signals at $10\,{\rm MHz}$ and $0.5\,{\rm Hz}$. The $10\,{\rm MHz}$ goes to the reference input of the two frequency generators to phase lock the two together. The 0.5Hz signal is sent to the CCD to trigger the beginning of the 17 sequential measurement series synchronizing to the heterodyne measurement via the frequency generators.
+
+In our measurement protocol we switch through all the source positions for each wavelength in series. The measurement at each source position is two seconds long (each triggered by the $0.5\,{\rm Hz}$ signal) resulting in a total measurement time per scan of $2\,{\rm s} \times 209\,{\rm sources} \times 5$ wavelengths $\sim 35$ minutes. For each two second measurement, 17 exposures are captured at at $10\,{\rm frames/s}$ for a total of $1.7\,s$. The remaining $300 {\rm ms}$ is used to write data from the camera buffer to the computer harddrive and switch to the next source position and/or wavelength. To get the $I_{0}G_{0}A_{DC},\,I_{\omega}G_{\omega}A_{AC}$ and $\phi_I-\phi_G+\phi$ from the heterodyne measurement mentioned in Sec. \ref{sec:heterodyne}, the time series (over 17 frames) light intensity for each pixel is fit to Eqn. \ref{eqn:heterodyne} fitted for these variables as shown in Fig. \ref{fig:TimeSeries}. 
+
+%\begin{figure}
+%\centering\includegr8aphics[width=7cm]{./figures/TimeSeries.png}
+%\caption{\label{fig:TimeSeries}
+% The intensity over time for five pixels on the CCD. Each time point corresponds to a single frame and the lines show the fits to Eqn \ref{eqn:heterodyne}}.
+%\end{figure}
+
+\section{Data Normalization}
+A single breast scan will allow us to determine $I_{0}G_{0}A_{DC},\,I_{\omega}G_{\omega}A_{AC}$ and $\phi_I-\phi_G+\phi$ as we saw in Sec. \ref{sec:heterodyne}. However, the quantities that we are interested in are $A_{DC},\,A_{AC}$ and $\phi$ due to the optical properties of the breast. By taking a second reference scan with just the intralipid solution, we can divide out $I_{0}G_{0},\,I_{\omega}G_{\omega}$ and subtract out $\phi_I-\phi_G$.
+
+In addition, in Fig \ref{fig:Gen3schem}
+
 
 
 \section{Profilometry}
