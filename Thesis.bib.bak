@@ -252,13 +252,18 @@
   Annote                   = {Folder 75}
 }
 
-@Article{andersson-engels_90_1,
+@Article{Andersson-Engels1990,
   Title                    = {Time-resolved transillumination for medical diagnostics},
-  Author                   = {Andersson-Engels, S. and Berg, R. and Svanberg, S. and Jarlman, O.},
-  Journal                  = ol,
+  Author                   = {Andersson-Engels, Stefan and Jarlman, O and Berg, R and Svanberg, S},
+  Journal                  = {Optics letters},
   Year                     = {1990},
+  Number                   = {21},
   Pages                    = {1179--1181},
-  Volume                   = {15}
+  Volume                   = {15},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{andreev_95_1,
@@ -307,6 +312,20 @@
   Annote                   = {Folder 82}
 }
 
+@Article{Ardeshirpour2010,
+  Title                    = {Optical tomography method that accounts for tilted chest wall in breast imaging},
+  Author                   = {Ardeshirpour, Yasaman and Zhu, Quing},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2010},
+  Number                   = {4},
+  Pages                    = {041515--041515},
+  Volume                   = {15},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.17}
+}
+
 @Article{armstrong_93_1,
   Title                    = {Effects of submicrometer-sized particles on microdroplet lasing},
   Author                   = {Armstrong, R. L. and Xie, J.-G. and Ruekgauer, T. E. and Gu, J. and Pinnik, R. G.},
@@ -331,6 +350,25 @@
   Annote                   = {Folder 68a}
 }
 
+@Article{Aronson1993,
+  Title                    = {Extrapolation distance for diffusion of light},
+  Author                   = {R. Aronson},
+  Journal                  = {Photon Migration and Imaging in Random Media and Tissues},
+  Year                     = {1993},
+  Pages                    = {297-305},
+  Volume                   = {1888},
+
+  Abstract                 = {Diffusion theory has been a useful and frequently applied analytical method to study the transport of light in random media. The diffusion equation requires unphysical boundary conditions. This is reflected in the fact that the diffusion solution must differ from the exact solution in a boundary region a few mean free paths thick. Exact transport theory indicates that for particle diffusion the true boundary is to be replaced by an extrapolated boundary 0.71 transport mean free paths outside of it. This is the number that has universally been used in treating light diffusion, although it is sometimes neglected because it is often a very short distance. However, because there is reflection at the boundary due to mismatch in the index of refraction, the extrapolation distance for diffusion of light is longer than that for particles, and this must be taken into account. The correction is large, even for modest indices of refraction. We show here that the appropriate boundary condition is given in terms of an extrapolation distance and tabulate this quantity as a function of relative scattering probability and index of refraction of the medium.},
+  Doi                      = {10.1117/12.154660},
+  Editor                   = {Britton Chance and Robert R. Alfano},
+  File                     = {:D\:\\Documents\\Papers\\Aronson1993.pdf:PDF},
+  Location                 = {Los Angeles, CA, USA},
+  Owner                    = {hban},
+  Publisher                = {SPIE},
+  Timestamp                = {2008.06.10},
+  Url                      = {http://link.aip.org/link/?PSI/1888/297/1}
+}
+
 @Article{aronson_95_1,
   Title                    = {Boundary conditions for diffuse light},
   Author                   = {Aronson, Raphael},
@@ -341,6 +379,23 @@
   Volume                   = {12},
 
   Annote                   = {Folder 33}
+}
+
+@Article{Aronson1995,
+  Title                    = {Boundary conditions for diffusion of light.},
+  Author                   = {R. Aronson},
+  Journal                  = {J Opt Soc Am A Opt Image Sci Vis},
+  Year                     = {1995},
+  Pages                    = {2532--2539},
+  Volume                   = {12},
+
+  Abstract                 = {In connection with recent work on remote imaging of random media by light, a straightforward generalization of the proper diffusion boundary conditions is presented that takes into account Fresnel reflection. The Milne problem at exterior boundaries is solved for various values of index of refraction, absorption, and scattering anisotropy parameters to yield extrapolated end points and extrapolation distances. A generalized interface condition is derived to replace the usual condition of continuity of intensity. Benchmark-quality numerical results are given for the extrapolation distance and for the new index-dependent parameter in the interface conditions. Difficulties in using the extrapolated end point when the index is sufficiently large are discussed, and a new image procedure suitable for this case is presented.},
+  File                     = {Aronson1995.pdf:Aronson1995.pdf:PDF},
+  Keywords                 = {Diffusion; Humans; Light; Mathematics; Scattering, Radiation; Vision},
+  Owner                    = {hban},
+  Pmid                     = {7494154},
+  Timestamp                = {2008.06.08},
+  Url                      = {http://josaa.osa.org/abstract.cfm?uri=josaa-12-11-2532}
 }
 
 @InProceedings{aronson_91_1,
@@ -369,40 +424,74 @@
   Annote                   = {Folder 59b}
 }
 
-@Article{arridge_99_1,
+@Article{Arridge1998,
+  Title                    = {A gradient-based optimisation scheme foroptical tomography},
+  Author                   = {Arridge, Simon and Schweiger, Martin},
+  Journal                  = {Optics Express},
+  Year                     = {1998},
+  Number                   = {6},
+  Pages                    = {213--226},
+  Volume                   = {2},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.08}
+}
+
+@Article{Arridge1993,
+  Title                    = {A finite element approach for modeling photon transport in tissue},
+  Author                   = {Arridge, SR and Schweiger, M and Hiraoka, M and Delpy, DT},
+  Journal                  = {Medical physics},
+  Year                     = {1993},
+  Number                   = {2},
+  Pages                    = {299--309},
+  Volume                   = {20},
+
+  Owner                    = {Han},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.07}
+}
+
+@Article{Arridge1999,
   Title                    = {Optical tomography in medical imaging},
-  Author                   = {Arridge, S. R.},
-  Journal                  = ip,
+  Author                   = {Arridge, Simon R},
+  Journal                  = {Inverse problems},
   Year                     = {1999},
   Number                   = {2},
-  Pages                    = {R41-R93},
+  Pages                    = {R41},
   Volume                   = {15},
 
-  Annote                   = {Folder 34a}
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.16}
 }
 
-@Article{arridge_00_1,
-  Title                    = {The finite element model for the propagation of light in scattering media: {A} direct method for domains with nonscattering regions},
-  Author                   = {Arridge, Simon R. and Dehghani, Hamid and Schwinger, Martin and Okada, Eiji},
-  Journal                  = mp,
+@Article{Arridge2000,
+  Title                    = {The finite element model for the propagation of light in scattering media: a direct method for domains with nonscattering regions},
+  Author                   = {Arridge, Simon R and Dehghani, Hamid and Schweiger, Martin and Okada, Eiji},
+  Journal                  = {Medical physics},
   Year                     = {2000},
   Number                   = {1},
-  Pages                    = {252-263},
+  Pages                    = {252--264},
   Volume                   = {27},
 
-  Annote                   = {Folder 60}
+  Owner                    = {bioptical},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.23}
 }
 
-@Article{arridge_98_1,
+@Article{Arridge1998a,
   Title                    = {Nonuniqueness in diffusion-based optical tomography},
-  Author                   = {Arridge, Simon R. and Lionhart, William R. B.},
-  Journal                  = ol,
+  Author                   = {Arridge, Simon R and Lionheart, William RB},
+  Journal                  = {Optics Letters},
   Year                     = {1998},
   Number                   = {11},
-  Pages                    = {882-884},
+  Pages                    = {882--884},
   Volume                   = {23},
 
-  Annote                   = {Folder 34a}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{arridge_09_1,
@@ -670,6 +759,20 @@
   Annote                   = {Folder 3}
 }
 
+@Article{Ban2013,
+  Title                    = {Diffuse optical tomography in the presence of a chest wall},
+  Author                   = {Ban, Han Y and Busch, David R and Pathak, Saurav and Moscatelli, Frank A and Machida, Manabu and Schotland, John C and Markel, Vadim A and Yodh, Arjun G},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2013},
+  Number                   = {2},
+  Pages                    = {026016--026016},
+  Volume                   = {18},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.05.25}
+}
+
 @Article{bao_07_1,
   Title                    = {Numerical solution of inverse scattering for near-field optics},
   Author                   = {Bao, G. and Li, P.},
@@ -781,6 +884,34 @@
   Annote                   = {Folder: TBD}
 }
 
+@Article{Barron2008,
+  Title                    = {Assessing the economic burden of breast cancer in a US managed care population},
+  Author                   = {Barron, John J and Quimbo, Ralph and Nikam, Prashant T and Amonkar, Mayur M},
+  Journal                  = {Breast cancer research and treatment},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {367--377},
+  Volume                   = {109},
+
+  Owner                    = {Han},
+  Publisher                = {Springer},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Bassi2007,
+  Title                    = {Portable, large-bandwidth time-resolved system for diffuse optical spectroscopy},
+  Author                   = {Bassi, Andrea and Farina, Andrea and D'Andrea, Cosimo and Pifferi, Antonio and Valentini, Gianluca and Cubeddu, Rinaldo},
+  Journal                  = {Optics express},
+  Year                     = {2007},
+  Number                   = {22},
+  Pages                    = {14482--14487},
+  Volume                   = {15},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{belkebir_06_1,
   Title                    = {Influence of multiple scattering on three-dimensional imaging with optical diffraction tomography},
   Author                   = {Belkebir, K. and Chaumet, P. C. and Sentenac, A.},
@@ -860,23 +991,32 @@
   Annote                   = {Folder 68b}
 }
 
-@Article{benaron_94_1,
-  Title                    = {Imaging neonatal brain injury using light-based optical tomography},
-  Author                   = {Benaron, D. A. and van Houten, J. and Ho, D. C. and Spilman, S. D. and Stevenson, D. K.},
-  Journal                  = {Pediatric Research},
-  Year                     = {1994},
-  Number                   = {4},
-  Pages                    = {A378-A378},
-  Volume                   = {35}
+@Article{Benaron1993,
+  Title                    = {Optical time-of-flight and absorbance imaging of biologic media},
+  Author                   = {Benaron, David A and Stevenson, David K},
+  Journal                  = {Science},
+  Year                     = {1993},
+  Number                   = {5100},
+  Pages                    = {1463--1466},
+  Volume                   = {259},
+
+  Owner                    = {bioptical},
+  Publisher                = {American Association for the Advancement of Science},
+  Timestamp                = {2015.06.17}
 }
 
-@Article{benaron_93_1,
-  Title                    = {Optical time-of-flight and absorbance imaging of biologic media},
-  Author                   = {Benaron, D. A. and Stevenson, D. K.},
-  Journal                  = sci,
-  Year                     = {1993},
-  Pages                    = {1463-1466},
-  Volume                   = {259}
+@InProceedings{Benaron1994,
+  Title                    = {Imaging neonatal brain injury using light-based optical tomography},
+  Author                   = {Benaron, DA and VANHOUTEN, J and Ho, DC and Spilman, SD and Stevenson, DK},
+  Booktitle                = {Pediatric Research},
+  Year                     = {1994},
+  Number                   = {4},
+  Organization             = {WILLIAMS \& WILKINS 351 WEST CAMDEN ST, BALTIMORE, MD 21201-2436},
+  Pages                    = {A378--A378},
+  Volume                   = {35},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.18}
 }
 
 @Article{benson_78_1,
@@ -994,6 +1134,20 @@
   Annote                   = {Not Filed}
 }
 
+@Article{Bevilacqua2000,
+  Title                    = {Broadband absorption spectroscopy in turbid media by combined frequency-domain and steady-state methods},
+  Author                   = {Bevilacqua, Frederic and Berger, Andrew J and Cerussi, Albert E and Jakubowski, Dorota and Tromberg, Bruce J},
+  Journal                  = {Applied optics},
+  Year                     = {2000},
+  Number                   = {34},
+  Pages                    = {6498--6507},
+  Volume                   = {39},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.06}
+}
+
 @Article{bigelow_03_1,
   Title                    = {Superluminal and slow light propagation in a room-temperature solid},
   Author                   = {Bigelow, M. A. and Lepeshkin, N. N. and Boyd, R. W.},
@@ -1014,6 +1168,20 @@
   Volume                   = {18},
 
   Annote                   = {Not printed}
+}
+
+@Article{Blasi2007,
+  Title                    = {Investigation of depth dependent changes in cerebral haemodynamics during face perception in infants},
+  Author                   = {Blasi, A and Fox, S and Everdell, N and Volein, A and Tucker, L and Csibra, G and Gibson, AP and Hebden, JC and Johnson, MH and Elwell, CE},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {2007},
+  Number                   = {23},
+  Pages                    = {6849},
+  Volume                   = {52},
+
+  Owner                    = {Han},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.08}
 }
 
 @Article{bliokh_04_1,
@@ -1075,18 +1243,6 @@
   Annote                   = {Folder 34a}
 }
 
-@Article{boas_01_1,
-  Title                    = {Imaging the body with diffuse optical tomography},
-  Author                   = {Boas, David A. and Brooks, Dana H. and Miller, Eric L. and DiMarzio, Charles A. and Kilmer, Misha and Gaudette, Richard J. and Zhang, Quan},
-  Journal                  = ieee_spm,
-  Year                     = {2001},
-  Number                   = {6},
-  Pages                    = {57-75},
-  Volume                   = {18},
-
-  Annote                   = {Folder 34b}
-}
-
 @Article{boas_95_1,
   Title                    = {Scattering and imaging with diffusing temporal field correlations},
   Author                   = {Boas, D. A. and Campbell, L. E. and Yodh, A. G.},
@@ -1099,15 +1255,57 @@
   Annote                   = {Folder 34a}
 }
 
-@Article{boas_94_1,
-  Title                    = {Scattering of diffusive photon density waves by spherical inhomogeneities within turbid media: {Analytic} solution and applications},
-  Author                   = {Boas, D. A. and O'Leary, M. A. and Chance, B. and Yodh, A. G.},
-  Journal                  = {Proc. Natl. Acad. Sci. USA},
-  Year                     = {1994},
-  Pages                    = {4887-4891},
-  Volume                   = {19},
+@Article{Boas2004,
+  Title                    = {Diffuse optical imaging of brain activation: approaches to optimizing image sensitivity, resolution, and accuracy},
+  Author                   = {Boas, David A and Dale, Anders M and Franceschini, Maria Angela},
+  Journal                  = {Neuroimage},
+  Year                     = {2004},
+  Pages                    = {S275--S288},
+  Volume                   = {23},
 
-  Annote                   = {Folder 33}
+  Owner                    = {bioptical},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Boas2002,
+  Title                    = {Noninvasive imaging of cerebral activation with diffuse optical tomography},
+  Author                   = {Boas, David A and Franceschini, Maria Angela and Dunn, Andy K and Strangman, Gary},
+  Journal                  = {In vivo optical imaging of brain function},
+  Year                     = {2002},
+  Pages                    = {193--221},
+
+  Owner                    = {Han},
+  Publisher                = {CRC Press Boca Raton, FL, USA},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Boas2001,
+  Title                    = {Imaging the body with diffuse optical tomography},
+  Author                   = {Boas, David and Brooks, Dana H and Miller, Eric L and DiMarzio, Charles and Kilmer, Misha and Gaudette, Richard J and Zhang, Quan and others},
+  Journal                  = {Signal Processing Magazine, IEEE},
+  Year                     = {2001},
+  Number                   = {6},
+  Pages                    = {57--75},
+  Volume                   = {18},
+
+  Owner                    = {bioptical},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Boas1994,
+  Title                    = {Scattering of diffuse photon density waves by spherical inhomogeneities within turbid media: analytic solution and applications},
+  Author                   = {Boas, DA and O'leary, MA and Chance, B and Yodh, AG},
+  Journal                  = {Proceedings of the National Academy of Sciences},
+  Year                     = {1994},
+  Number                   = {11},
+  Pages                    = {4887--4891},
+  Volume                   = {91},
+
+  Owner                    = {bioptical},
+  Publisher                = {National Acad Sciences},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{boguna_00_1,
@@ -1156,15 +1354,18 @@
   Annote                   = {Folder 77}
 }
 
-@Article{bonfert-taylor_12_1,
+@Article{Bonfert-Taylor2012,
   Title                    = {Information loss and reconstruction in diffuse fluorescence tomography},
-  Author                   = {Bonfert-Taylor, P. and Leblond, F. and Holt, R. W. and Tichauer, K. and Pogue, B. W. and Taylor, E. C.},
-  Journal                  = josaa,
+  Author                   = {Bonfert-Taylor, Petra and Leblond, Frederic and Holt, Robert W and Tichauer, Kenneth and Pogue, Brian W and Taylor, Edward C},
+  Journal                  = {JOSA A},
   Year                     = {2012},
-  Pages                    = {321-330},
+  Number                   = {3},
+  Pages                    = {321--330},
   Volume                   = {29},
 
-  Annote                   = {Not Printed}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{bonner_87_1,
@@ -1591,6 +1792,20 @@
   Annote                   = {Folder 68a}
 }
 
+@Article{Busch2013,
+  Title                    = {Optical malignancy parameters for monitoring progression of breast cancer neoadjuvant chemotherapy},
+  Author                   = {Busch, David R and Choe, Regine and Rosen, Mark A and Guo, Wensheng and Durduran, Turgut and Feldman, Michael D and Mies, Carolyn and Czerniecki, Brian J and Tchou, Julia and DeMichele, Angela and others},
+  Journal                  = {Biomedical optics express},
+  Year                     = {2013},
+  Number                   = {1},
+  Pages                    = {105--121},
+  Volume                   = {4},
+
+  Owner                    = {Han},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.14}
+}
+
 @Article{bushell_72_1,
   Title                    = {On the convergence of the Born series for all energies},
   Author                   = {Bushell, P. J.},
@@ -1876,6 +2091,20 @@
   Annote                   = {Folder 38}
 }
 
+@Article{Carp2010,
+  Title                    = {Validation of diffuse correlation spectroscopy measurements of rodent cerebral blood flow with simultaneous arterial spin labeling MRI; towards MRI-optical continuous cerebral metabolic monitoring},
+  Author                   = {Carp, SA and Dai, GP and Boas, DA and Franceschini, MA and Kim, YR},
+  Journal                  = {Biomedical optics express},
+  Year                     = {2010},
+  Number                   = {2},
+  Pages                    = {553--565},
+  Volume                   = {1},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{carpineti_95_1,
   Title                    = {Mass conservation and anticorrelation effects in the colloidal aggregation of dense solutions},
   Author                   = {Carpineti, Marina and Giglio, Marzio and Degiorgio, Vittorio},
@@ -1900,6 +2129,16 @@
   Annote                   = {Folder 4}
 }
 
+@Misc{Case1967,
+  Title                    = {Linear Transport Theory. 1967},
+
+  Author                   = {Case, KM and Zweifel, PF},
+
+  Owner                    = {bioptical},
+  Publisher                = {Addison-Wesley, Reading, MA},
+  Timestamp                = {2015.05.31}
+}
+
 @InProceedings{case_69_1,
   Title                    = {On the boundary value problems of linear transport theory},
   Author                   = {Case, K. M.},
@@ -1910,6 +2149,20 @@
   Volume                   = {1},
 
   Annote                   = {Folder 59b}
+}
+
+@Article{Case2009,
+  Title                    = {Linear transport theory},
+  Author                   = {Case, Kenneth M and Zweifel, Paul F and Pomraning, GC},
+  Journal                  = {Physics Today},
+  Year                     = {2009},
+  Number                   = {10},
+  Pages                    = {72--73},
+  Volume                   = {21},
+
+  Owner                    = {bioptical},
+  Publisher                = {American Institute of Physics},
+  Timestamp                = {2015.05.31}
 }
 
 @Article{cassel_00_1,
@@ -1923,35 +2176,102 @@
   Annote                   = {Folder 59b}
 }
 
-@Article{cerussi_07_1,
+@Article{Cerussi2007,
   Title                    = {Predicting response to breast cancer neoadjuvant chemotherapy using diffuse optical spectroscopy},
-  Author                   = {Cerussi, A. and Hsiang, D. and Shah, N. and Mehta, R. and Durkin, A. and Butler, J. and Tromberg, B. J.},
-  Journal                  = pnas,
+  Author                   = {Cerussi, Albert and Hsiang, David and Shah, Natasha and Mehta, Rita and Durkin, Amanda and Butler, John and Tromberg, Bruce J},
+  Journal                  = {Proceedings of the National Academy of Sciences},
   Year                     = {2007},
-  Pages                    = {4014-4019},
+  Number                   = {10},
+  Pages                    = {4014--4019},
   Volume                   = {104},
 
-  Annote                   = {Not Printed}
+  Owner                    = {bioptical},
+  Publisher                = {National Acad Sciences},
+  Timestamp                = {2015.06.16}
 }
 
-@Article{chaillat_12_1,
-  Title                    = {{FaIMS}: {A} fast algorithm for the inverse medium problem with multiple frequencies and multiple sources for the scalar {Helmholtz} equation},
-  Author                   = {Chaillat, S. and Biros, G.},
-  Journal                  = jcomp,
+@Article{Cerussi2006,
+  Title                    = {In vivo absorption, scattering, and physiologic properties of 58 malignant breast tumors determined by broadband diffuse optical spectroscopy},
+  Author                   = {Cerussi, Albert and Shah, Natasha and Hsiang, David and Durkin, Amanda and Butler, John and Tromberg, Bruce J},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2006},
+  Number                   = {4},
+  Pages                    = {044005--044005},
+  Volume                   = {11},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Cerussi2011,
+  Title                    = {Diffuse optical spectroscopic imaging correlates with final pathological response in breast cancer neoadjuvant chemotherapy},
+  Author                   = {Cerussi, Albert E and Tanamai, Vaya W and Hsiang, David and Butler, John and Mehta, Rita S and Tromberg, Bruce J},
+  Journal                  = {Philosophical Transactions of the Royal Society of London A: Mathematical, Physical and Engineering Sciences},
+  Year                     = {2011},
+  Number                   = {1955},
+  Pages                    = {4512--4530},
+  Volume                   = {369},
+
+  Owner                    = {bioptical},
+  Publisher                = {The Royal Society},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Cerussi2012,
+  Title                    = {Tissue phantoms in multicenter clinical trials for diffuse optical technologies},
+  Author                   = {Cerussi, Albert E and Warren, Robert and Hill, Brian and Roblyer, Darren and Leproux, Ana{\"\i}s and Durkin, Amanda F and Oï¿½Sullivan, Thomas D and Keene, Sam and Haghany, Hosain and Quang, Timothy and others},
+  Journal                  = {Biomedical optics express},
   Year                     = {2012},
-  Pages                    = {4403Â­4421},
+  Number                   = {5},
+  Pages                    = {966--971},
+  Volume                   = {3},
+
+  Owner                    = {Han},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.08}
+}
+
+@Article{Chaillat2012,
+  Title                    = {FaIMS: A fast algorithm for the inverse medium problem with multiple frequencies and multiple sources for the scalar Helmholtz equation},
+  Author                   = {Chaillat, St{\'e}phanie and Biros, George},
+  Journal                  = {Journal of Computational Physics},
+  Year                     = {2012},
+  Number                   = {12},
+  Pages                    = {4403--4421},
   Volume                   = {231},
 
-  Annote                   = {Not Printed}
+  Owner                    = {bioptical},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.06.17}
 }
 
-@Article{chance_98_1,
-  Title                    = {Phase measurement of light absorption and scattering in human tissues},
-  Author                   = {Chance, B. and Cope, M. and Gratton, E. and Ramanujam, N. and Tromberg, B.},
-  Journal                  = rsi,
+@Article{Chance1998,
+  Title                    = {Phase measurement of light absorption and scatter in human tissue},
+  Author                   = {Chance, Britton and Cope, M and Gratton, E and Ramanujam, N and Tromberg, B},
+  Journal                  = {Review of scientific instruments},
   Year                     = {1998},
-  Pages                    = {3457-3481},
-  Volume                   = {689}
+  Number                   = {10},
+  Pages                    = {3457--3481},
+  Volume                   = {69},
+
+  Owner                    = {bioptical},
+  Publisher                = {AIP Publishing},
+  Timestamp                = {2015.06.17}
+}
+
+@Article{Chance1988,
+  Title                    = {Time-resolved spectroscopy of hemoglobin and myoglobin in resting and ischemic muscle},
+  Author                   = {Chance, Britton and Nioka, Shoko and Kent, Jane and McCully, Kevin and Fountain, Michael and Greenfeld, Robert and Holtom, Gary},
+  Journal                  = {Analytical biochemistry},
+  Year                     = {1988},
+  Number                   = {2},
+  Pages                    = {698--707},
+  Volume                   = {174},
+
+  Owner                    = {bioptical},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.06.18}
 }
 
 @Article{chang_07_1,
@@ -2130,26 +2450,56 @@
   Annote                   = {Folder 6}
 }
 
-@Article{choe_05_1,
-  Title                    = {Diffuse optical tomography of breast cancer during neoadjuvant chemotherapy: {A} case study with comparison to {MRI}},
-  Author                   = {Choe, R. and Corlu, A. and Lee, K. and Durduran, T. and Konecky, S. and Arridge, S. and Czerniecki, B. and Fraker, D. and DeMichele, A. and Chance, B. and Yodh, A.},
-  Journal                  = mp,
+@PhdThesis{Choe2005,
+  Title                    = {Diffuse optical tomography and spectroscopy of breast cancer and fetal brain},
+  Author                   = {Choe, Regine},
+  School                   = {University of Pennsylvania},
   Year                     = {2005},
-  Pages                    = {1128-1139},
-  Volume                   = {32},
 
-  Annote                   = {Not printed}
+  Owner                    = {Han},
+  Timestamp                = {2015.06.08}
 }
 
-@Article{choe_09_1,
+@Article{Choe2005a,
+  Title                    = {Diffuse optical tomography of breast cancer during neoadjuvant chemotherapy: a case study with comparison to MRI},
+  Author                   = {Choe, Regine and Corlu, Alper and Lee, Kijoon and Durduran, Turgut and Konecky, Soren D and Grosicka-Koptyra, Monika and Arridge, Simon R and Czerniecki, Brian J and Fraker, Douglas L and DeMichele, Angela and others},
+  Journal                  = {Medical physics},
+  Year                     = {2005},
+  Number                   = {4},
+  Pages                    = {1128--1139},
+  Volume                   = {32},
+
+  Owner                    = {Han},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Choe2012,
+  Title                    = {Diffuse optical monitoring of the neoadjuvant breast cancer therapy},
+  Author                   = {Choe, Regine and Durduran, Turgut},
+  Journal                  = {Selected Topics in Quantum Electronics, IEEE Journal of},
+  Year                     = {2012},
+  Number                   = {4},
+  Pages                    = {1367--1386},
+  Volume                   = {18},
+
+  Owner                    = {bioptical},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Choe2009,
   Title                    = {Differentiation of benign and malignant breast tumors by in-vivo three-dimensional parallel-plate diffuse optical tomography},
-  Author                   = {Choe, R. and Konecky, S. D. and Corlu, A. and Lee, K. and Durduran, T. and Busch, D. R. and Czerniecki, B. J. and Tchou, J. and Fraker, D. L. and DeMichele, A. and Chance, B. and Arridge, S. R. and Schweiger, M. and Culver, J. P. and Schnall, M. D. and Putt, M. E. and Rosen, M. A. and Yodh, A. G.},
-  Journal                  = jbo,
+  Author                   = {Choe, Regine and Konecky, Soren D and Corlu, Alper and Lee, Kijoon and Durduran, Turgut and Busch, David R and Pathak, Saurav and Czerniecki, Brian J and Tchou, Julia and Fraker, Douglas L and others},
+  Journal                  = {Journal of biomedical optics},
   Year                     = {2009},
-  Pages                    = {024020},
+  Number                   = {2},
+  Pages                    = {024020--024020},
   Volume                   = {14},
 
-  Annote                   = {Not Printed}
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.05.25}
 }
 
 @Article{chowdhury_96_1,
@@ -2173,6 +2523,20 @@
   Volume                   = {29},
 
   Annote                   = {Folder 11}
+}
+
+@Article{Chung2008,
+  Title                    = {In vivo water state measurements in breast cancer using broadband diffuse optical spectroscopy},
+  Author                   = {Chung, SH and Cerussi, AE and Klifa, C and Baek, HM and Birgul, O and Gulsen, G and Merritt, SI and Hsiang, D and Tromberg, BJ},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {2008},
+  Number                   = {23},
+  Pages                    = {6713},
+  Volume                   = {53},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{chylek_76_1,
@@ -2437,14 +2801,18 @@
   Annote                   = {Folder 36}
 }
 
-@Article{colak_99_1,
+@Article{Colak1999,
   Title                    = {Clinical optical tomography and NIR spectroscopy for breast cancer detection},
-  Author                   = {Colak, S. B. and van der Mark, M. B. and Hooft, G. W. and Hoogenraad, J. H. and van der Linden, E. S. and Kuijpers, F. A.},
-  Journal                  = ieee_jstqe,
+  Author                   = {Colak, SB and Van der Mark, MB and Hooft, GW'T and Hoogenraad, JH and Van der Linden, ES and Kuijpers, FA},
+  Journal                  = {Selected Topics in Quantum Electronics, IEEE Journal of},
   Year                     = {1999},
   Number                   = {4},
-  Pages                    = {1143-1158},
-  Volume                   = {5}
+  Pages                    = {1143--1158},
+  Volume                   = {5},
+
+  Owner                    = {Han},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{colak_97_1,
@@ -2491,40 +2859,60 @@
   Annote                   = {Folder 3}
 }
 
-@Article{corlu_07_1,
-  Title                    = {Three-dimensional {\it in vivo} fluorescence diffuse optical tomography of breast cancer in humans},
-  Author                   = {Corlu, A. and Choe, R. and Durduran, T. and Rosen, M. A. and Schweiger, M. and Arridge, S. R. and Schnall, M. D. and Yodh, A. G.},
-  Journal                  = oe,
-  Year                     = {2007},
-  Number                   = {11},
-  Pages                    = {6696-6716},
-  Volume                   = {15},
+@Article{Contini1997,
+  Title                    = {Photon migration through a turbid slab described by a model based on diffusion approximation. I. Theory},
+  Author                   = {Contini, Daniele and Martelli, Fabrizio and Zaccanti, Giovanni},
+  Journal                  = {Applied optics},
+  Year                     = {1997},
+  Number                   = {19},
+  Pages                    = {4587--4599},
+  Volume                   = {36},
 
-  Annote                   = {Folder 78}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.07}
 }
 
-@Article{corlu_05_1,
+@Article{Corlu2005,
   Title                    = {Diffuse optical tomography with spectral constraints and wavelength optimization},
-  Author                   = {Corlu, A. and Durduran, J. and Choe, R. and Schweiger, M. and Hillman, E. and Arridge, S. and Yodh, A.},
-  Journal                  = ao,
+  Author                   = {Corlu, Alper and Choe, Regine and Durduran, Turgut and Lee, Kijoon and Schweiger, Martin and Arridge, Simon R and Hillman, Elizabeth and Yodh, Arjun G},
+  Journal                  = {Applied optics},
   Year                     = {2005},
   Number                   = {11},
-  Pages                    = {2082-2090},
+  Pages                    = {2082--2093},
   Volume                   = {44},
 
-  Annote                   = {Not printed}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
-@Article{corlu_03_1,
+@Article{Corlu2007,
+  Title                    = {Three-dimensional in vivo fluorescence diffuse optical tomography of breast cancer in humans},
+  Author                   = {Corlu, Alper and Choe, Regine and Durduran, Turgut and Rosen, Mark A and Schweiger, Martin and Arridge, Simon R and Schnall, Mitchell D and Yodh, Arjun G},
+  Journal                  = {Optics express},
+  Year                     = {2007},
+  Number                   = {11},
+  Pages                    = {6696--6716},
+  Volume                   = {15},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Corlu2003,
   Title                    = {Uniqueness and wavelength optimization in continuous-wave multispectral diffuse optical tomography},
-  Author                   = {Corlu, A. and Durduran, J. and Choe, R. and Schweiger, M. and Hillman, E. and Arridge, S. and Yodh, A.},
-  Journal                  = ol,
+  Author                   = {Corlu, Alper and Durduran, Turgut and Choe, Regine and Schweiger, Martin and Hillman, Elizabeth and Arridge, Simon R and Yodh, Arjun G},
+  Journal                  = {Optics letters},
   Year                     = {2003},
   Number                   = {23},
-  Pages                    = {2339-2402},
+  Pages                    = {2339--2341},
   Volume                   = {28},
 
-  Annote                   = {Not printed}
+  Owner                    = {Han},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.07}
 }
 
 @Article{corni_02_1,
@@ -2562,6 +2950,20 @@
   Annote                   = {Folder 68a}
 }
 
+@Article{Cuccia2003,
+  Title                    = {In vivo quantification of optical contrast agent dynamics in rat tumors by use of diffuse optical spectroscopy with magnetic resonance imaging coregistration},
+  Author                   = {Cuccia, David J and Bevilacqua, Frederic and Durkin, Anthony J and Merritt, Sean and Tromberg, Bruce J and Gulsen, Gultekin and Yu, Hon and Wang, Jun and Nalcioglu, Orhan},
+  Journal                  = {Applied optics},
+  Year                     = {2003},
+  Number                   = {16},
+  Pages                    = {2940--2950},
+  Volume                   = {42},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{cuccia_05_1,
   Title                    = {Mudulated imaging: quantitative analysis and tomography of turbid media in the spatial-frequency domain},
   Author                   = {Cuccia, D. J. and Bevilacqua, F. and Durkin, A. J. and Tromberg, B. J.},
@@ -2597,48 +2999,86 @@
   Annote                   = {Folder 75}
 }
 
-@Article{culver_03_1,
-  Title                    = {Three-dimensional diffuse optical tomography in the parallel plane transmission geometry: Evaluation of a hybrid frequency domain/continuous wave clinical system for breast imaging},
-  Author                   = {Culver, Joseph P. and Choe, Regine and Holboke, Monica J. and Zubkov, L. and Durduran, T. and Slemp, A. and Ntziachristos, V. and Chance, B. and Yodh, A. G.},
-  Journal                  = mp,
+@Article{Culver2003,
+  Title                    = {Three-dimensional diffuse optical tomography in the parallel plane transmission geometry: evaluation of a hybrid frequency domain/continuous wave clinical system for breast imaging},
+  Author                   = {Culver, JP and Choe, R and Holboke, MJ and Zubkov, L and Durduran, T and Slemp, A and Ntziachristos, V and Chance, B and Yodh, AG},
+  Journal                  = {Medical physics},
   Year                     = {2003},
   Number                   = {2},
-  Pages                    = {235-247},
+  Pages                    = {235--247},
   Volume                   = {30},
 
-  Annote                   = {Folder 34b}
+  Owner                    = {bioptical},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.14}
 }
 
-@Article{culver_03_3,
-  Title                    = {Diffuse optical tomography of cerebral blood flow, oxygenation, and metabolism in rat during focal ischemia},
-  Author                   = {Culver, J. P. and Durduran, T. and Furuya, T. and Cheung, C. and Greenberg, J. H. and Yodh, A. G.},
-  Journal                  = {J. of Cerebral Blood Flow and Metabolism},
-  Year                     = {2003},
-  Number                   = {8},
-  Pages                    = {911-924},
-  Volume                   = {23}
-}
-
-@Article{culver_01_1,
+@Article{Culver2001,
   Title                    = {Optimization of optode arrangements for diffuse optical tomography: A singular-value analysis},
-  Author                   = {Culver, J. P. and Ntziachristos, V. and Holboke, M. J. and Yodh, A. G. },
-  Journal                  = ol,
+  Author                   = {Culver, JP and Ntziachristos, V and Holboke, MJ and Yodh, AG},
+  Journal                  = {Optics letters},
   Year                     = {2001},
-  Number                   = {109},
-  Pages                    = {701-703},
+  Number                   = {10},
+  Pages                    = {701--703},
   Volume                   = {26},
 
-  Annote                   = {Folder 34a}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.17}
 }
 
-@Article{culver_03_2,
+@InCollection{Culver2003b,
+  Title                    = {Diffuse optical measurement of hemoglobin and cerebral blood flow in rat brain during hypercapnia, hypoxia and cardiac arrest},
+  Author                   = {Culver, Joseph P and Durduran, Turgut and Cheung, Cecil and Yodh, AG and Furuya, Daisuke and Greenberg, Joel H},
+  Booktitle                = {Oxygen Transport To Tissue XXIII},
+  Publisher                = {Springer},
+  Year                     = {2003},
+  Pages                    = {293--297},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Culver2003c,
+  Title                    = {Diffuse optical tomography of cerebral blood flow, oxygenation, and metabolism in rat during focal ischemia},
+  Author                   = {Culver, Joseph P and Durduran, Turgut and Furuya, Daisuke and Cheung, Cecil and Greenberg, Joel H and Yodh, AG},
+  Journal                  = {Journal of cerebral blood flow \& metabolism},
+  Year                     = {2003},
+  Number                   = {8},
+  Pages                    = {911--924},
+  Volume                   = {23},
+
+  Owner                    = {Han},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Culver2003a,
   Title                    = {Volumetric diffuse optical tomography of brain activity},
-  Author                   = {Culver, J. P. and Siegel, A. M. and Stott, J. J. and Boas, D. A.},
-  Journal                  = ol,
+  Author                   = {Culver, Joseph P and Siegel, Andrew M and Stott, Jonathan J and Boas, David A},
+  Journal                  = {Optics letters},
   Year                     = {2003},
   Number                   = {21},
-  Pages                    = {2061-2063},
-  Volume                   = {28}
+  Pages                    = {2061--2063},
+  Volume                   = {28},
+
+  Owner                    = {Han},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Cutler1931,
+  Title                    = {Transillumination of the breast},
+  Author                   = {Cutler, Max},
+  Journal                  = {Annals of surgery},
+  Year                     = {1931},
+  Number                   = {1},
+  Pages                    = {223},
+  Volume                   = {93},
+
+  Owner                    = {bioptical},
+  Publisher                = {Lippincott, Williams, and Wilkins},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{d'andrea_03_1,
@@ -2833,6 +3273,34 @@
   Annote                   = {Folder 78}
 }
 
+@Article{Dehghani2009,
+  Title                    = {Near infrared optical tomography using NIRFAST: Algorithm for numerical model and image reconstruction},
+  Author                   = {Dehghani, Hamid and Eames, Matthew E and Yalavarthy, Phaneendra K and Davis, Scott C and Srinivasan, Subhadra and Carpenter, Colin M and Pogue, Brian W and Paulsen, Keith D},
+  Journal                  = {Communications in numerical methods in engineering},
+  Year                     = {2009},
+  Number                   = {6},
+  Pages                    = {711--732},
+  Volume                   = {25},
+
+  Owner                    = {bioptical},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Dehghani2003,
+  Title                    = {Multiwavelength three-dimensional near-infrared tomography of the breast: initial simulation, phantom, and clinical results},
+  Author                   = {Dehghani, Hamid and Pogue, Brian W and Poplack, Steven P and Paulsen, Keith D},
+  Journal                  = {Applied Optics},
+  Year                     = {2003},
+  Number                   = {1},
+  Pages                    = {135--145},
+  Volume                   = {42},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{deissler_08_1,
   Title                    = {Dipole in a magnetic field, work, and quantum spin},
   Author                   = {Deissler, R. J.},
@@ -2874,6 +3342,20 @@
   Volume                   = {15},
 
   Annote                   = {Folder 46b}
+}
+
+@Article{Diop2011,
+  Title                    = {Calibration of diffuse correlation spectroscopy with a time-resolved near-infrared technique to yield absolute cerebral blood flow measurements},
+  Author                   = {Diop, Mamadou and Verdecchia, Kyle and Lee, Ting-Yim and St Lawrence, Keith},
+  Journal                  = {Biomedical optics express},
+  Year                     = {2011},
+  Number                   = {7},
+  Pages                    = {2068--2081},
+  Volume                   = {2},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{dobbins_91_1,
@@ -2944,6 +3426,20 @@
   Volume                   = {72},
 
   Annote                   = {Folder 70}
+}
+
+@Article{Doornbos1999,
+  Title                    = {The determination of in vivo human tissue optical properties and absolute chromophore concentrations using spatially resolved steady-state diffuse reflectance spectroscopy},
+  Author                   = {Doornbos, RMP and Lang, Roland and Aalders, MC and Cross, FW and Sterenborg, HJCM},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {1999},
+  Number                   = {4},
+  Pages                    = {967},
+  Volume                   = {44},
+
+  Owner                    = {Han},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.07}
 }
 
 @Article{dorn_98_1,
@@ -3228,25 +3724,143 @@
   Volume                   = {105}
 }
 
-@Article{durduran_10_1,
-  Title                    = {Diffuse optics for tissue monitoring and tomography},
-  Author                   = {Durduran, T. and Choe, R. and Baker, W. B. and Yodh, A. G.},
-  Journal                  = rpp,
-  Year                     = {2010},
-  Pages                    = {076701},
-  Volume                   = {73}
+@Article{Durduran2004b,
+  Title                    = {Spatiotemporal quantification of cerebral blood flow during functional activation in rat somatosensory cortex using laser-speckle flowmetry},
+  Author                   = {Durduran, Turgut and Burnett, Mark G and Yu, Guoqiang and Zhou, Chao and Furuya, Daisuke and Yodh, Arjun G and Detre, John A and Greenberg, Joel H},
+  Journal                  = {Journal of Cerebral Blood Flow \& Metabolism},
+  Year                     = {2004},
+  Number                   = {5},
+  Pages                    = {518--525},
+  Volume                   = {24},
+
+  Owner                    = {bioptical},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2015.06.16}
 }
 
-@Article{durduran_99_1,
+@Article{Durduran2004c,
+  Title                    = {Spatiotemporal quantification of cerebral blood flow during functional activation in rat somatosensory cortex using laser-speckle flowmetry},
+  Author                   = {Durduran, Turgut and Burnett, Mark G and Yu, Guoqiang and Zhou, Chao and Furuya, Daisuke and Yodh, Arjun G and Detre, John A and Greenberg, Joel H},
+  Journal                  = {Journal of Cerebral Blood Flow \& Metabolism},
+  Year                     = {2004},
+  Number                   = {5},
+  Pages                    = {518--525},
+  Volume                   = {24},
+
+  Owner                    = {bioptical},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Durduran2010,
+  Title                    = {Diffuse optics for tissue monitoring and tomography},
+  Author                   = {Durduran, Turgut and Choe, Regine and Baker, WB and Yodh, AG},
+  Journal                  = {Reports on Progress in Physics},
+  Year                     = {2010},
+  Number                   = {7},
+  Pages                    = {076701},
+  Volume                   = {73},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Durduran2002,
+  Title                    = {Bulk optical properties of healthy female breast tissue},
+  Author                   = {Durduran, T and Choe, R and Culver, JP and Zubkov, L and Holboke, MJ and Giammarco, J and Chance, B and Yodh, AG},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {2002},
+  Number                   = {16},
+  Pages                    = {2847},
+  Volume                   = {47},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Durduran2005,
+  Title                    = {Diffuse optical measurement of blood flow in breast tumors},
+  Author                   = {Durduran, Turgut and Choe, Regine and Yu, Guoqiang and Zhou, Chao and Tchou, Julia C and Czerniecki, Brian J and Yodh, Arjun G},
+  Journal                  = {Optics letters},
+  Year                     = {2005},
+  Number                   = {21},
+  Pages                    = {2915--2917},
+  Volume                   = {30},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Durduran2005a,
+  Title                    = {Diffuse optical measurement of blood flow in breast tumors},
+  Author                   = {Durduran, Turgut and Choe, Regine and Yu, Guoqiang and Zhou, Chao and Tchou, Julia C and Czerniecki, Brian J and Yodh, Arjun G},
+  Journal                  = {Optics letters},
+  Year                     = {2005},
+  Number                   = {21},
+  Pages                    = {2915--2917},
+  Volume                   = {30},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Durduran1999,
   Title                    = {Algorithms for 3D localization and imaging using near-field diffraction tomography with diffuse light},
-  Author                   = {Durduran, Turgut and Culver, J. P. and Holboke, M. J. and Li, X. D. and Zubkov, Leonid and Chance, B. and Pattanayak, Deva N. and Yodh, A. G.},
-  Journal                  = oe,
+  Author                   = {Durduran, Turgut and Culver, J and Holboke, M and Li, X and Zubkov, Leonid and Chance, Britton and Pattanayak, Deva and Yodh, Arjun},
+  Journal                  = {Optics express},
   Year                     = {1999},
   Number                   = {8},
-  Pages                    = {247-262},
+  Pages                    = {247--262},
   Volume                   = {4},
 
-  Annote                   = {Folder 34a}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Durduran1997,
+  Title                    = {Does the photon-diffusion coefficient depend on absorption?},
+  Author                   = {Durduran, T and Yodh, AG and Chance, B and Boas, DA},
+  Journal                  = {JOSA A},
+  Year                     = {1997},
+  Number                   = {12},
+  Pages                    = {3358--3365},
+  Volume                   = {14},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Durduran2014,
+  Title                    = {Diffuse correlation spectroscopy for non-invasive, micro-vascular cerebral blood flow measurement},
+  Author                   = {Durduran, Turgut and Yodh, Arjun G},
+  Journal                  = {Neuroimage},
+  Year                     = {2014},
+  Pages                    = {51--63},
+  Volume                   = {85},
+
+  Owner                    = {bioptical},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Durduran2004,
+  Title                    = {Diffuse optical measurement of blood flow, blood oxygenation, and metabolism in a human brain during sensorimotor cortex activation},
+  Author                   = {Durduran, Turgut and Yu, Guoqiang and Burnett, Mark G and Detre, John A and Greenberg, Joel H and Wang, Jiongjiong and Zhou, Chao and Yodh, Arjun G},
+  Journal                  = {Optics letters},
+  Year                     = {2004},
+  Number                   = {15},
+  Pages                    = {1766--1768},
+  Volume                   = {29},
+
+  Owner                    = {Han},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{dykhne_03_1,
@@ -3305,6 +3919,16 @@
   Annote                   = {Folder 46a}
 }
 
+@Book{Egan1979,
+  Title                    = {Optical properties of inhomogeneous materials: Applications to geology, astronomy chemistry, and engineering},
+  Author                   = {Egan, Walter},
+  Publisher                = {Elsevier},
+  Year                     = {2012},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.05.31}
+}
+
 @Article{ekardt_84_1,
   Title                    = {Dynamical polarizability of small metal particles: self-consistent spherical jellium background model},
   Author                   = {Ekardt, W.},
@@ -3335,6 +3959,19 @@
   Volume                   = {44},
 
   Annote                   = {Not Printed}
+}
+
+@Article{Enfield2007,
+  Title                    = {Three-dimensional time-resolved optical mammography of the uncompressed breast},
+  Author                   = {Enfield, Louise C and Gibson, Adam P and Everdell, Nicholas L and Delpy, David T and Schweiger, Martin and Arridge, Simon R and Richardson, Caroline and Keshtgar, Mohammad and Douek, Michael and Hebden, Jeremy C},
+  Journal                  = {Applied optics},
+  Year                     = {2007},
+  Number                   = {17},
+  Pages                    = {3628--3638},
+  Volume                   = {46},
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.28}
 }
 
 @Article{engheta_05_1,
@@ -3678,14 +4315,18 @@
   Annote                   = {Folder 59b}
 }
 
-@Article{fishkin_93_1,
-  Title                    = {Propagation of photon-density waves in strongly scattering media containing an absorbing semiinfinite plane bounded by a straight edge},
-  Author                   = {Fishkin, J. B. and Gratton, E.},
-  Journal                  = josaa,
+@Article{Fishkin1993,
+  Title                    = {Propagation of photon-density waves in strongly scattering media containing an absorbing semi-infinite plane bounded by a straight edge},
+  Author                   = {Fishkin, Joshua B and Gratton, Enrico},
+  Journal                  = {JOSA A},
   Year                     = {1993},
   Number                   = {1},
-  Pages                    = {127-140},
-  Volume                   = {10}
+  Pages                    = {127--140},
+  Volume                   = {10},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{flatau_97_1,
@@ -3710,6 +4351,34 @@
   Volume                   = {7},
 
   Annote                   = {Folder 6}
+}
+
+@Article{Flexman2011,
+  Title                    = {Digital optical tomography system for dynamic breast imaging},
+  Author                   = {Flexman, Molly L and Khalil, Michael A and Al Abdi, Rabah and Kim, Hyun K and Fong, Christopher J and Desperito, Elise and Hershman, Dawn L and Barbour, Randall L and Hielscher, Andreas H},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2011},
+  Number                   = {7},
+  Pages                    = {076014--076014},
+  Volume                   = {16},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Flock1987,
+  Title                    = {Total attenuation coefficients and scattering phase functions of tissues and phantom materials at 633 nm},
+  Author                   = {Flock, Stephen T and Wilson, Brian C and Patterson, Michael S},
+  Journal                  = {Medical Physics},
+  Year                     = {1987},
+  Number                   = {5},
+  Pages                    = {835--841},
+  Volume                   = {14},
+
+  Owner                    = {bioptical},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.21}
 }
 
 @Article{florescu_11_1,
@@ -3758,15 +4427,17 @@
   Annote                   = {Folder 3}
 }
 
-@Article{franceschini_07_1,
-  Title                    = {Assesment of infant brain development with frequency-domain near-infrared spectroscopy},
-  Author                   = {Franceschini, M. A. and Thaker, S. and Themelis, G. and Krishnamoorthy, K. K. and Bortfeld, H. and Diamond, S. G. and Boas, D. A. and Arvin, K. and Grant, P. E.},
-  Journal                  = {Proc. Natl. Acad. Sci. USA},
-  Year                     = {1997},
-  Pages                    = {6468-6473},
-  Volume                   = {94},
+@Article{Franceschini2007,
+  Title                    = {Assessment of infant brain development with frequency-domain near-infrared spectroscopy},
+  Author                   = {Franceschini, Maria Angela and Thaker, Sonal and Themelis, George and Krishnamoorthy, Kalpathy K and Bortfeld, Heather and Diamond, Solomon G and Boas, David A and Arvin, Kara and Grant, P Ellen},
+  Journal                  = {Pediatric research},
+  Year                     = {2007},
+  Pages                    = {546--551},
+  Volume                   = {61},
 
-  Annote                   = {Folder 34b}
+  Owner                    = {bioptical},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{franceschini_97_1,
@@ -4250,6 +4921,20 @@
   Annote                   = {Folder 1}
 }
 
+@Article{Geng2011,
+  Title                    = {Structured-light 3D surface imaging: a tutorial},
+  Author                   = {Geng, Jason},
+  Journal                  = {Advances in Optics and Photonics},
+  Year                     = {2011},
+  Number                   = {2},
+  Pages                    = {128--160},
+  Volume                   = {3},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.05.23}
+}
+
 @InBook{genov_03_1,
   Title                    = {Wave scattering in complex media: From theory to applications},
   Author                   = {Genov, D. A. and Sarychev, A. K. and Shalaev, V. M.},
@@ -4314,16 +4999,18 @@
   Annote                   = {Folder 24}
 }
 
-@Article{gibson_05_1,
+@Article{Gibson2005,
   Title                    = {Recent advances in diffuse optical imaging},
-  Author                   = {Gibson, A. P. and Hebden, J. C. and Arridge, S. R.},
-  Journal                  = pmedb,
+  Author                   = {Gibson, AP and Hebden, JC and Arridge, Simon R},
+  Journal                  = {Physics in medicine and biology},
   Year                     = {2005},
   Number                   = {4},
-  Pages                    = {R1-R43},
+  Pages                    = {R1},
   Volume                   = {50},
 
-  Annote                   = {Folder 34b}
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{ginzburg_76_1,
@@ -4356,9 +5043,24 @@
   Number                   = {12},
   Pages                    = {1701},
   Volume                   = {48},
+
   Owner                    = {bioptical},
   Publisher                = {IOP Publishing},
   Timestamp                = {2015.05.23}
+}
+
+@Article{Godavarty2002,
+  Title                    = {Influence of the refractive index-mismatch at the boundaries measured in fluorescenceenhanced frequency-domain photon migration imaging},
+  Author                   = {Godavarty, Anuradha and Hawrysz, Daniel and Roy, Ranadhir and Sevick-Muraca, Eva and Eppstein, Margaret},
+  Journal                  = {Optics Express},
+  Year                     = {2002},
+  Number                   = {15},
+  Pages                    = {653--662},
+  Volume                   = {10},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.11}
 }
 
 @Article{goedecke_88_1,
@@ -4373,16 +5075,18 @@
   Annote                   = {Folder 6}
 }
 
-@Article{gonatas_95_1,
+@Article{Gonatas1995,
   Title                    = {Optical diffusion imaging using a direct inversion method},
-  Author                   = {Gonatas, C. P. and Ishii, Masaru and Leigh, John S. and Schotland, John C.},
-  Journal                  = pre,
+  Author                   = {Gonatas, CP and Ishii, Masaru and Leigh, John S and Schotland, John C},
+  Journal                  = {Physical Review E},
   Year                     = {1995},
   Number                   = {4},
-  Pages                    = {4361-4365},
+  Pages                    = {4361},
   Volume                   = {52},
 
-  Annote                   = {Folder 38}
+  Owner                    = {bioptical},
+  Publisher                = {APS},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{gonzalez_07_2,
@@ -4405,6 +5109,20 @@
   Volume                   = {24},
 
   Annote                   = {Not printed}
+}
+
+@Article{Gorthi2010,
+  Title                    = {Fringe projection techniques: whither we are?},
+  Author                   = {Gorthi, Sai Siva and Rastogi, Pramod},
+  Journal                  = {Optics and lasers in engineering},
+  Year                     = {2010},
+  Number                   = {IMAC-REVIEW-2009-001},
+  Pages                    = {133--140},
+  Volume                   = {48},
+
+  Owner                    = {bioptical},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.05.23}
 }
 
 @Article{goto_11_1,
@@ -4503,14 +5221,15 @@
   Volume                   = {48}
 }
 
-@InProceedings{gratton_90_1,
+@InProceedings{Gratton1990,
   Title                    = {The possibility of a near-infrared optical imaging system using frequency-domain methods},
-  Author                   = {Gratton, E. and Mantulin, W. W. and van de Ven, M. J. and Fishkin, J. B. Maris, M. B. and Chance, B.},
-  Booktitle                = {Proc.~Third Int.~Conf.~on Peace Through Mind/Brain Science},
+  Author                   = {Gratton, E and Mantulin, WW and Van De Ven, MJ and Fishkin, JB and Maris, MB and Chance, B},
+  Booktitle                = {Proceedings of III International Conference for Peace through Mind/Brain Science},
   Year                     = {1990},
+  Pages                    = {183--189},
 
-  Address                  = {Hamamatsu, Japan},
-  Pages                    = {183}
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{graves_03_1,
@@ -4614,13 +5333,18 @@
   Volume                   = {51}
 }
 
-@Article{grosenick_05_1,
-  Title                    = {Time-domain scanning optical mammography: {I}. Recording and assessment of mammograms of 154 patients},
-  Author                   = {Grosenick, D. and Moesta, K. T. and Moller, M. and Mucke, J. and Wabnitz, H. and Gebauer, B. and Stroszczynski, C. and Wassermann, B. and Schlag, P. M. and Rinneberg, H.},
-  Journal                  = pmedb,
+@Article{Grosenick2005,
+  Title                    = {Time-domain scanning optical mammography: I. Recording and assessment of mammograms of 154 patients},
+  Author                   = {Grosenick, Dirk and Moesta, K Thomas and Michael, M and Wabnitz, Heidrun and Gebauer, Bernd and Stroszczynski, Christian and Wassermann, Bernhard and Schlag, Peter M and Rinneberg, Herbert and others},
+  Journal                  = {Physics in medicine and biology},
   Year                     = {2005},
-  Pages                    = {2429-2449},
-  Volume                   = {50}
+  Number                   = {11},
+  Pages                    = {2429},
+  Volume                   = {50},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{gu_03_1,
@@ -4710,6 +5434,20 @@
   Year                     = {1976},
   Pages                    = {4274},
   Volume                   = {13}
+}
+
+@Article{Guven2005,
+  Title                    = {Diffuse optical tomography with a priori anatomical information},
+  Author                   = {Guven, Murat and Yazici, Birsen and Intes, Xavier and Chance, Britton},
+  Journal                  = {Physics in Medicine and Biology},
+  Year                     = {2005},
+  Number                   = {12},
+  Pages                    = {2837},
+  Volume                   = {50},
+
+  Owner                    = {Han},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{habib_88_1,
@@ -4812,14 +5550,18 @@
   Annote                   = {Folder 68b}
 }
 
-@Article{haskell_94_1,
-  Title                    = {Boundary-conditions for the diffusion equation in radiative transfer},
-  Author                   = {Haskell, R. C. and Svaasand, L. O. and Tsay, T. T. and Feng, T. C. and {McAdams}, M. S.},
-  Journal                  = josaa,
+@Article{Haskell1994,
+  Title                    = {Boundary conditions for the diffusion equation in radiative transfer},
+  Author                   = {Haskell, Richard C and Svaasand, Lars O and Tsay, Tsong-Tseh and Feng, Ti-Chen and Tromberg, Bruce J and McAdams, Matthew S},
+  Journal                  = {JOSA A},
   Year                     = {1994},
   Number                   = {10},
-  Pages                    = {2727-2741},
-  Volume                   = {11}
+  Pages                    = {2727--2741},
+  Volume                   = {11},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{haw_97_1,
@@ -4834,16 +5576,18 @@
   Annote                   = {Folder 3}
 }
 
-@Article{hawrysz_00_1,
-  Title                    = {Developments toward diagnostic breast cancer imaging using near-infrared optical measurements and fluorescent contrast agants},
-  Author                   = {Hawrysz, D. J. and Sevick-Muraca, E. M.},
+@Article{Hawrysz2000,
+  Title                    = {Developments Toward Diagnostic Breast Cancer Imaging Using Near-Infrared Optical Measurements and Fluorescent Contrast Agents 1},
+  Author                   = {Hawrysz, Daniel J and Sevick-Muraca, Eva M},
   Journal                  = {Neoplasia},
   Year                     = {2000},
   Number                   = {5},
-  Pages                    = {388-417},
+  Pages                    = {388--417},
   Volume                   = {2},
 
-  Annote                   = {Folder TBD}
+  Owner                    = {Han},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.06.14}
 }
 
 @InBook{haydock_80_1,
@@ -4889,24 +5633,32 @@
   Volume                   = {93}
 }
 
-@Article{hebden_03_1,
+@Article{Hebden2003,
   Title                    = {Advances in optical imaging of the newborn infant brain},
-  Author                   = {Hebden, J. C.},
+  Author                   = {Hebden, Jeremy C},
   Journal                  = {Psychophysiology},
   Year                     = {2003},
   Number                   = {4},
-  Pages                    = {501-510 },
-  Volume                   = {40}
+  Pages                    = {501--510},
+  Volume                   = {40},
+
+  Owner                    = {bioptical},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2015.06.18}
 }
 
-@Article{hebden_02_1,
+@Article{Hebden2002,
   Title                    = {Three-dimensional optical tomography of the premature infant brain},
-  Author                   = {Hebden, J. C. and Gibson, A. and Yusof, R. M. and Everdell, N. and Hillman, E. M. C. and Delpy, D. T. and Arridge, S. R. and Austin, T. and Meek, J. H. and Wyatt, J. S.},
-  Journal                  = pmedb,
+  Author                   = {Hebden, Jeremy C and Gibson, Adam and Yusof, Rozarina Md and Everdell, Nick and Hillman, Elizabeth MC and Delpy, David T and Arridge, Simon R and Austin, Topun and Meek, Judith H and Wyatt, John S},
+  Journal                  = {Physics in medicine and biology},
   Year                     = {2002},
   Number                   = {23},
-  Pages                    = {4155-4166},
-  Volume                   = {47}
+  Pages                    = {4155},
+  Volume                   = {47},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.18}
 }
 
 @Article{hecht_97_1,
@@ -4940,6 +5692,16 @@
   Volume                   = {93},
 
   Annote                   = {Not printed}
+}
+
+@Article{Hestenes1952,
+  Title                    = {Methods of conjugate gradients for solving linear systems},
+  Author                   = {Hestenes, Magnus Rudolph and Stiefel, Eduard},
+  Year                     = {1952},
+
+  Owner                    = {bioptical},
+  Publisher                = {NBS},
+  Timestamp                = {2015.06.06}
 }
 
 @Article{hicks_05_1,
@@ -5040,11 +5802,12 @@
   Journal                  = {Journal of Biomedical Optics},
   Year                     = {2000},
   Number                   = {2},
-  Pages                    = {237--247},
+  Pages                    = {237},
   Volume                   = {5},
+
   Owner                    = {bioptical},
-  Publisher                = {International Society for Optics and Photonics},
-  Timestamp                = {2015.05.23}
+  Publisher                = {Bellingham, Wash.: Society of Photo-Optical Instrumentation Engineers, c1996-},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{holte_48_1,
@@ -5081,14 +5844,17 @@
   Annote                   = {Folder: TBD}
 }
 
-@Article{vanhouten_96_1,
-  Title                    = {Clinical measurement of brain oxygenation and function using light-based optical tomography},
-  Author                   = {van Houten, J. P. and Cheong, W. F. and Kermit, E. L. and Machold, T. R. and Stevenson, D. K. and Benaron, D. A.},
+@Article{Houten1996,
+  Title                    = {Clinical measurement of brain oxygenation and function using light-based optical tomography.},
+  Author                   = {van Houten, John P and Cheong, Wai-Fung and Kermit, Eben L and Machold, Timothy R and Stevenson, David K and Benaron, David A},
   Journal                  = {Pediatric Research},
   Year                     = {1996},
-  Number                   = {4},
-  Pages                    = {2273-2273},
-  Volume                   = {39}
+  Pages                    = {382--382},
+  Volume                   = {39},
+
+  Owner                    = {bioptical},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2015.06.18}
 }
 
 @Article{hovenier_96_1,
@@ -5184,26 +5950,60 @@
   Annote                   = {Folder 59b}
 }
 
-@Article{intes_02_1,
-  Title                    = {Projection access order in algebraic reconstruction technique for diffuse optical tomography},
-  Author                   = {Intes, X. and Ntziachristos, V. and Culver, J. P. and Yodh, A. and Chance, B.},
-  Journal                  = pmedb,
-  Year                     = {2002},
-  Number                   = {1},
-  Pages                    = {N1-N10},
-  Volume                   = {47},
+@Article{Intes2004,
+  Title                    = {Diffuse optical tomography with physiological and spatial a priori constraints},
+  Author                   = {Intes, Xavier and Maloux, Clemence and Guven, Murat and Yazici, Birzen and Chance, Britton},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {2004},
+  Number                   = {12},
+  Pages                    = {N155},
+  Volume                   = {49},
 
-  Annote                   = {Folder 34b}
+  Owner                    = {Han},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.14}
 }
 
-@Article{intes_03_1,
+@Article{Intes2002,
+  Title                    = {Projection access order in algebraic reconstruction technique for diffuse optical tomography},
+  Author                   = {Intes, Xavier and Ntziachristos, Vasilis and Culver, Joe P and Yodh, Arjun and Chance, Britton},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {2002},
+  Number                   = {1},
+  Pages                    = {N1},
+  Volume                   = {47},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Intes2003,
   Title                    = {In vivo continuous-wave optical breast imaging enhanced with Indocyanine Green},
-  Author                   = {Intes, X. and Ripoll, J. and Chen, Y. and Nioka, S. and Yodh, A. G. and Chance, B.},
-  Journal                  = mp,
+  Author                   = {Intes, Xavier and Ripoll, Jorge and Chen, Yu and Nioka, Shoko and Yodh, AG and Chance, Britton},
+  Journal                  = {Medical physics},
   Year                     = {2003},
   Number                   = {6},
-  Pages                    = {1039-1047},
-  Volume                   = {30}
+  Pages                    = {1039--1047},
+  Volume                   = {30},
+
+  Owner                    = {Han},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Irwin2011,
+  Title                    = {Influences of tissue absorption and scattering on diffuse correlation spectroscopy blood flow measurements},
+  Author                   = {Irwin, Daniel and Dong, Lixin and Shang, Yu and Cheng, Ran and Kudrimoti, Mahesh and Stevens, Scott D and Yu, Guoqiang},
+  Journal                  = {Biomedical optics express},
+  Year                     = {2011},
+  Number                   = {7},
+  Pages                    = {1969--1985},
+  Volume                   = {2},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{ishii_95_1,
@@ -5213,6 +6013,17 @@
   Year                     = {1995},
   Pages                    = {312-317},
   Volume                   = {2389}
+}
+
+@Book{Ishimaru1978,
+  Title                    = {Wave propagation and scattering in random media},
+  Author                   = {Ishimaru, Akira},
+  Publisher                = {Academic press New York},
+  Year                     = {1978},
+  Volume                   = {2},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.05.31}
 }
 
 @Article{itin_10_1,
@@ -5237,13 +6048,60 @@
   Annote                   = {Not Filed}
 }
 
-@Article{jacques_89_1,
+@Article{Jacques2013,
+  Title                    = {Optical properties of biological tissues: a review},
+  Author                   = {Jacques, Steven L},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {2013},
+  Number                   = {11},
+  Pages                    = {R37},
+  Volume                   = {58},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.06}
+}
+
+@Article{Jacques1989,
   Title                    = {Time-resolved reflectance spectroscopy in turbid tissues},
-  Author                   = {Jacques, S. L.},
-  Journal                  = ieee_tbe,
+  Author                   = {Jacques, Steven L},
+  Journal                  = {Biomedical Engineering, IEEE Transactions on},
   Year                     = {1989},
-  Pages                    = {1155-1161},
-  Volume                   = {36}
+  Number                   = {12},
+  Pages                    = {1155--1161},
+  Volume                   = {36},
+
+  Owner                    = {bioptical},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.06.17}
+}
+
+@Article{Jakubowski2004,
+  Title                    = {Monitoring neoadjuvant chemotherapy in breast cancer using quantitative diffuse optical spectroscopy: a case study},
+  Author                   = {Jakubowski, Dorota B and Cerussi, Albert E and Shah, Natasha and Hsiang, David and Butler, John and Tromberg, Bruce J and others},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2004},
+  Number                   = {1},
+  Pages                    = {230--238},
+  Volume                   = {9},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Jemal2010,
+  Title                    = {Global patterns of cancer incidence and mortality rates and trends},
+  Author                   = {Jemal, Ahmedin and Center, Melissa M and DeSantis, Carol and Ward, Elizabeth M},
+  Journal                  = {Cancer Epidemiology Biomarkers \& Prevention},
+  Year                     = {2010},
+  Number                   = {8},
+  Pages                    = {1893--1907},
+  Volume                   = {19},
+
+  Owner                    = {bioptical},
+  Publisher                = {AACR},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{jensen_99_1,
@@ -5292,14 +6150,32 @@
   Annote                   = {Folder 25}
 }
 
-@Article{jiang_sd_03_1,
+@Article{Jiang2009,
+  Title                    = {Evaluation of breast tumor response to neoadjuvant chemotherapy with tomographic diffuse optical spectroscopy: Case studies of tumor region-of-interest changes 1},
+  Author                   = {Jiang, Shudong and Pogue, Brian W and Carpenter, Colin M and Poplack, Steven P and Wells, Wendy A and Kogel, Christine A and Forero, Jorge A and Muffly, Lori S and Schwartz, Gary N and Paulsen, Keith D and others},
+  Journal                  = {Radiology},
+  Year                     = {2009},
+  Number                   = {2},
+  Pages                    = {551--560},
+  Volume                   = {252},
+
+  Owner                    = {bioptical},
+  Publisher                = {Radiological Society of North America, Inc.},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Jiang2003,
   Title                    = {Near-infrared breast tomography calibration with optoelastic tissue simulating phantoms},
-  Author                   = {Jiang, S. D. and Pogue, B. W. and McBride, T. O. and Doyley, M. M. and Poplack, S. P. and Paulsen, K. D.},
-  Journal                  = {Journal of Electronic Imaging},
+  Author                   = {Jiang, Shudong and Pogue, Brian W and McBride, Troy O and Doyley, Marvin M and Poplack, Steven P and Paulsen, Keith D},
+  Journal                  = {Journal of electronic imaging},
   Year                     = {2003},
   Number                   = {4},
-  Pages                    = {613-620 },
-  Volume                   = {12}
+  Pages                    = {613--620},
+  Volume                   = {12},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.24}
 }
 
 @Article{jimenez_11_2,
@@ -5322,6 +6198,48 @@
   Volume                   = {32},
 
   Annote                   = {Folder 83}
+}
+
+@Article{Jobsis1977,
+  Title                    = {Noninvasive, infrared monitoring of cerebral and myocardial oxygen sufficiency and circulatory parameters},
+  Author                   = {Jobsis, Frans F},
+  Journal                  = {Science},
+  Year                     = {1977},
+  Number                   = {4323},
+  Pages                    = {1264--1267},
+  Volume                   = {198},
+
+  Owner                    = {bioptical},
+  Publisher                = {American Association for the Advancement of Science},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Jo1999a,
+  Title                    = {Discovery of the near-infrared window into the body and the early development of near-infrared spectroscopy},
+  Author                   = {Jobsis, Frans F and others},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {1999},
+  Number                   = {4},
+  Pages                    = {392--396},
+  Volume                   = {4},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Jo1999,
+  Title                    = {Biochemical and physiological basis of medical near-infrared spectroscopy},
+  Author                   = {Jobsis, Frans F., and Jobsis, Paul. D., and others},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {1999},
+  Number                   = {4},
+  Pages                    = {397--402},
+  Volume                   = {4},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{johnson_72_1,
@@ -5383,6 +6301,15 @@
   Volume                   = {45},
 
   Annote                   = {Folder 3}
+}
+
+@Article{Kak1987,
+  Title                    = {Principles of Computerized Tomography (Piscataway, NJ: IEEE)},
+  Author                   = {Kak, AC and Slaney, M},
+  Year                     = {1987},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.06}
 }
 
 @Article{kaplan_09_1,
@@ -5838,6 +6765,20 @@
   Annote                   = {Folder 29}
 }
 
+@Article{Kienle1999,
+  Title                    = {In vivo determination of the optical properties of muscle with time-resolved reflectance using a layered model},
+  Author                   = {Kienle, Alwin and Glanzmann, Thomas},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {1999},
+  Number                   = {11},
+  Pages                    = {2689},
+  Volume                   = {44},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.17}
+}
+
 @Article{kildishev_07_1,
   Title                    = {Comment on ''{Negative} refractive index in artificial metamaterials},
   Author                   = {Kildishev, A. V. and Drachev, V. P. and Chettiar, U. K. and Shalaev, V. M. and Werner, D. H. and Kwon, D. H.},
@@ -6026,6 +6967,20 @@
   Volume                   = {93},
 
   Annote                   = {Not filed}
+}
+
+@Article{Kim2010,
+  Title                    = {Noninvasive measurement of cerebral blood flow and blood oxygenation using near-infrared and diffuse correlation spectroscopies in critically brain-injured adults},
+  Author                   = {Kim, Meeri N and Durduran, Turgut and Frangos, Suzanne and Edlow, Brian L and Buckley, Erin M and Moss, Heather E and Zhou, Chao and Yu, Guoqiang and Choe, Regine and Maloney-Wilensky, Eileen and others},
+  Journal                  = {Neurocritical care},
+  Year                     = {2010},
+  Number                   = {2},
+  Pages                    = {173--180},
+  Volume                   = {12},
+
+  Owner                    = {bioptical},
+  Publisher                = {Springer},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{kim-w_99_1,
@@ -6264,16 +7219,42 @@
   Volume                   = {17}
 }
 
-@Article{konecky_08_1,
+@PhdThesis{Konecky2008,
+  Title                    = {Non-invasive imaging of breast cancer with diffusing near-infrared light},
+  Author                   = {Konecky, Soren D},
+  School                   = {University of Pennsylvania},
+  Year                     = {2008},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.05}
+}
+
+@Article{Konecky2008b,
+  Title                    = {Comparison of diffuse optical tomography of human breast with whole-body and breast-only positron emission tomography},
+  Author                   = {Konecky, Soren D and Choe, Regine and Corlu, Alper and Lee, Kijoon and Wiener, Rony and Srinivas, Shyam M and Saffer, Janet R and Freifelder, Richard and Karp, Joel S and Hajjioui, Nassim and others},
+  Journal                  = {Medical physics},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {446--455},
+  Volume                   = {35},
+
+  Owner                    = {bioptical},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Konecky2008a,
   Title                    = {Imaging complex structures with diffuse light},
-  Author                   = {Konecky, S. D. and Panasyuk, G. Y. and Lee, K. and Markel, V. and Yodh, A. and Schotland, J. C.},
-  Journal                  = oe,
+  Author                   = {Konecky, Soren D and Panasyuk, George Y and Lee, Kijoon and Markel, Vadim and Yodh, Arjun G and Schotland, John C},
+  Journal                  = {Optics express},
   Year                     = {2008},
   Number                   = {7},
-  Pages                    = {5048-5060},
+  Pages                    = {5048--5060},
   Volume                   = {16},
 
-  Annote                   = {Folder 1}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{koschny_04_1,
@@ -6490,6 +7471,20 @@
   Annote                   = {Folder 46b}
 }
 
+@Article{Kukreti2009,
+  Title                    = {Characterization of Metabolic Differences between Benign and Malignant Tumors: High-Spectral-Resolution Diffuse Optical Spectroscopy 1},
+  Author                   = {Kukreti, Shwayta and Cerussi, Albert E and Tanamai, Wendy and Hsiang, David and Tromberg, Bruce J and Gratton, Enrico},
+  Journal                  = {Radiology},
+  Year                     = {2009},
+  Number                   = {1},
+  Pages                    = {277--284},
+  Volume                   = {254},
+
+  Owner                    = {bioptical},
+  Publisher                = {Radiological Society of North America, Inc.},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{kuscer_91_1,
   Title                    = {Some analytical results for the radiative transfer in thick atmospheres},
   Author                   = {Kuscer, I. and McCormick, N. J.},
@@ -6687,6 +7682,20 @@
   Annote                   = {Folder 59b}
 }
 
+@Article{Lasker2007,
+  Title                    = {Digital-signal-processor-based dynamic imaging system for optical tomography},
+  Author                   = {Lasker, Joseph M and Masciotti, James M and Schoenecker, Matthew and Schmitz, Christoph H and Hielscher, Andreas H},
+  Journal                  = {Review of Scientific Instruments},
+  Year                     = {2007},
+  Number                   = {8},
+  Pages                    = {083706},
+  Volume                   = {78},
+
+  Owner                    = {bioptical},
+  Publisher                = {AIP Publishing},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{lawandy_04_1,
   Title                    = {Localized surface plasmon singularities in amplifying media},
   Author                   = {Lawandy, N. M},
@@ -6709,6 +7718,20 @@
   Volume                   = {15},
 
   Annote                   = {Folder 78}
+}
+
+@Article{Lee1997,
+  Title                    = {Fatty and fibroglandular tissue volumes in the breasts of women 20-83 years old: comparison of X-ray mammography and computer-assisted MR imaging.},
+  Author                   = {Lee, Nancy A and Rusinek, Henry and Weinreb, Jeffrey and Chandra, Ramesh and Toth, Hildegard and Singer, Cory and Newstead, Gillian},
+  Journal                  = {AJR. American journal of roentgenology},
+  Year                     = {1997},
+  Number                   = {2},
+  Pages                    = {501--506},
+  Volume                   = {168},
+
+  Owner                    = {bioptical},
+  Publisher                = {Am Roentgen Ray Soc},
+  Timestamp                = {2015.06.06}
 }
 
 @Article{lee_85_1,
@@ -6753,6 +7776,20 @@
   Publisher                = {The Combustion Institute},
 
   Annote                   = {Not filed}
+}
+
+@Article{Leff2008,
+  Title                    = {Diffuse optical imaging of the healthy and diseased breast: a systematic review},
+  Author                   = {Leff, Daniel Richard and Warren, Oliver J and Enfield, Louise C and Gibson, Adam and Athanasiou, Thanos and Patten, Darren K and Hebden, Jem and Yang, Guang Zhong and Darzi, Ara},
+  Journal                  = {Breast cancer research and treatment},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {9--22},
+  Volume                   = {108},
+
+  Owner                    = {bioptical},
+  Publisher                = {Springer},
+  Timestamp                = {2015.06.18}
 }
 
 @Article{lehmann_00_1,
@@ -6853,14 +7890,32 @@
   Annote                   = {Folder 24}
 }
 
-@Article{li_03_1,
+@Article{Li2003,
   Title                    = {Tomographic optical breast imaging guided by three-dimensional mammography},
-  Author                   = {Li, A. and Miller, E. L. and Kilmer, M. E. and Brukilacchio, T. J. and Chaves, T. and Stott, J. and Zhang, Q. and Wu, T. and Chorlton, M. and Moore, R. H. and Kopans, D. B. and Boas, D. A.},
-  Journal                  = ao,
+  Author                   = {Li, Ang and Miller, Eric L and Kilmer, Misha E and Brukilacchio, Thomas J and Chaves, Tina and Stott, Jonathan and Zhang, Quan and Wu, Tao and Chorlton, MaryAnn and Moore, Richard H and others},
+  Journal                  = {Applied optics},
   Year                     = {2003},
   Number                   = {25},
-  Pages                    = {5181-5190},
-  Volume                   = {42}
+  Pages                    = {5181--5190},
+  Volume                   = {42},
+
+  Owner                    = {Han},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Li2007,
+  Title                    = {Multispectral diffuse optical tomography with absorption and scattering spectral constraints},
+  Author                   = {Li, Changqing and Grobmyer, Stephen R and Chen, Lin and Zhang, Qizhi and Fajardo, Laurie L and Jiang, Huabei},
+  Journal                  = {Applied optics},
+  Year                     = {2007},
+  Number                   = {34},
+  Pages                    = {8229--8236},
+  Volume                   = {46},
+
+  Owner                    = {Han},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.07}
 }
 
 @Article{li_10_1,
@@ -6895,6 +7950,18 @@
   Volume                   = {91},
 
   Annote                   = {Folder 2}
+}
+
+@Article{Li2013,
+  Title                    = {Simultaneous measurement of deep tissue blood flow and oxygenation using noncontact diffuse correlation spectroscopy flow-oximeter},
+  Author                   = {Li, Ting and Lin, Yu and Shang, Yu and He, Lian and Huang, Chong and Szabunio, Margaret and Yu, Guoqiang},
+  Journal                  = {Scientific reports},
+  Year                     = {2013},
+  Volume                   = {3},
+
+  Owner                    = {bioptical},
+  Publisher                = {Nature Publishing Group},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{li_07_1,
@@ -6977,6 +8044,21 @@
   Volume                   = {38},
 
   Annote                   = {Folder 28}
+}
+
+@Article{Lin2002,
+  Title                    = {Noninvasive, low-noise, fast imaging of blood volume and deoxygenation changes in muscles using light-emitting diode continuous-wave imager},
+  Author                   = {Lin, Yuanqing and Lech, Gwen and Nioka, Shoko and Intes, Xavier and Chance, Britton},
+  Journal                  = {Review of Scientific Instruments},
+  Year                     = {2002},
+  Number                   = {8},
+  Pages                    = {3065--3074},
+  Volume                   = {73},
+
+  Keywords                 = {muscle, DOS},
+  Owner                    = {bioptical},
+  Publisher                = {AIP Publishing},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{liu_93_1,
@@ -7165,6 +8247,18 @@
   Volume                   = {15},
 
   Annote                   = {Folder 24}
+}
+
+@InCollection{Ma2013,
+  Title                    = {Breast cancer statistics},
+  Author                   = {Ma, Jiemin and Jemal, Ahmedin},
+  Booktitle                = {Breast Cancer Metastasis and Drug Resistance},
+  Publisher                = {Springer},
+  Year                     = {2013},
+  Pages                    = {1--18},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{machida_10_1,
@@ -7732,16 +8826,18 @@
   Annote                   = {Folder 1}
 }
 
-@Article{markel_03_1,
-  Title                    = {The inverse problem in optical diffusion tomography. {III.} {Inversion} formulas and singular value decomposition},
-  Author                   = {Markel, V. A. and Mital, V. and Schotland, J. C.},
-  Journal                  = josaa,
+@Article{Markel2003,
+  Title                    = {Inverse problem in optical diffusion tomography. III. Inversion formulas and singular-value decomposition},
+  Author                   = {Markel, Vadim A and Mital, Vivek and Schotland, John C},
+  Journal                  = {JOSA A},
   Year                     = {2003},
   Number                   = {5},
-  Pages                    = {890-902},
+  Pages                    = {890--902},
   Volume                   = {20},
 
-  Annote                   = {Folder 1}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{markel_90_1,
@@ -7768,16 +8864,18 @@
   Annote                   = {Folder 1}
 }
 
-@Article{markel_03_2,
-  Title                    = {Inverse problem in optical diffusion tomography. {IV. Nonlinear} inversion formulas},
-  Author                   = {Markel, V. A. and O'Sullivan, J. A. and Schotland, J. C.},
-  Journal                  = josaa,
+@Article{Markel2003a,
+  Title                    = {Inverse problem in optical diffusion tomography. IV. Nonlinear inversion formulas},
+  Author                   = {Markel, Vadim A and O’Sullivan, Joseph A and Schotland, John C},
+  Journal                  = {JOSA A},
   Year                     = {2003},
   Number                   = {5},
-  Pages                    = {903-912},
+  Pages                    = {903--912},
   Volume                   = {20},
 
-  Annote                   = {Folder 1}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{markel_97_1,
@@ -7893,40 +8991,18 @@
   Annote                   = {Folder 1}
 }
 
-@Article{markel_04_4,
+@Article{Markel2004,
   Title                    = {Symmetries, inversion formulas, and image reconstruction for optical tomography},
-  Author                   = {Markel, V. A. and Schotland, J. C.},
-  Journal                  = pre,
+  Author                   = {Markel, Vadim A and Schotland, John C},
+  Journal                  = {Physical Review E},
   Year                     = {2004},
   Number                   = {5},
   Pages                    = {056616},
   Volume                   = {70},
 
-  Annote                   = {Folder 1}
-}
-
-@Article{markel_02_1,
-  Title                    = {The inverse problem in optical diffusion tomography. {II.} {Inversion} with boundary conditions},
-  Author                   = {Markel, V. A. and Schotland, J. C.},
-  Journal                  = josaa,
-  Year                     = {2002},
-  Number                   = {2},
-  Pages                    = {558-566},
-  Volume                   = {19},
-
-  Annote                   = {Folder 1}
-}
-
-@Article{markel_02_2,
-  Title                    = {Effects of sampling and limited data in optical tomography},
-  Author                   = {Markel, Vadim A. and Schotland, John C.},
-  Journal                  = apl,
-  Year                     = {2002},
-  Number                   = {7},
-  Pages                    = {1180-1182},
-  Volume                   = {81},
-
-  Annote                   = {Folder 1}
+  Owner                    = {bioptical},
+  Publisher                = {APS},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{markel_02_3,
@@ -7941,6 +9017,34 @@
   Annote                   = {Folder 1}
 }
 
+@Article{Markel2002,
+  Title                    = {Effects of sampling and limited data in optical tomography},
+  Author                   = {Markel, Vadim A and Schotland, John C},
+  Journal                  = {Applied physics letters},
+  Year                     = {2002},
+  Number                   = {7},
+  Pages                    = {1180--1182},
+  Volume                   = {81},
+
+  Owner                    = {bioptical},
+  Publisher                = {AIP Publishing},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Markel2002a,
+  Title                    = {Inverse problem in optical diffusion tomography. II. Role of boundary conditions},
+  Author                   = {Markel, Vadim A and Schotland, John C},
+  Journal                  = {JOSA A},
+  Year                     = {2002},
+  Number                   = {3},
+  Pages                    = {558--566},
+  Volume                   = {19},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{markel_01_2,
   Title                    = {The inverse problem in optical diffusion tomography. {I.} {Fourier}-{Laplace} inversion formulas},
   Author                   = {Markel, V. A. and Schotland, J. C.},
@@ -7949,18 +9053,6 @@
   Number                   = {6},
   Pages                    = {1336-1347},
   Volume                   = {18},
-
-  Annote                   = {Folder 1}
-}
-
-@Article{markel_01_3,
-  Title                    = {Inverse scattering for the diffusion equation with general boundary conditions},
-  Author                   = {Markel, V. A. and Schotland, J. C.},
-  Journal                  = pre,
-  Year                     = {2001},
-  Number                   = {3},
-  Pages                    = {R035601},
-  Volume                   = {64},
 
   Annote                   = {Folder 1}
 }
@@ -7977,6 +9069,20 @@
   Volume                   = {67},
 
   Annote                   = {Folder 1}
+}
+
+@Article{Markel2001,
+  Title                    = {Inverse scattering for the diffusion equation with general boundary conditions},
+  Author                   = {Markel, Vadim A and Schotland, John C},
+  Journal                  = {Physical Review E},
+  Year                     = {2001},
+  Number                   = {3},
+  Pages                    = {035601},
+  Volume                   = {64},
+
+  Owner                    = {bioptical},
+  Publisher                = {APS},
+  Timestamp                = {2015.06.16}
 }
 
 @InBook{markel_99_1,
@@ -8138,16 +9244,16 @@
   Annote                   = {Folder 1}
 }
 
-@InProceedings{markel_05_6,
+@InProceedings{Markel2005,
   Title                    = {Optical diffusion tomography with large data sets},
-  Author                   = {Markel, V. A. and Wang, Z.-M. and Schotland, J. C.},
-  Booktitle                = {{Photonic Applications in Biosensing and Imaging}},
+  Author                   = {Markel, Vadim A and Wang, Zheng-Min and Schotland, John C},
+  Booktitle                = {Photonics North 2005},
   Year                     = {2005},
-  Pages                    = {59691B-1-11},
-  Publisher                = {SPIE},
-  Volume                   = {5969},
+  Organization             = {International Society for Optics and Photonics},
+  Pages                    = {59691B--59691B},
 
-  Annote                   = {Folder 1}
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{marques_09_1,
@@ -8243,13 +9349,32 @@
   Annote                   = {Folder 11}
 }
 
-@Article{mcbride_01_1,
+@Article{McBride1999,
+  Title                    = {Spectroscopic diffuse optical tomography for the quantitative assessment of hemoglobin concentration and oxygen saturation in breast tissue},
+  Author                   = {McBride, Troy O and Pogue, Brian W and Gerety, Ellen D and Poplack, Steven B and {\"O}sterberg, Ulf L and Paulsen, Keith D},
+  Journal                  = {Applied optics},
+  Year                     = {1999},
+  Number                   = {25},
+  Pages                    = {5480--5490},
+  Volume                   = {38},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.18}
+}
+
+@Article{McBride2001,
   Title                    = {A parallel-detection frequency-domain near-infrared tomography system for hemoglobin imaging of the breast in vivo},
-  Author                   = {McBride, T. and Pogue, B. and Jiang, S. and Osterberg, U. and Paulsen, K.},
-  Journal                  = rsi,
+  Author                   = {McBride, Troy O and Pogue, Brian W and Jiang, Shudong and Oesterberg, Ulf L and Paulsen, Keith D},
+  Journal                  = {Review of Scientific Instruments},
   Year                     = {2001},
-  Pages                    = {1817},
-  Volume                   = {72}
+  Number                   = {3},
+  Pages                    = {1817--1824},
+  Volume                   = {72},
+
+  Owner                    = {Han},
+  Publisher                = {AIP Publishing},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{mccall_09_1,
@@ -8410,6 +9535,20 @@
   Volume                   = {76},
 
   Annote                   = {Folder 6}
+}
+
+@Article{Merritt2003,
+  Title                    = {Coregistration of diffuse optical spectroscopy and magnetic resonance imaging in a rat tumor model},
+  Author                   = {Merritt, Sean and Bevilacqua, Frederic and Durkin, Anthony J and Cuccia, David J and Lanning, Ryan and Tromberg, Bruce J and Gulsen, Gultekin and Yu, Hon and Wang, Jun and Nalcioglu, Orhan},
+  Journal                  = {Applied optics},
+  Year                     = {2003},
+  Number                   = {16},
+  Pages                    = {2951--2959},
+  Volume                   = {42},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{mie_1908_1,
@@ -8682,6 +9821,20 @@
   Annote                   = {Folder 22}
 }
 
+@Article{Mourant1997,
+  Title                    = {Predictions and measurements of scattering and absorption over broad wavelength ranges in tissue phantoms},
+  Author                   = {Mourant, Judith R and Fuselier, Tamika and Boyer, James and Johnson, Tamara M and Bigio, Irving J},
+  Journal                  = {Applied Optics},
+  Year                     = {1997},
+  Number                   = {4},
+  Pages                    = {949--957},
+  Volume                   = {36},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.06}
+}
+
 @Article{mueller_02_1,
   Title                    = {Three-dimensional radiative transfer in an isotropically scattering semi-infinite medium: generalized reflection function},
   Author                   = {Mueller, D. W. and Crosbie, A. L.},
@@ -8796,6 +9949,20 @@
   Annote                   = {Folder 5}
 }
 
+@Article{Nachabe2010,
+  Title                    = {Estimation of lipid and water concentrations in scattering media with diffuse optical spectroscopy from 900to1600nm},
+  Author                   = {Nachab{\'e}, Rami and Hendriks, Benno HW and Desjardins, Adrien E and van der Voort, Marjolein and van der Mark, Martin B and Sterenborg, Henricus JCM},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2010},
+  Number                   = {3},
+  Pages                    = {037015--037015},
+  Volume                   = {15},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{naeimi_09_1,
   Title                    = {Optical properties of fractal aggregates of nanoparticles: {Effects} of particle size polydispersity},
   Author                   = {Naeimi, Z. and Miri, M. F.},
@@ -8889,6 +10056,33 @@
   Annote                   = {Folder 24}
 }
 
+@InCollection{Nioka1997,
+  Title                    = {Optical imaging of breast tumor by means of continuous waves},
+  Author                   = {Nioka, S and Yung, Y and Shnall, M and Zhao, S and Orel, S and Xie, C and Chance, B and Solin, L},
+  Booktitle                = {Oxygen Transport to Tissue XVIII},
+  Publisher                = {Springer},
+  Year                     = {1997},
+  Pages                    = {227--232},
+
+  __markedentry            = {[bioptical:6]},
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.28}
+}
+
+@Article{Nissilae2002,
+  Title                    = {Instrumentation for the accurate measurement of phase and amplitude in optical tomography},
+  Author                   = {Nissil{\"a}, Ilkka and Kotilahti, Kalle and Fallstr{\"o}m, Kim and Katila, Toivo},
+  Journal                  = {Review of scientific instruments},
+  Year                     = {2002},
+  Number                   = {9},
+  Pages                    = {3306--3312},
+  Volume                   = {73},
+
+  Owner                    = {bioptical},
+  Publisher                = {AIP Publishing},
+  Timestamp                = {2015.06.14}
+}
+
 @Article{noginov_09_1,
   Title                    = {Demonstration of a spaser-based nanolaser},
   Author                   = {Noginov, M. A. and Zhu, G. and Belgrave, A. M. and Bakker, R. and Shalaev, V. M. and Narimanov, E. E. and Stout, S. and Herz, E. and Suteewong, T. and Wiesner, U.},
@@ -8920,9 +10114,10 @@
   Number                   = {10},
   Pages                    = {230--242},
   Volume                   = {5},
+
   Owner                    = {bioptical},
   Publisher                = {Optical Society of America},
-  Timestamp                = {2015.05.23}
+  Timestamp                = {2015.06.16}
 }
 
 @Article{Ntziachristos2001,
@@ -8933,18 +10128,24 @@
   Number                   = {6},
   Pages                    = {470--478},
   Volume                   = {20},
+
   Owner                    = {bioptical},
   Publisher                = {IEEE},
   Timestamp                = {2015.05.23}
 }
 
-@Article{ntziachristos_98_1,
+@Article{Ntziachristos1998,
   Title                    = {Time-correlated single photon counting imager for simultaneous magnetic resonance and near-infrared mammography},
-  Author                   = {Ntziachristos, V. and Ma, X. H. and Chance, B.},
-  Journal                  = rsi,
+  Author                   = {Ntziachristos, Vasilis and Ma, XuHui and Chance, Britton},
+  Journal                  = {Review of Scientific Instruments},
   Year                     = {1998},
-  Pages                    = {4221-4233},
-  Volume                   = {69}
+  Number                   = {12},
+  Pages                    = {4221--4233},
+  Volume                   = {69},
+
+  Owner                    = {bioptical},
+  Publisher                = {AIP Publishing},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{ntziachristos_02_1,
@@ -8979,20 +10180,10 @@
   Number                   = {6},
   Pages                    = {2767--2772},
   Volume                   = {97},
+
   Owner                    = {bioptical},
   Publisher                = {National Acad Sciences},
-  Timestamp                = {2015.05.23}
-}
-
-@Article{ntziachristos_99_1,
-  Title                    = {Concurrent MRI and diffuse optical tomography of breast after indocyanine green enhancement},
-  Author                   = {Ntziachristos, V. and Yodh, A. and Schnall, M. and Chance, B.},
-  Journal                  = {Proc. Natl. Acad. Sci. USA},
-  Year                     = {1999},
-  Pages                    = {2767-2772},
-  Volume                   = {97},
-
-  Annote                   = {Folder 34b}
+  Timestamp                = {2015.06.14}
 }
 
 @Article{Ntziachristos2002,
@@ -9003,9 +10194,10 @@
   Number                   = {4},
   Pages                    = {347--354},
   Volume                   = {4},
+
   Owner                    = {bioptical},
   Publisher                = {Elsevier},
-  Timestamp                = {2015.05.23}
+  Timestamp                = {2015.06.18}
 }
 
 @Article{nussenzveig_03_1,
@@ -9020,25 +10212,24 @@
   Annote                   = {Folder 11}
 }
 
-@Article{oleary_96_1,
-  Title                    = {Fluorescence lifetime imaging in turbid media},
-  Author                   = {O'Leary, M. A. and Boas, D. A. and Li, X. D. and Chance, B. and Yodh, A. G.},
-  Journal                  = ol,
+@PhdThesis{OLeary1996a,
+  Title                    = {Imaging with diffuse photon density waves},
+  Author                   = {O'Leary, Maureen A},
+  School                   = {University of Pennsylvania},
   Year                     = {1996},
-  Number                   = {2},
-  Pages                    = {158-160},
-  Volume                   = {21},
 
-  Annote                   = {Folder 78}
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.04}
 }
 
-@Article{oleary_95_1,
-  Title                    = {Experimental images of heterogeneous turbid media by frequency-domain diffusing photon tomography},
-  Author                   = {O'Leary, M. and Boas, D. and Chance, B. and Yodh, A.},
-  Journal                  = ol,
-  Year                     = {1995},
-  Pages                    = {426-429},
-  Volume                   = {20}
+@Article{OLeary1996b,
+  Title                    = {Co-registration of images from diffusive waves with other imaging modalities to enhance optical specificity},
+  Author                   = {O'Leary, MA and Nzitachristos, V and Chance, B and Yodh, AG},
+  Journal                  = {Advances in Optical Imaging and Photon Migration},
+  Year                     = {1996},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.05.23}
 }
 
 @Article{oh_99_1,
@@ -9109,6 +10300,34 @@
   Annote                   = {Folder 4}
 }
 
+@Article{Orchard1969,
+  Title                    = {Reflection and transmission of light by diffusing suspensions},
+  Author                   = {Orchard, SE},
+  Journal                  = {JOSA},
+  Year                     = {1969},
+  Number                   = {12},
+  Pages                    = {1584--1597},
+  Volume                   = {59},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.05.31}
+}
+
+@Article{Orchard1969a,
+  Title                    = {Reflection and transmission of light by diffusing suspensions},
+  Author                   = {Orchard, SE},
+  Journal                  = {JOSA},
+  Year                     = {1969},
+  Number                   = {12},
+  Pages                    = {1584--1597},
+  Volume                   = {59},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.11}
+}
+
 @Article{ordal_85_1,
   Title                    = {Optical-properties of 14 metals in the infrared and far infrared - AL, CO, CU, AU, FE, PB, MO, NI, PD, PT, AG, TI, V, and W},
   Author                   = {Ordal, M. A. and Bell, R. J. and Alexander, R. W. Long, L. L. and Querry, M. A.},
@@ -9127,6 +10346,20 @@
   Number                   = {7},
   Pages                    = {1099-1119},
   Volume                   = {22}
+}
+
+@Article{Orihuela-Espina2010,
+  Title                    = {Quality control and assurance in functional near infrared spectroscopy (fNIRS) experimentation},
+  Author                   = {Orihuela-Espina, F and Leff, DR and James, DRC and Darzi, AW and Yang, GZ},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {2010},
+  Number                   = {13},
+  Pages                    = {3701},
+  Volume                   = {55},
+
+  Owner                    = {Han},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.08}
 }
 
 @Article{orlowski_99_1,
@@ -9152,13 +10385,32 @@
   Annote                   = {Folder 4}
 }
 
-@Article{OLeary1996,
-  Title                    = {Co-registration of images from diffusive waves with other imaging modalities to enhance optical specificity},
-  Author                   = {O’Leary, MA and Nzitachristos, V and Chance, B and Yodh, AG},
-  Journal                  = {Advances in Optical Imaging and Photon Migration},
-  Year                     = {1996},
+@Article{OLeary1995,
+  Title                    = {Experimental images of heterogeneous turbid media by frequency-domain diffusing-photon tomography},
+  Author                   = {O’Leary, MA and Boas, DA and Chance, B and Yodh, AG},
+  Journal                  = {Optics letters},
+  Year                     = {1995},
+  Number                   = {5},
+  Pages                    = {426--428},
+  Volume                   = {20},
+
   Owner                    = {bioptical},
-  Timestamp                = {2015.05.23}
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{OLeary1996,
+  Title                    = {Fluorescence lifetime imaging in turbid media},
+  Author                   = {O’Leary, MA and Boas, DA and Li, XD and Chance, B and Yodh, AG},
+  Journal                  = {Optics Letters},
+  Year                     = {1996},
+  Number                   = {2},
+  Pages                    = {158--160},
+  Volume                   = {21},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{pack_01_1,
@@ -9358,13 +10610,18 @@
   Annote                   = {Folder 34a}
 }
 
-@Article{patterson_89_1,
-  Title                    = {Time resolved reflectance and transmittance for the non-invasive measurement of tissue optical properties},
-  Author                   = {Patterson, M. S. and Chance, B. and Wilson, B. C.},
-  Journal                  = ao,
+@Article{Patterson1989,
+  Title                    = {Time resolved reflectance and transmittance for the noninvasive measurement of tissue optical properties},
+  Author                   = {Patterson, Michael S and Chance, Britton and Wilson, Brian C},
+  Journal                  = {Applied optics},
   Year                     = {1989},
-  Pages                    = {2331-2336},
-  Volume                   = {28}
+  Number                   = {12},
+  Pages                    = {2331--2336},
+  Volume                   = {28},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{patwardham_05_1,
@@ -9388,6 +10645,20 @@
   Volume                   = {84},
 
   Annote                   = {Not Printed}
+}
+
+@Article{Paulsen1995,
+  Title                    = {Spatially varying optical property reconstruction using a finite element diffusion equation approximation},
+  Author                   = {Paulsen, Keith D and Jiang, Huabei},
+  Journal                  = {Medical Physics},
+  Year                     = {1995},
+  Number                   = {6},
+  Pages                    = {691--701},
+  Volume                   = {22},
+
+  Owner                    = {Han},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.07}
 }
 
 @Article{peatross_00_1,
@@ -9465,7 +10736,6 @@
   Author                   = {Peng, Tao},
   Year                     = {2007},
 
-  __markedentry            = {[bioptical:6]},
   Owner                    = {bioptical},
   Timestamp                = {2015.05.23}
 }
@@ -9603,13 +10873,18 @@
   Annote                   = {Folder 34a}
 }
 
-@Article{pifferi_03_1,
-  Title                    = {Four-wavelength time-resolved optical mammography in the $680-980$-nm range},
-  Author                   = {Pifferi, A. and Taroni, P. and Torricelli, A. and Messina, F. and Cubeddu, R.},
-  Journal                  = ol,
+@Article{Pifferi2003,
+  Title                    = {Four-wavelength time-resolved optical mammography in the 680 980-nm range},
+  Author                   = {Pifferi, Antonio and Taroni, Paola and Torricelli, Alessandro and Messina, Fabrizio and Cubeddu, Rinaldo and Danesini, Gianmaria},
+  Journal                  = {Optics letters},
   Year                     = {2003},
-  Pages                    = {1138-1140},
-  Volume                   = {28}
+  Number                   = {13},
+  Pages                    = {1138--1140},
+  Volume                   = {28},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{pitarke_01_1,
@@ -9698,15 +10973,32 @@
   Annote                   = {Not printed}
 }
 
-@Article{pogue_95_1,
+@Article{Pogue1995,
   Title                    = {Initial assessment of a simple system for frequency domain diffuse optical tomography},
-  Author                   = {Pogue, B.Â W. and Patterson, M.Â S. and Jiang, H.Â and Paulsen, K.Â D.},
-  Journal                  = pmedb,
+  Author                   = {Pogue, BW and Patterson, MS and Jiang, H and Paulsen, KD},
+  Journal                  = {Physics in medicine and biology},
   Year                     = {1995},
-  Pages                    = {1709-1729},
+  Number                   = {10},
+  Pages                    = {1709},
   Volume                   = {40},
 
-  Annote                   = {Not printed}
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Pogue1997,
+  Title                    = {Instrumentation and design of a frequency-domain diffuse optical tomography imager for breast cancer detection},
+  Author                   = {Pogue, Brian and Testorf, Markus and McBride, Troy and Osterberg, Ulf and Paulsen, Keith},
+  Journal                  = {Optics express},
+  Year                     = {1997},
+  Number                   = {13},
+  Pages                    = {391--403},
+  Volume                   = {1},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{pogue_99_1,
@@ -9721,13 +11013,60 @@
   Annote                   = {Folder 34a}
 }
 
-@Article{pogue_94_1,
+@Article{Pogue1999,
+  Title                    = {Spatially variant regularization improves diffuse optical tomography},
+  Author                   = {Pogue, Brian W and McBride, Troy O and Prewitt, Judith and {\"O}sterberg, Ulf L and Paulsen, Keith D},
+  Journal                  = {Applied optics},
+  Year                     = {1999},
+  Number                   = {13},
+  Pages                    = {2950--2961},
+  Volume                   = {38},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Pogue2006,
+  Title                    = {Review of tissue simulating phantoms for optical spectroscopy, imaging and dosimetry},
+  Author                   = {Pogue, Brian W and Patterson, Michael S},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2006},
+  Number                   = {4},
+  Pages                    = {041102--041102},
+  Volume                   = {11},
+
+  Owner                    = {Han},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.08}
+}
+
+@Article{Pogue1994,
   Title                    = {Frequency-domain optical absorption spectroscopy of finite tissue volumes using diffusion theory},
-  Author                   = {Pogue, B. W. and Patterson, M. S.},
-  Journal                  = pmedb,
+  Author                   = {Pogue, Brian W and Patterson, Michael S},
+  Journal                  = {Physics in medicine and biology},
   Year                     = {1994},
-  Pages                    = {1157-1180},
-  Volume                   = {39}
+  Number                   = {7},
+  Pages                    = {1157},
+  Volume                   = {39},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.17}
+}
+
+@Article{Pogue2001,
+  Title                    = {Quantitative Hemoglobin Tomography with Diffuse Near-Infrared Spectroscopy: Pilot Results in the Breast 1},
+  Author                   = {Pogue, Brian W and Poplack, Steven P and McBride, Troy O and Wells, Wendy A and Osterman, K Sunshine and Osterberg, Ulf L and Paulsen, Keith D},
+  Journal                  = {Radiology},
+  Year                     = {2001},
+  Number                   = {1},
+  Pages                    = {261--266},
+  Volume                   = {218},
+
+  Owner                    = {bioptical},
+  Publisher                = {Radiological Society of North America},
+  Timestamp                = {2015.06.18}
 }
 
 @InProceedings{poliakov_97_1,
@@ -9792,6 +11131,21 @@
   Volume                   = {14},
 
   Annote                   = {Folder 63}
+}
+
+@Article{Poplack2007,
+  Title                    = {Electromagnetic Breast Imaging: Results of a Pilot Study in Women with Abnormal Mammograms 1},
+  Author                   = {Poplack, Steven P and Tosteson, Tor D and Wells, Wendy A and Pogue, Brian W and Meaney, Paul M and Hartov, Alexander and Kogel, Christine A and Soho, Sandra K and Gibson, Jennifer J and Paulsen, Keith D},
+  Journal                  = {Radiology},
+  Year                     = {2007},
+  Number                   = {2},
+  Pages                    = {350--359},
+  Volume                   = {243},
+
+  __markedentry            = {[bioptical:]},
+  Owner                    = {bioptical},
+  Publisher                = {Radiological Society of North America},
+  Timestamp                = {2015.06.28}
 }
 
 @Article{popov_04_1,
@@ -10236,15 +11590,18 @@
   Annote                   = {Folder 34c}
 }
 
-@Article{ripoll_04_1,
-  Title                    = {Imaging scattering media from a distance: {Theory} and applications of noncontact optical tomography},
-  Author                   = {Ripoll, J. and Ntziachristos, V.},
-  Journal                  = mpl,
+@Article{Ripoll2004,
+  Title                    = {Imaging scattering media from a distance: theory and applications of noncontact optical tomography},
+  Author                   = {Ripoll, Jorge and Ntziachristos, Vasilis},
+  Journal                  = {Modern Physics Letters B},
   Year                     = {2004},
-  Pages                    = {1403},
+  Number                   = {28n29},
+  Pages                    = {1403--1431},
   Volume                   = {18},
 
-  Annote                   = {Not Filed}
+  Owner                    = {bioptical},
+  Publisher                = {World Scientific},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{ripoll_03_1,
@@ -10259,15 +11616,32 @@
   Annote                   = {Folder TBD}
 }
 
-@Article{ripoll_03_2,
-  Title                    = {Free-space propagation of diffuse light: {Theory} and experiments},
-  Author                   = {Ripoll, J. and Schulz, R. B. and Ntziachristos, V.},
-  Journal                  = prl,
+@Article{Ripoll2003,
+  Title                    = {Free-space propagation of diffuse light: theory and experiments},
+  Author                   = {Ripoll, Jorge and Schulz, Ralf B and Ntziachristos, Vasilis},
+  Journal                  = {Physical review letters},
   Year                     = {2003},
+  Number                   = {10},
   Pages                    = {103901},
   Volume                   = {91},
 
-  Annote                   = {Not filed}
+  Owner                    = {bioptical},
+  Publisher                = {APS},
+  Timestamp                = {2015.06.17}
+}
+
+@Article{Roche-Labarbe2010,
+  Title                    = {Noninvasive optical measures of CBV, StO2, CBF index, and rCMRO2 in human premature neonates' brains in the first six weeks of life},
+  Author                   = {Roche-Labarbe, Nad{\`e}ge and Carp, Stefan A and Surova, Andrea and Patel, Megha and Boas, David A and Grant, P Ellen and Franceschini, Maria Angela},
+  Journal                  = {Human brain mapping},
+  Year                     = {2010},
+  Number                   = {3},
+  Pages                    = {341--352},
+  Volume                   = {31},
+
+  Owner                    = {Han},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2015.06.08}
 }
 
 @Article{roessler_80_1,
@@ -10337,16 +11711,18 @@
   Annote                   = {Folder 34a}
 }
 
-@Article{rossum_99_1,
+@Article{Rossum1999,
   Title                    = {Multiple scattering of classical waves: microscopy, mesoscopy, and diffusion},
-  Author                   = {van Rossum, M. C. W. and Nieuwenhuizen, T. M.},
-  Journal                  = rmp,
+  Author                   = {van Rossum, MCW van and Nieuwenhuizen, Th M},
+  Journal                  = {Reviews of Modern Physics},
   Year                     = {1999},
   Number                   = {1},
-  Pages                    = {313-371},
+  Pages                    = {313},
   Volume                   = {71},
 
-  Annote                   = {Folder 33}
+  Owner                    = {bioptical},
+  Publisher                = {APS},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{roy_01_1,
@@ -10765,6 +12141,20 @@
   Annote                   = {Not filed}
 }
 
+@Article{Schegerin2009,
+  Title                    = {Prognostic imaging in neoadjuvant chemotherapy of locally-advanced breast cancer should be cost-effective},
+  Author                   = {Schegerin, Marc and Tosteson, Anna NA and Kaufman, Peter A and Paulsen, Keith D and Pogue, Brian W},
+  Journal                  = {Breast cancer research and treatment},
+  Year                     = {2009},
+  Number                   = {3},
+  Pages                    = {537--547},
+  Volume                   = {114},
+
+  Owner                    = {bioptical},
+  Publisher                = {Springer},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{schmidt_00_1,
   Title                    = {A 32-channel time-resolved instrument for medical optical tomography},
   Author                   = {Schmidt, F. and Fry, M. and Hillman, E. and Hebden, J. and Delpy, D.},
@@ -10774,13 +12164,18 @@
   Volume                   = {71}
 }
 
-@Article{schmidt_00_2,
+@Article{Schmidt2000,
   Title                    = {Multiple-slice imaging of a tissue-equivalent phantom by use of time-resolved optical tomography},
-  Author                   = {Schmidt, F. E. and Hebden, J. C. and Hillman, E. M. and Fry, M. E.and Schweiger, M. and Dehghani, H. and Delpy, D. T. and Arridge, S. R.},
-  Journal                  = ao,
+  Author                   = {Schmidt, Florian EW and Hebden, Jeremy C and Hillman, Elizabeth and Fry, Martin E and Schweiger, Martin and Dehghani, Hamid and Delpy, David T and Arridge, Simon R},
+  Journal                  = {Applied optics},
   Year                     = {2000},
-  Pages                    = {3380-3387},
-  Volume                   = {39}
+  Number                   = {19},
+  Pages                    = {3380--3387},
+  Volume                   = {39},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{schoonover_08_1,
@@ -10803,16 +12198,18 @@
   Volume                   = {61}
 }
 
-@Article{schotland_97_1,
-  Title                    = {Continuous wave diffusion imaging},
-  Author                   = {Schotland, John C.},
-  Journal                  = josaa,
+@Article{Schotland1997,
+  Title                    = {Continuous-wave diffusion imaging},
+  Author                   = {Schotland, John C},
+  Journal                  = {JOSA A},
   Year                     = {1997},
   Number                   = {1},
-  Pages                    = {275-279},
+  Pages                    = {275--279},
   Volume                   = {14},
 
-  Annote                   = {Folder 38}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{schotland_88_1,
@@ -10874,13 +12271,18 @@
   Annote                   = {Folder 1}
 }
 
-@Article{schulz_03_1,
+@Article{Schulz2003,
   Title                    = {Noncontact optical tomography of turbid media},
-  Author                   = {Schulz, R. and Ripoll, J. and Ntziachristos, V.},
-  Journal                  = ol,
+  Author                   = {Schulz, Ralf B and Ripoll, Jorge and Ntziachristos, Vasilis},
+  Journal                  = {Optics letters},
   Year                     = {2003},
-  Pages                    = {1701-1703},
-  Volume                   = {28}
+  Number                   = {18},
+  Pages                    = {1701--1703},
+  Volume                   = {28},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{schwartz_07_1,
@@ -10894,6 +12296,34 @@
   Volume                   = {446},
 
   Annote                   = {Folder 75}
+}
+
+@Article{Schweiger2014,
+  Title                    = {The Toast++ software suite for forward and inverse modeling in optical tomography},
+  Author                   = {Schweiger, Martin and Arridge, Simon},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2014},
+  Number                   = {4},
+  Pages                    = {040801--040801},
+  Volume                   = {19},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.12}
+}
+
+@Article{Schweiger2005,
+  Title                    = {Gauss--Newton method for image reconstruction in diffuse optical tomography},
+  Author                   = {Schweiger, Martin and Arridge, Simon R and Nissil{\"a}, Ilkka},
+  Journal                  = {Physics in medicine and biology},
+  Year                     = {2005},
+  Number                   = {10},
+  Pages                    = {2365},
+  Volume                   = {50},
+
+  Owner                    = {bioptical},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.08}
 }
 
 @Article{sciortino_95_1,
@@ -10957,9 +12387,52 @@
   Number                   = {1},
   Pages                    = {55--64},
   Volume                   = {66},
+
   Owner                    = {bioptical},
   Publisher                = {Wiley Online Library},
   Timestamp                = {2015.05.23}
+}
+
+@Article{Shah2001,
+  Title                    = {Noninvasive functional optical spectroscopy of human breast tissue},
+  Author                   = {Shah, Natasha and Cerussi, Albert and Eker, Charlotta and Espinoza, Jenny and Butler, John and Fishkin, Joshua and Hornung, Rene and Tromberg, Bruce},
+  Journal                  = {Proceedings of the National Academy of Sciences},
+  Year                     = {2001},
+  Number                   = {8},
+  Pages                    = {4420--4425},
+  Volume                   = {98},
+
+  Owner                    = {bioptical},
+  Publisher                = {National Acad Sciences},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Shah2004,
+  Title                    = {The role of diffuse optical spectroscopy in the clinical management of breast cancer},
+  Author                   = {Shah, Natasha and Cerussi, Albert E and Jakubowski, Dorota and Hsiang, David and Butler, John and Tromberg, Bruce J},
+  Journal                  = {Disease markers},
+  Year                     = {2004},
+  Number                   = {2-3},
+  Pages                    = {95--105},
+  Volume                   = {19},
+
+  Owner                    = {bioptical},
+  Publisher                = {Hindawi Publishing Corporation},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Shah2005,
+  Title                    = {Combined diffuse optical spectroscopy and contrast-enhanced magnetic resonance imaging for monitoring breast cancer neoadjuvant chemotherapy: a case study},
+  Author                   = {Shah, Natasha and Gibbs, Jessica and Wolverton, Dulcy and Cerussi, Albert and Hylton, Nola and Tromberg, Bruce J},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2005},
+  Number                   = {5},
+  Pages                    = {051503--051503},
+  Volume                   = {10},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{shalaev_94_1,
@@ -11282,6 +12755,20 @@
   Annote                   = {Folder 2}
 }
 
+@Article{Shang2010,
+  Title                    = {Effects of muscle fiber motion on diffuse correlation spectroscopy blood flow measurements during exercise},
+  Author                   = {Shang, Yu and Symons, TB and Durduran, Turgut and Yodh, Arjun G and Yu, Guoqiang},
+  Journal                  = {Biomedical optics express},
+  Year                     = {2010},
+  Number                   = {2},
+  Pages                    = {500--511},
+  Volume                   = {1},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{sheik-bahae_90_1,
   Title                    = {Sensitive measurement of optical nonlinearities using a single beam},
   Author                   = {Sheik-Bahae, M. and Said, A. A. and Wei, T. H. },
@@ -11341,6 +12828,17 @@
   Annote                   = {Folder 46a}
 }
 
+@Misc{Shewchuk1994,
+  Title                    = {An introduction to the conjugate gradient method without the agonizing pain},
+
+  Author                   = {Shewchuk, Jonathan Richard},
+  Year                     = {1994},
+
+  Owner                    = {bioptical},
+  Publisher                = {Carnegie-Mellon University. Department of Computer Science},
+  Timestamp                = {2015.06.12}
+}
+
 @Article{shirasaki_91_1,
   Title                    = {Noise reduction in quantum nondemolition measurement with a nonlinear {Mach-Zender} interferometer using squeezed vacuum},
   Author                   = {Shirasaki, Masataka and Haus, H. A.},
@@ -11374,14 +12872,32 @@
   Annote                   = {Folder 10}
 }
 
-@Article{siegel_03_1,
+@Article{Siegel1999,
+  Title                    = {Design and evaluation of a continuous-wave diffuse optical tomography system},
+  Author                   = {Siegel, A and Marota, JJ and Boas, David},
+  Journal                  = {Optics express},
+  Year                     = {1999},
+  Number                   = {8},
+  Pages                    = {287--298},
+  Volume                   = {4},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Siegel2003,
   Title                    = {Temporal comparison of functional brain imaging with diffuse optical tomography and fMRI during rat forepaw stimulation},
-  Author                   = {Siegel, A. M. and Culver, J. P. and Mandeville, J. B. and Boas, D. A.},
-  Journal                  = pmedb,
+  Author                   = {Siegel, Andrew M and Culver, Joseph P and Mandeville, Joseph B and Boas, David A},
+  Journal                  = {Physics in medicine and biology},
   Year                     = {2003},
   Number                   = {10},
-  Pages                    = {1391-1403},
-  Volume                   = {48}
+  Pages                    = {1391},
+  Volume                   = {48},
+
+  Owner                    = {Han},
+  Publisher                = {IOP Publishing},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{siewert_07_1,
@@ -11617,6 +13133,20 @@
   Annote                   = {Folder 7b}
 }
 
+@Article{Smith2002,
+  Title                    = {American Cancer Society guidelines for the early detection of cancer},
+  Author                   = {Smith, Robert A and Cokkinides, Vilma and von Eschenbach, Andrew C and Levin, Bernard and Cohen, Carmel and Runowicz, Carolyn D and Sener, Stephen and Saslow, Debbie and Eyre, Harmon J},
+  Journal                  = {CA: a cancer journal for clinicians},
+  Year                     = {2002},
+  Number                   = {1},
+  Pages                    = {8--22},
+  Volume                   = {52},
+
+  Owner                    = {Han},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2015.06.14}
+}
+
 @Article{snieder_91_1,
   Title                    = {An extension of {Backus-Gilbert} theory to nonlinear inverse problems},
   Author                   = {Snieder, Roel},
@@ -11626,6 +13156,20 @@
   Volume                   = {7},
 
   Annote                   = {Folder 49}
+}
+
+@Article{Soliman2010,
+  Title                    = {Functional imaging using diffuse optical spectroscopy of neoadjuvant chemotherapy response in women with locally advanced breast cancer},
+  Author                   = {Soliman, Hany and Gunasekara, Anoma and Rycroft, Mary and Zubovits, Judit and Dent, Rebecca and Spayne, Jacqueline and Yaffe, Martin J and Czarnota, Gregory J},
+  Journal                  = {Clinical Cancer Research},
+  Year                     = {2010},
+  Number                   = {9},
+  Pages                    = {2605--2614},
+  Volume                   = {16},
+
+  Owner                    = {bioptical},
+  Publisher                = {AACR},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{soloviev_03_1,
@@ -11815,15 +13359,18 @@
   Annote                   = {Folder 59b}
 }
 
-@Article{srinivasan_05_1,
+@Article{Srinivasan2005,
   Title                    = {Spectrally constrained chromophore and scattering near-infrared tomography provides quantitative and robust reconstruction},
-  Author                   = {Srinivasan, S. and Pogue, B. and Jiang, S. and Dehghani, H. and Paulsen, K.},
-  Journal                  = ao,
+  Author                   = {Srinivasan, Subhadra and Pogue, Brian W and Jiang, Shudong and Dehghani, Hamid and Paulsen, Keith D},
+  Journal                  = {Applied optics},
   Year                     = {2005},
-  Pages                    = {1858-1869},
+  Number                   = {10},
+  Pages                    = {1858--1869},
   Volume                   = {44},
 
-  Annote                   = {Not printed}
+  Owner                    = {Han},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.07}
 }
 
 @Article{stamnes_01_1,
@@ -12242,6 +13789,20 @@
   Annote                   = {Not Filed}
 }
 
+@Article{Sunar2006,
+  Title                    = {Noninvasive diffuse optical measurement of blood flow and blood oxygenation for monitoring radiation therapy in patients with head and neck tumors: a pilot study},
+  Author                   = {Sunar, Ulas and Quon, Harry and Durduran, Turgut and Zhang, Jun and Du, Juan and Zhou, Chao and Yu, Guoqiang and Choe, Regine and Kilger, Alex and Lustig, Robert and others},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2006},
+  Number                   = {6},
+  Pages                    = {064021--064021},
+  Volume                   = {11},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{swanson_01_1,
   Title                    = {Limits of the small-angle approximation to the radiative transport equation},
   Author                   = {Swanson, Nancy L. and Gehman, Victor M. and Billard, Barton D. and Gennaro, Theresa L.},
@@ -12277,6 +13838,19 @@
   Annote                   = {Folder 10}
 }
 
+@InProceedings{Tajima1990,
+  Title                    = {3-D data acquisition by rainbow range finder},
+  Author                   = {Tajima, Johji and Iwakawa, Masato},
+  Booktitle                = {Pattern Recognition, 1990. Proceedings., 10th International Conference on},
+  Year                     = {1990},
+  Organization             = {IEEE},
+  Pages                    = {309--313},
+  Volume                   = {1},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.15}
+}
+
 @Article{taleb_98_1,
   Title                    = {Optical properties of self-assembled {2D} and {3D} superlattices of silver nanoparticles},
   Author                   = {Taleb, A. and Petit, C. and Pileni, M. P.},
@@ -12306,6 +13880,47 @@
   Volume                   = {16},
 
   Annote                   = {Folder 46b}
+}
+
+@Article{Taroni2010,
+  Title                    = {Noninvasive assessment of breast cancer risk using time-resolved diffuse optical spectroscopy},
+  Author                   = {Taroni, Paola and Pifferi, Antonio and Quarto, Giovanna and Spinelli, Lorenzo and Torricelli, Alessandro and Abbate, Francesca and Villa, Anna and Balestreri, Nicola and Menna, Simona and Cassano, Enrico and others},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2010},
+  Number                   = {6},
+  Pages                    = {060501--060501},
+  Volume                   = {15},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Taroni2003,
+  Title                    = {In vivo absorption and scattering spectroscopy of biological tissues},
+  Author                   = {Taroni, Paola and Pifferi, Antonio and Torricelli, Alessandro and Comelli, Daniela and Cubeddu, Rinaldo},
+  Journal                  = {Photochemical \& Photobiological Sciences},
+  Year                     = {2003},
+  Number                   = {2},
+  Pages                    = {124--129},
+  Volume                   = {2},
+
+  Owner                    = {bioptical},
+  Publisher                = {Royal Society of Chemistry},
+  Timestamp                = {2015.06.17}
+}
+
+@Article{Taroni2015,
+  Title                    = {Breast Tissue Composition and Its Dependence on Demographic Risk Factors for Breast Cancer: Non-Invasive Assessment by Time Domain Diffuse Optical Spectroscopy},
+  Author                   = {Taroni, Paola and Quarto, Giovanna and Pifferi, Antonio and Abbate, Francesca and Balestreri, Nicola and Menna, Simona and Cassano, Enrico and Cubeddu, Rinaldo},
+  Journal                  = {PloS one},
+  Year                     = {2015},
+  Number                   = {6},
+  Pages                    = {e0128941},
+  Volume                   = {10},
+  Owner                    = {Han},
+  Publisher                = {Public Library of Science},
+  Timestamp                = {2015.06.26}
 }
 
 @Article{tarvainen_05_1,
@@ -12350,6 +13965,32 @@
   Number                   = {1},
   Pages                    = {111-120},
   Volume                   = {8}
+}
+
+@Article{Thomsen1998,
+  Title                    = {Physiological and pathological factors of human breast disease that can influence optical diagnosis},
+  Author                   = {Thomsen, Sharon and Tatman, Dereck},
+  Journal                  = {Annals of the New York Academy of Sciences},
+  Year                     = {1998},
+  Number                   = {1},
+  Pages                    = {171--193},
+  Volume                   = {838},
+
+  Owner                    = {bioptical},
+  Publisher                = {Wiley Online Library},
+  Timestamp                = {2015.06.21}
+}
+
+@InProceedings{Thomsen1990,
+  Title                    = {Microscopic correlates of macroscopic optical property changes during thermal coagulation of myocardium},
+  Author                   = {Thomsen, Sharon L and Jacques, Steven L and Flock, Stephen T},
+  Booktitle                = {OE/LASE'90, 14-19 Jan., Los Angeles, CA},
+  Year                     = {1990},
+  Organization             = {International Society for Optics and Photonics},
+  Pages                    = {2--11},
+
+  Owner                    = {bioptical},
+  Timestamp                = {2015.06.21}
 }
 
 @Article{thormahlen_85_1,
@@ -12398,6 +14039,34 @@
   Annote                   = {Folder 10}
 }
 
+@Article{Tromberg2005,
+  Title                    = {Imaging in breast cancer: diffuse optics in breast cancer: detecting tumors in pre-menopausal women and monitoring neoadjuvant chemotherapy},
+  Author                   = {Tromberg, Bruce J and Cerussi, Albert and Shah, Natasha and Compton, Montana and Durkin, Amanda and Hsiang, David and Butler, John and Mehta, Rita},
+  Journal                  = {Breast Cancer Research},
+  Year                     = {2005},
+  Number                   = {6},
+  Pages                    = {279},
+  Volume                   = {7},
+
+  Owner                    = {Han},
+  Publisher                = {BioMed Central Ltd},
+  Timestamp                = {2015.06.14}
+}
+
+@Article{Tromberg2008,
+  Title                    = {Assessing the future of diffuse optical imaging technologies for breast cancer management},
+  Author                   = {Tromberg, Bruce J and Pogue, Brian W and Paulsen, Keith D and Yodh, Arjun G and Boas, David A and Cerussi, Albert E},
+  Journal                  = {Medical physics},
+  Year                     = {2008},
+  Number                   = {6},
+  Pages                    = {2443--2451},
+  Volume                   = {35},
+
+  Owner                    = {bioptical},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.18}
+}
+
 @Article{Troy1996,
   Title                    = {Optical properties of normal and diseased breast tissues: prognosis for optical mammography},
   Author                   = {Troy, Tamara L and Page, David L and Sevick-Muraca, Eva M},
@@ -12406,6 +14075,7 @@
   Number                   = {3},
   Pages                    = {342--355},
   Volume                   = {1},
+
   Owner                    = {bioptical},
   Publisher                = {International Society for Optics and Photonics},
   Timestamp                = {2015.05.23}
@@ -12421,6 +14091,20 @@
   Volume                   = {72},
 
   Annote                   = {Folder 2}
+}
+
+@Article{Tseng2008,
+  Title                    = {In vivo determination of skin near-infrared optical properties using diffuse optical spectroscopy},
+  Author                   = {Tseng, Sheng-Hao and Grant, Alexander and Durkin, Anthony J},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {014016--014016},
+  Volume                   = {13},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{tsukerman_11_1,
@@ -12455,15 +14139,18 @@
   Volume                   = {222}
 }
 
-@Article{turner_05_1,
+@Article{Turner2005,
   Title                    = {Complete-angle projection diffuse optical tomography by use of early photons},
-  Author                   = {Turner, G. and Zacharakis, G. and Soubret, A. and Ripoll, J. and Ntziachristos, V.},
-  Journal                  = ol,
+  Author                   = {Turner, Gordon M and Zacharakis, Giannis and Soubret, Antoine and Ripoll, Jorge and Ntziachristos, Vasilis},
+  Journal                  = {Optics letters},
   Year                     = {2005},
-  Pages                    = {409-411},
+  Number                   = {4},
+  Pages                    = {409--411},
   Volume                   = {30},
 
-  Annote                   = {Folder 34c}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.17}
 }
 
 @Article{twomey_76_1,
@@ -12523,6 +14210,20 @@
   Annote                   = {Folder 46a}
 }
 
+@Article{VanDeVen2010,
+  Title                    = {A novel fluorescent imaging agent for diffuse optical tomography of the breast: first clinical experience in patients},
+  Author                   = {Van De Ven, Stephanie and Wiethoff, Andrea and Nielsen, Tim and Brendel, Bernhard and Van Der Voort, Marjolein and Nachabe, Rami and Van der Mark, Martin and Van Beek, Michiel and Bakker, Leon and Fels, Lueder and others},
+  Journal                  = {Molecular Imaging and Biology},
+  Year                     = {2010},
+  Number                   = {3},
+  Pages                    = {343--348},
+  Volume                   = {12},
+
+  Owner                    = {bioptical},
+  Publisher                = {Springer},
+  Timestamp                = {2015.06.16}
+}
+
 @Article{vanorden_09_1,
   Title                    = {Optical waves on nanoparticle chains coupled with surfaces},
   Author                   = {Van Orden, D. and Fainman, Y. and Lomakin, V.},
@@ -12552,6 +14253,34 @@
   Year                     = {2002},
   Pages                    = {115416},
   Volume                   = {65}
+}
+
+@Article{Ven2009,
+  Title                    = {Diffuse optical tomography of the breast: initial validation in benign cysts},
+  Author                   = {van de Ven, Stephanie and Elias, Sjoerd and Wiethoff, Andrea and van der Voort, Marjolein and Leproux, Anais and Nielsen, Tim and Brendel, Bernhard and Bakker, Leon and van der Mark, Martin and Mali, Willem and others},
+  Journal                  = {Molecular Imaging and Biology},
+  Year                     = {2009},
+  Number                   = {2},
+  Pages                    = {64--70},
+  Volume                   = {11},
+
+  Owner                    = {bioptical},
+  Publisher                = {Springer},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Venugopal2012,
+  Title                    = {Recent advances in optical mammography},
+  Author                   = {Venugopal, Vivek and Intes, Xavier},
+  Journal                  = {Current Medical Imaging Reviews},
+  Year                     = {2012},
+  Number                   = {3},
+  Pages                    = {244--259},
+  Volume                   = {8},
+
+  Owner                    = {bioptical},
+  Publisher                = {Bentham Science Publishers},
+  Timestamp                = {2015.06.07}
 }
 
 @Article{venugopalan_98_1,
@@ -12775,6 +14504,20 @@
   Annote                   = {Folder 83}
 }
 
+@Article{Wang2010,
+  Title                    = {In vivo quantitative imaging of normal and cancerous breast tissue using broadband diffuse optical tomography},
+  Author                   = {Wang, Jia and Jiang, Shudong and Li, Zhongze and Barth, Richard J and Kaufman, Peter A and Pogue, Brian W and Paulsen, Keith D and others},
+  Journal                  = {Medical physics},
+  Year                     = {2010},
+  Number                   = {7},
+  Pages                    = {3715--3724},
+  Volume                   = {37},
+
+  Owner                    = {bioptical},
+  Publisher                = {American Association of Physicists in Medicine},
+  Timestamp                = {2015.06.18}
+}
+
 @Article{wang_91_1,
   Title                    = {Ballistic 2-D imaging through scattering walls using an ultrafast optical Kerr gate},
   Author                   = {Wang, L. and Ho, P. P. and Liu, C. and Zhang, G. and Alfano, R. R.},
@@ -12793,6 +14536,16 @@
   Volume                   = {406},
 
   Annote                   = {Folder 77}
+}
+
+@Book{Wang2012,
+  Title                    = {Biomedical optics: principles and imaging},
+  Author                   = {Wang, Lihong V and Wu, Hsin-i},
+  Publisher                = {John Wiley \& Sons},
+  Year                     = {2012},
+
+  Owner                    = {Han},
+  Timestamp                = {2015.06.07}
 }
 
 @Article{wang-w_05-1,
@@ -12817,16 +14570,18 @@
   Annote                   = {Folder 83}
 }
 
-@Article{wang_05_1,
-  Title                    = {Experimental demonstration of an analytic method for image reconstruction in optical tomography with large data sets},
-  Author                   = {Wang, Z.-M. and Panasyuk, G. Y. and Markel, V. A. and Schotland, J. C.},
-  Journal                  = ol,
+@Article{Wang2005,
+  Title                    = {Experimental demonstration of an analytic method for image reconstruction in optical diffusion tomography with large data sets},
+  Author                   = {Wang, Zheng-Min and Panasyuk, George Y and Markel, Vadim A and Schotland, John C},
+  Journal                  = {Optics letters},
   Year                     = {2005},
   Number                   = {24},
-  Pages                    = {3338-3340},
+  Pages                    = {3338--3340},
   Volume                   = {30},
 
-  Annote                   = {Folder 1}
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{warren_93_1,
@@ -12900,6 +14655,20 @@
   Annote                   = {Folder 49}
 }
 
+@Article{Weidner1992,
+  Title                    = {Tumor angiogenesis: a new significant and independent prognostic indicator in early-stage breast carcinoma},
+  Author                   = {Weidner, Noel and Folkman, Judah and Pozza, Franco and Bevilacqua, Pierantonio and Allred, Elizabeth N and Moore, Dan H and Meli, Salvatore and Gasparini, Giampietro},
+  Journal                  = {Journal of the National Cancer Institute},
+  Year                     = {1992},
+  Number                   = {24},
+  Pages                    = {1875--1887},
+  Volume                   = {84},
+
+  Owner                    = {bioptical},
+  Publisher                = {Oxford University Press},
+  Timestamp                = {2015.06.21}
+}
+
 @Article{weissleder_03_1,
   Title                    = {Shedding light onto live molecular targets},
   Author                   = {Weissleder, R. and Ntziachristos, V.},
@@ -12951,6 +14720,20 @@
   Number                   = {27},
   Pages                    = {6853-6863},
   Volume                   = {106}
+}
+
+@Article{White1987,
+  Title                    = {Average soft-tissue and bone models for use in radiation dosimetry},
+  Author                   = {White, DR and Woodard, HQ and Hammond, SM},
+  Journal                  = {The British journal of radiology},
+  Year                     = {1987},
+  Number                   = {717},
+  Pages                    = {907--913},
+  Volume                   = {60},
+
+  Owner                    = {bioptical},
+  Publisher                = {The British Institute of Radiology},
+  Timestamp                = {2015.06.06}
 }
 
 @Article{white_79_1,
@@ -13042,6 +14825,20 @@
   Volume                   = {47},
 
   Annote                   = {Folder 3}
+}
+
+@Article{Woodard1986,
+  Title                    = {The composition of body tissues},
+  Author                   = {Woodard, HQ and White, DR},
+  Journal                  = {The British journal of radiology},
+  Year                     = {1986},
+  Number                   = {708},
+  Pages                    = {1209--1218},
+  Volume                   = {59},
+
+  Owner                    = {bioptical},
+  Publisher                = {The British Institute of Radiology},
+  Timestamp                = {2015.06.06}
 }
 
 @Article{wu_11_1,
@@ -13146,16 +14943,18 @@
   Annote                   = {Folder 70}
 }
 
-@Article{xu_03_1,
+@Article{Xu2003,
   Title                    = {Near-infrared imaging in the small animal brain: optimization of fiber positions},
-  Author                   = {Xu, H. and Dehghani, H. and Pogue, B. W. and Springett, R. and Paulsen, K. D. and Dunn, J. F.},
-  Journal                  = jbo,
+  Author                   = {Xu, Heng and Dehghani, Hamid and Pogue, Brian W and Springett, Roger and Paulsen, Keith D and Dunn, Jeff F},
+  Journal                  = {Journal of Biomedical Optics},
   Year                     = {2003},
   Number                   = {1},
-  Pages                    = {102-110 },
+  Pages                    = {102--110},
   Volume                   = {8},
 
-  Annote                   = {To be printed}
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.18}
 }
 
 @Article{xu_02_1,
@@ -13179,6 +14978,21 @@
   Volume                   = {18},
 
   Annote                   = {Folder 63}
+}
+
+@Article{Xu2007,
+  Title                    = {Development of a handheld near-infrared imager for dynamic characterization of in vivo biological tissue systems},
+  Author                   = {Xu, Ronald X and Qiang, Bo and Mao, Jimmy J and Povoski, Stephen P},
+  Journal                  = {Applied optics},
+  Year                     = {2007},
+  Number                   = {30},
+  Pages                    = {7442--7451},
+  Volume                   = {46},
+
+  Keywords                 = {DOS, handheld},
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{xu_03_2,
@@ -13212,6 +15026,20 @@
   Volume                   = {70},
 
   Annote                   = {Folder 7a}
+}
+
+@Article{Yalavarthy2007,
+  Title                    = {Structural information within regularization matrices improves near infrared diffuse optical tomography},
+  Author                   = {Yalavarthy, Phaneendra K and Pogue, Brian W and Dehghani, Hamid and Carpenter, Colin M and Jiang, Shudong and Paulsen, Keith D},
+  Journal                  = {Optics Express},
+  Year                     = {2007},
+  Number                   = {13},
+  Pages                    = {8043--8058},
+  Volume                   = {15},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{yao_08_1,
@@ -13273,16 +15101,18 @@
   Annote                   = {Folder 34c}
 }
 
-@Article{yates_05_1,
+@Article{Yates2005,
   Title                    = {Time-resolved optical mammography using a liquid coupled interface},
-  Author                   = {Yates, T. and Hebden, J. and Gibson, A. and Enfield, L. and Everdell, N. and Arridge, S. and Delpy, D.},
-  Journal                  = jbo,
+  Author                   = {Yates, Tara D and Hebden, Jeremy C and Gibson, Adam P and Enfield, Louise and Everdell, Nicholas L and Arridge, Simon R and Delpy, David T},
+  Journal                  = {Journal of biomedical optics},
   Year                     = {2005},
   Number                   = {5},
-  Pages                    = {054011},
+  Pages                    = {054011--054011},
   Volume                   = {10},
 
-  Annote                   = {Not printed}
+  Owner                    = {Han},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.14}
 }
 
 @Article{ye_01_1,
@@ -13321,16 +15151,18 @@
   Annote                   = {Folder 79}
 }
 
-@Article{yodh_95_1,
-  Title                    = {Spectroscopy and imaging with diffuse light},
-  Author                   = {Yodh, A. and Chance, B.},
-  Journal                  = pt,
+@Article{Yodh1995,
+  Title                    = {Spectroscopy and imaging with diffusing light},
+  Author                   = {Yodh, Arjun and Chance, Britton},
+  Journal                  = {Physics Today},
   Year                     = {1995},
+  Number                   = {3},
+  Pages                    = {34--41},
+  Volume                   = {48},
 
-  Month                    = {March},
-  Pages                    = {34-40},
-
-  Annote                   = {Folder 34a}
+  Owner                    = {bioptical},
+  Publisher                = {[New York, American Institute of Physics]},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{yoo_91_1,
@@ -13354,14 +15186,88 @@
   Annote                   = {Folder }
 }
 
-@Article{yu_03_1,
+@Article{Yu2003,
   Title                    = {Frequency-domain multiplexing system for in vivo diffuse light measurements of rapid cerebral hemodynamics},
-  Author                   = {Yu, G. Q. and Durduran, T. and Furuya, D. and Greenberg, J. H. and Yodh, A. G.},
-  Journal                  = ao,
+  Author                   = {Yu, Guoqiang and Durduran, Turgut and Furuya, Daisuke and Greenberg, Joel H and Yodh, Arjun G},
+  Journal                  = {Applied optics},
   Year                     = {2003},
   Number                   = {16},
-  Pages                    = {2931-2939},
-  Volume                   = {42}
+  Pages                    = {2931--2939},
+  Volume                   = {42},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Yu2005a,
+  Title                    = {Time-dependent blood flow and oxygenation in human skeletal muscles measured with noninvasive near-infrared diffuse optical spectroscopies},
+  Author                   = {Yu, Guoqiang and Durduran, Turgut and Lech, Gwen and Zhou, Chao and Chance, Britton and Mohler, Emile R and Yodh, Arjun G},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2005},
+  Number                   = {2},
+  Pages                    = {024027--02402712},
+  Volume                   = {10},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.18}
+}
+
+@Article{Yu2005b,
+  Title                    = {Time-dependent blood flow and oxygenation in human skeletal muscles measured with noninvasive near-infrared diffuse optical spectroscopies},
+  Author                   = {Yu, Guoqiang and Durduran, Turgut and Lech, Gwen and Zhou, Chao and Chance, Britton and Mohler, Emile R and Yodh, Arjun G},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2005},
+  Number                   = {2},
+  Pages                    = {024027--02402712},
+  Volume                   = {10},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Yu2005,
+  Title                    = {Noninvasive monitoring of murine tumor blood flow during and after photodynamic therapy provides early assessment of therapeutic efficacy},
+  Author                   = {Yu, Guoqiang and Durduran, Turgut and Zhou, Chao and Wang, Hsing-Wen and Putt, Mary E and Saunders, H Mark and Sehgal, Chandra M and Glatstein, Eli and Yodh, Arjun G and Busch, Theresa M},
+  Journal                  = {Clinical cancer research},
+  Year                     = {2005},
+  Number                   = {9},
+  Pages                    = {3543--3552},
+  Volume                   = {11},
+
+  Owner                    = {bioptical},
+  Publisher                = {AACR},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Yu2005c,
+  Title                    = {Noninvasive monitoring of murine tumor blood flow during and after photodynamic therapy provides early assessment of therapeutic efficacy},
+  Author                   = {Yu, Guoqiang and Durduran, Turgut and Zhou, Chao and Wang, Hsing-Wen and Putt, Mary E and Saunders, H Mark and Sehgal, Chandra M and Glatstein, Eli and Yodh, Arjun G and Busch, Theresa M},
+  Journal                  = {Clinical cancer research},
+  Year                     = {2005},
+  Number                   = {9},
+  Pages                    = {3543--3552},
+  Volume                   = {11},
+
+  Owner                    = {bioptical},
+  Publisher                = {AACR},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Yu2007,
+  Title                    = {Validation of diffuse correlation spectroscopy for muscle blood flow with concurrent arterial spin labeled perfusion MRI},
+  Author                   = {Yu, Guoqiang and Floyd, Thomas F and Durduran, Turgut and Zhou, Chao and Wang, Jiongjiong and Detre, John A and Yodh, Arjun G},
+  Journal                  = {Optics express},
+  Year                     = {2007},
+  Number                   = {3},
+  Pages                    = {1064--1075},
+  Volume                   = {15},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.18}
 }
 
 @Article{yu_93_1,
@@ -13409,6 +15315,20 @@
   Volume                   = {57},
 
   Annote                   = {Folder 15}
+}
+
+@Article{Zaman2007,
+  Title                    = {In vivo detection of gold nanoshells in tumors using diffuse optical spectroscopy},
+  Author                   = {Zaman, Raiyan T and Diagaradjane, Parmeswaran and Wang, James C and Schwartz, Jon and Rajaram, Narasimhan and Gill-Sharp, Kelly L and Cho, Sang H and Rylander III, Henry Grady and Payne, J Donald and Krishnan, Sunil and others},
+  Journal                  = {Selected Topics in Quantum Electronics, IEEE Journal of},
+  Year                     = {2007},
+  Number                   = {6},
+  Pages                    = {1715--1720},
+  Volume                   = {13},
+
+  Owner                    = {bioptical},
+  Publisher                = {IEEE},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{zekri_00_1,
@@ -13466,6 +15386,34 @@
   Annote                   = {Folder 28}
 }
 
+@Article{Zhang2005,
+  Title                    = {Coregistered tomographic x-ray and optical breast imaging: initial results},
+  Author                   = {Zhang, Quan and Brukilacchio, Thomas J and Li, Ang and Stott, Jonathan J and Chaves, Tina and Hillman, Elizabeth and Wu, Tao and Chorlton, MaryAnn and Rafferty, Elizabeth and Moore, Richard H and others},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2005},
+  Number                   = {2},
+  Pages                    = {024033--0240339},
+  Volume                   = {10},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Zhang2010,
+  Title                    = {Flexible 3D shape measurement using projector defocusing: extended measurement range},
+  Author                   = {Zhang, Song},
+  Journal                  = {Optics letters},
+  Year                     = {2010},
+  Number                   = {7},
+  Pages                    = {934--936},
+  Volume                   = {35},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.05.23}
+}
+
 @Article{zhang_08_1,
   Title                    = {Plasmon-induced transparency in metamaterials},
   Author                   = {Zhang, S. and Genov, D. A. and Wang, Y. and Liu, M. and Zhang, X.},
@@ -13486,7 +15434,6 @@
   Pages                    = {083601--083601},
   Volume                   = {45},
 
-  __markedentry            = {[bioptical:]},
   Owner                    = {bioptical},
   Publisher                = {International Society for Optics and Photonics},
   Timestamp                = {2015.05.23}
@@ -13526,6 +15473,18 @@
   Annote                   = {Folder 82}
 }
 
+@InProceedings{Zhao2015,
+  Title                    = {Systematic optimization of MRI guided near infrared diffuse optical spectroscopy in breast},
+  Author                   = {Zhao, Yan and Mastanduno, Michael A and Jiang, Shudong and El-Ghussein, Fadi and Xu, Junqing and Gui, Jiang and Pogue, Brian W and Paulsen, Keith D},
+  Booktitle                = {SPIE BiOS},
+  Year                     = {2015},
+  Organization             = {International Society for Optics and Photonics},
+  Pages                    = {931605--931605},
+
+  Owner                    = {Han},
+  Timestamp                = {2015.06.14}
+}
+
 @Article{zheng_11_1,
   Title                    = {Asymmetric Propagation of Optical Signals in Graded Plasmonic Chains},
   Author                   = {Zheng, M. J. and Lei, D. Y. and Yakubo, K. and Yu, K. W.},
@@ -13535,6 +15494,48 @@
   Volume                   = {6},
 
   Annote                   = {Not Filed}
+}
+
+@Article{Zhou2007,
+  Title                    = {Diffuse optical monitoring of blood flow and oxygenation in human breast cancer during early stages of neoadjuvant chemotherapy},
+  Author                   = {Zhou, Chao and Choe, Regine and Shah, Natasha and Durduran, Turgut and Yu, Guoqiang and Durkin, Amanda and Hsiang, David and Mehta, Rita and Butler, John and Cerussi, Albert and others},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2007},
+  Number                   = {5},
+  Pages                    = {051903--051903},
+  Volume                   = {12},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Zhou2007a,
+  Title                    = {Diffuse optical monitoring of blood flow and oxygenation in human breast cancer during early stages of neoadjuvant chemotherapy},
+  Author                   = {Zhou, Chao and Choe, Regine and Shah, Natasha and Durduran, Turgut and Yu, Guoqiang and Durkin, Amanda and Hsiang, David and Mehta, Rita and Butler, John and Cerussi, Albert and others},
+  Journal                  = {Journal of biomedical optics},
+  Year                     = {2007},
+  Number                   = {5},
+  Pages                    = {051903--051903},
+  Volume                   = {12},
+
+  Owner                    = {bioptical},
+  Publisher                = {International Society for Optics and Photonics},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Zhou2006,
+  Title                    = {Diffuse optical correlation tomography of cerebral blood flow during cortical spreading depression in rat brain},
+  Author                   = {Zhou, Chao and Yu, Guoqiang and Furuya, Daisuke and Greenberg, Joel and Yodh, Arjun and Durduran, Turgut},
+  Journal                  = {Optics express},
+  Year                     = {2006},
+  Number                   = {3},
+  Pages                    = {1125--1144},
+  Volume                   = {14},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{zhu_08_1,
@@ -13570,6 +15571,20 @@
   Annote                   = {Folder 33}
 }
 
+@Article{Zhu2003,
+  Title                    = {Imaging tumor angiogenesis by use of combined near-infrared diffusive light and ultrasound},
+  Author                   = {Zhu, Quing and Chen, NanGuang and Kurtzman, Scott H},
+  Journal                  = {Optics letters},
+  Year                     = {2003},
+  Number                   = {5},
+  Pages                    = {337--339},
+  Volume                   = {28},
+
+  Owner                    = {bioptical},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2015.06.21}
+}
+
 @Article{Zhu1999,
   Title                    = {Imager that combines near-infrared diffusive light and ultrasound},
   Author                   = {Zhu, Q and Durduran, T and Ntziachristos, V and Holboke, M and Yodh, AG},
@@ -13578,9 +15593,38 @@
   Number                   = {15},
   Pages                    = {1050--1052},
   Volume                   = {24},
+
   Owner                    = {bioptical},
   Publisher                = {Optical Society of America},
-  Timestamp                = {2015.05.23}
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Zhu2005,
+  Title                    = {Utilizing optical tomography with ultrasound localization to image heterogeneous hemoglobin distribution in large breast cancers},
+  Author                   = {Zhu, Quing and Kurtzman, Scott H and Hegde, Poornima and Tannenbaum, Susan and Kane, Mark and Huang, Minming and Chen, Nan Guang and Jagjivan, Bipin and Zarfos, Kristen},
+  Journal                  = {Neoplasia},
+  Year                     = {2005},
+  Number                   = {3},
+  Pages                    = {263--270},
+  Volume                   = {7},
+
+  Owner                    = {bioptical},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.06.16}
+}
+
+@Article{Zhu2008,
+  Title                    = {Noninvasive monitoring of breast cancer during neoadjuvant chemotherapy using optical tomography with ultrasound localization},
+  Author                   = {Zhu, Quing and Tannenbaum, Susan and Hegde, Poornima and Kane, Mark and Xu, Chen and Kurtzman, Scott H},
+  Journal                  = {Neoplasia},
+  Year                     = {2008},
+  Number                   = {10},
+  Pages                    = {1028--1040},
+  Volume                   = {10},
+
+  Owner                    = {bioptical},
+  Publisher                = {Elsevier},
+  Timestamp                = {2015.06.16}
 }
 
 @Article{zhu_03_1,

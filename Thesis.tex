@@ -1,6 +1,6 @@
 \documentclass[11pt]{report}
 
-\usepackage{./packages/penndiss2}
+\usepackage{./packages/penndiss3}
 \usepackage{times}
 \usepackage{tabularx}
 \usepackage{epsfig}
@@ -13,10 +13,14 @@
 \usepackage{subfigure}
 \usepackage{url}
 \usepackage{gloss}
-
+\usepackage{csquotes}
 \usepackage{float}
+\usepackage{cite}
+\usepackage{enumitem}
+\usepackage[section]{placeins}
+\usepackage[subsection]{placeins}
 \usepackage[caption = false]{subfig}
-\usepackage[demo]{graphicx}
+%\usepackage[demo]{graphicx}
 
 \usepackage[top=1.2in,right=1.2in,left=1.5in,bottom=1.4in]{geometry} %needed to get margins right
 
@@ -25,31 +29,47 @@
 \subsection*{{{{\large \em \bf || #1 ||}}}}}
 \makegloss %to make a glossary
 
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.85}
+\renewcommand{\textfraction}{.10}
+\renewcommand{\floatpagefraction}{.85}
+\renewcommand{\dbltopfraction}{.85}
+\renewcommand{\dblfloatpagefraction}{.85}
+\renewcommand{\floatpagefraction}{.85}
+\renewcommand{\dbltopfraction}{.85}
+\renewcommand{\dblfloatpagefraction}{.85}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+
 \newcommand{\comment}[1]{}
+\newcommand{\mua}{\mu_a}
+\newcommand{\musp}{\mu_s^{\prime}}
+\newcommand{\mbf}[1]{\mathbf{#1}}
 
 \begin{document}
-
-\title{Clinical Applications of Diffuse Optical Tomography in Breast Cancer Imaging}
-\author{Han Yong Ban}
+\thispagestyle{empty}
+\title{Spatially-dense, Multi-spectral, Frequency-domain Diffuse Optical Tomography of Breast Cancer}
+\author{Han Y. Ban}
 \submitdate{July 2015} \dept{Physics and Astronomy}
-\superviser{Arjun G. Yodh, James M. Skinner Professor of Science, Professor of Physics} 
-\groupchair{Maria Drndic, Professor of Physics}
-\memberA{Frank Moscatelli, Professor of Physics}
-\memberB{TBD, Professor of Physics}
-\memberC{TBD, Professor of Physics}
-\memberD{TBD, Professor of Physics}
+\superviser{Arjun G. Yodh, Professor of Physics and Astronomy} 
+\groupchair{Marija Drndic, Professor of Physics and Astronomy}
+\memberA{Masao Sato, Professor of Physics and Astronomy}
+\memberB{Timothy Zhu, Professor of Radiation Oncology}
+\memberC{Ravinder Reddy, Professor of Radiology}
+\memberD{Frank Moscatelli, Professor of Physics and Astronomy}
+
 
 \figurespagetrue
 \tablespagetrue
-
+\raggedbottom
 \beforepreface
-%\dedicationsection{./front/dedication}
-%\acknowlsection{./front/acknowledgement}
-
-%\clearpage
-%\pagebreak
-
-%\abstractsection{./front/abstract}
+\dedicationsection{./Preface/Dedication}
+\acknowlsection{./Preface/Acknowledgement}
+\clearpage
+\pagebreak
+\abstractsection{./Preface/Abstract}
 \afterpreface
 
 \input{./Chapters/1_Introduction}
@@ -57,14 +77,14 @@
 \input{./Chapters/3_Chestwall}
 \input{./Chapters/4_Gen3}
 \input{./Chapters/5_Summary_and_Conclusion}
+\input{./Appendix/A_Gen3Software}
 
-%\chapter{Benchtop Imaging Experiments}
-%\input{./sections/chestwall}
-%\input{./sections/appendix} 
+
 
 \printgloss{../../../bibtexdatabase/glossarymastercopy}
 
 \addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{unsrt}
 \bibliographystyle{plain}
 \bibliography{Thesis}
 

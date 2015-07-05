@@ -16,44 +16,44 @@
  -1ex minus -.2ex}{1.5ex plus .2ex}{\normalsize\bf}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcounter{appdx}
-\newcounter{subappdx}[appdx]
-\setcounter{appdx}{0}
-\setcounter{subappdx}{1}
+%\newcounter{appdx}
+%\newcounter{subappdx}[appdx]
+%\setcounter{appdx}{0}
+%\setcounter{subappdx}{1}
 
-\def\theappendix{\Alph{appdx}}
-\def\thesubappendix{\arabic{subappdx}}
-\def\@appdxapp{Appendix}
-\def\l@appendix{\@dottedtocline{1}{1.5em}{2.3em}}
-\def\appendixmark#1{}
+%\def\theappendix{\Alph{appdx}}
+%\def\thesubappendix{\arabic{subappdx}}
+%\def\@appdxapp{Appendix}
+%\def\l@appendix{\@dottedtocline{1}{1.5em}{2.3em}}
+%\def\appendixmark#1{}
 
-\def\@makeappendixhead#1{ \vspace*{50pt} { \parindent 0pt \raggedright
- \ifnum \c@secnumdepth >\m@ne \huge\bf \@appdxapp{} \theappendix \par
- \vskip 20pt \fi \LARGE \bf #1\par
- \nobreak \vskip 40pt } }
+%\def\@makeappendixhead#1{ \vspace*{50pt} { \parindent 0pt \raggedright
+% \ifnum \c@secnumdepth >\m@ne \huge\bf \@appdxapp{} \theappendix \par
+% \vskip 20pt \fi \LARGE \bf #1\par
+% \nobreak \vskip 40pt } }
 
-\def\subappendix#1{\refstepcounter{subappdx}\section{#1}}
+%\def\subappendix#1{\refstepcounter{subappdx}\section{#1}}
 
-\def\@appendix[#1]#2{
-   \def\thesection{\theappendix.\arabic{subappdx}}  
-      \refstepcounter{appdx}
-      \refstepcounter{chapter}                 %reset so \section numbers correctly
-      \typeout{\@appdxapp\space\theappendix.}
-      \addcontentsline{toc}{chapter}{\protect\numberline{\theappendix}#1}
+%\def\@appendix[#1]#2{
+%   \def\thesection{\theappendix.\arabic{subappdx}}  
+%      \refstepcounter{appdx}
+%      \refstepcounter{chapter}                 %reset so \section numbers correctly
+%      \typeout{\@appdxapp\space\theappendix.}
+%      \addcontentsline{toc}{chapter}{\protect\numberline{\theappendix}#1}
 %   \else
 %      \addcontentsline{toc}{chapter}{#1}
 %   \fi
-   \appendixmark{#1}
-   \addtocontents{lof}{\protect\addvspace{10pt}}
-   \addtocontents{lot}{\protect\addvspace{10pt}}
-   \@afterheading
-   \@makeappendixhead{#2}
+%   \appendixmark{#1}
+%   \addtocontents{lof}{\protect\addvspace{10pt}}
+%   \addtocontents{lot}{\protect\addvspace{10pt}}
+%   \@afterheading
+%   \@makeappendixhead{#2}
 }   % end of \@appendix
 
-\def\@sappendix#1{\@afterheading}
+%\def\@sappendix#1{\@afterheading}
 
-\def\appendix{\clearpage \thispagestyle{plain} \global\@topnum\z@
-    \@afterindentfalse \secdef\@appendix\@sappendix}
+%\def\appendix{\clearpage \thispagestyle{plain} \global\@topnum\z@
+%    \@afterindentfalse \secdef\@appendix\@sappendix}
 
 % Modify the table of contents depth \tocdepth and \secnumdepth so
 % that 1) *numbered* sections go down to include \subsubsection
@@ -158,10 +158,8 @@
                 \vskip.001in
                 {\LARGE\expandafter{\@dept}}
                 \vskip .1in
-                Presented to the Faculties of the University of Pennsylvania\\
-								in\\ 
-								Partial Fulfillment of the Requirements for the 
-								\\Degree of Doctor of Philosophy
+                Presented to the Faculties of the University of Pennsylvania in Partial\\
+								Fulfillment of the Requirements for the Degree of Doctor of Philosophy
                 \vskip0.001in
                 \centerline{\@copyrightyear}
         \end{center}
@@ -171,15 +169,17 @@
         \vskip.05in%
         \noindent\@superviser \\
         Supervisor of Dissertation\\
-        \vskip0.4in
-        \hrule width7cm
+        \vskip0.1in
+        \hrule width7cm \\
         \vskip.05in%
         \noindent\@groupchair \\
         Graduate Group Chairperson \\
-        \vskip0.001in
+        \vskip.001in
         \noindent Dissertation Committee \\
-			  \noindent\@memberA \indent\@memberB \\
-        \noindent\@memberC \indent \indent \@memberD \\
+	    \noindent\@memberA\\
+	    \noindent\@memberB\\ 
+        \noindent\@memberC\\
+        \noindent\@memberD \\
         }
 
 \def\copyrightpage{%

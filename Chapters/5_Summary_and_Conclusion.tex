@@ -1,58 +1,16 @@
-\chapter{Summary and Conclusion}
+\chapter{Summary}
+In this thesis, I have presented research that further develops Diffuse Optical Tomography for clinical breast imaging. This research was challenging because of its many facets, which ranged from subtle optoelectronics in the physics instrumentation to complexities of the diffuse optical inverse problem algorithms and computation to our evolving understanding of breast cancer biophysics and biophotonics.  Ultimately, the clinical grade instrumentation we have built is nonionizing (safe), low-cost (commercially attractive), high-throughput (accessible), and scalable (flexible). On the clinical side, DOT has many possible niches. The non-invasive optical modality, for example, is attractive for medical niches such as detection and characterization of cancer in the radiographically dense breast (e.g., for fibrotic breasts characteristic of, but not limited to, young women), for repeated imaging in populations with genetic predisposition to develop breast cancer (e.g., populations with BRCA mutations), for detection of some breast cancer phenotypes that are sometimes been difficult to observe with traditional mammography (e.g., some DCIS lesions), for use in combination with other techniques to improve diagnosis (e.g., multi-modal imaging), for tracking functional information about cancer response in neoadjuvant chemotherapy monitoring (e.g., to adjust the drug regimen), and more.
 
-\section{Summary of main results}
+In Chapter 3, I used phantom experiments to systematically investigate the effects of the chest wall on diffuse optical tomography (DOT) in the standard parallel-plate (slab) breast imaging geometry. Resolution and image quality was studied using a spatially-dense (source-detector) data set and linear reconstruction methods. This research lead us to several promising conclusions. First, although the presence of the chest wall phantom in close proximity to the target complicates the inverse problem, we are able to reconstruct images of absorption contrast with CW data. Further, we showed that the most severe effects of the chest wall can be rectified by appropriate data restriction in conjunction with linear image reconstruction. In the work, we carried out both fast reconstructions using an analytical reconstruction method, and we developed and experimentally verified an algebraic image reconstruction which turned out to be well suited for use with these data sets that are compromised (and restricted versions of these data) by the presence of the chest wall.
 
+In the future, we will want to consider the research from Chapter 3 in a clinical context. In practical clinical applications of DOT, the location of the chest wall relative to the sources and detectors should be known, and therefore data restriction can be applied {\em in vivo}. Further, the fast reconstruction times of the linear methods, and the ever improving computation and memory costs, make real-time DOT imaging an appropriate goal in the clinical setting. If successful (and work remains to achieve this goal), then it should be possible to develop data-driven algorithms for data rejection in the clinical imagers which could utilize real-time adjustment of patient position, etc. Of course, further exploration of these datasets with nonlinear inversion methods should be interesting too. Additionally, my research points to the need to explore applications of optical projection imaging, wherein the 3D tomographic images slices are averaged over the whole depth of the plane-parallel (slab) sample; projection imaging appears to have real potential. Our research found that the projection images are much less sensitive to systematic errors typically encountered in image reconstruction, i.e., compared to the individual reconstructed slices; reconstructed slices often exhibit severe image artifacts, especially near boundaries. The projection images, by contrast, were found to be free of many of these artifacts and to display the targets clearly. (Recall that projection images still require 3D DOT.) This finding may be significant since the optical projection image is rather similar to x-ray radiographic projection, yet it displays optical contrast that is correlated to functional information about tissues (and can possibly be acquired real time). Interestingly, with my clinical instrument, discussed in Chapter 4, it is possible to carry out breast imaging in two different orthogonal geometries (frontal and sagittal); thus, with two orthogonal image projections (used in tandem), more accurate renderings of the tumor size, shape and character will be possible with fewer artifacts. Finally, it could be very interesting to implement this projection image data as a prior (i.e., initial guess) for nonlinear reconstructions.
 
-\subsection{Chestwall}
+In Chapter 4, I described the instrumentation that I built for clinical breast DOT in great detail. The instrument provides unique imaging opportunities for the field because it has a spatially dense ($10^7$) source-detector pair arrangement and multi-spectral/frequency-domain data types. The result of my effort is the most data-intensive stand-alone DOT instrument yet reported. The instrument was characterized and validated with tissue phantoms. Further, first cancer patient data has been obtained. All of this initial data is now being used for reconstruction and hardware optimization.
 
-We have used phantom experiments to investigate systematically the
-effects of the chest wall on diffusion optical tomography (DOT) of the
-breast.  The results lead us to several promising conclusions.
+Specifically, for our particular data type (frequency-domain) and source-detector geometry (slab), we explored a small subset of possible reconstruction algorithms with various regularization techniques (Tikhonov, Perona-Malik, Total Variation) in 2D and 3D. We carried out studies with simulated data to test multi-chromophore and simultaneous absorption/scattering reconstructions. We then tested the whole combination of instrumentation and algorithms (i.e., the best versions of the algorithms that we found in the studies of simulated data) using tissue phantoms. In the process, we learned that with separate (i.e.., independent) regularization (TV regularization) for absorption and scattering, the properties and resolution of the reconstructed absorption targets were improved. We are also learning that tissue phantom and clinical problems are different enough to warrant different reconstruction approaches, because the target objects with sharp versus smooth optical transitions are imaged differently when employing different reconstruction approaches. 
 
-First, we have found that, when absorption contrast is of interest,
-simple continuous-wave instrumentation with linearized inversion can
-suffice. This finding was obtained in spite of the presence of the
-chest wall phantom in close proximity to the target, which (i) renders
-the inverse problem nonlinear and (ii) differs from the background
-Intralipid and the target not only in absorption but also in
-scattering properties.  Generally, under the conditions stated above,
-time- or frequency-resolved measurements and nonlinear
-image-reconstruction methods are required. We, however, have been able
-to bypass these complications by appropriately restricting the data
-points used in the reconstruction. We note that in
-  clinical applications of DOT, the location of the chest wall
-  relative to the sources and detectors is usually known;
-  therefore, the approach of this paper to data restriction can
-  be applied {\em in vivo}. Work remains,however, to optimize these approaches. Devising the latter, for example, may require more sophisticated
-  and/or data-driven algorithms for data rejection, as well as
-  experimentation {\em in vivo}. In this paper, we have demonstrated that
-  the rather severe effects of the chest wall can, in principle, be
-  rectified by appropriate data restriction in conjunction with a
-  linear image reconstruction. The paper shows that, by means of properly restricting the data points used in image
-reconstruction, it is possible to resolve a small absorptive target in
-the vicinity of a spatially and optically large inhomogeneity
-and that the quality of the reconstruction is almost
-  unaffected by the chest wall.
+This research represents the beginning of the clinical translation process. Thus far only a small number of issues in the vast phase-space of our reconstruction software and in our Gen3 imager hardware has been explored. In the future, we will investigate the effects of combining multiple regularization schemes, e.g., wherein some are spatially variant to reduce artifacts that arise near the source and detector planes, and we will explore other regularization parameter spaces and iterative image reconstruction processes. To try and further reduce these source and detector plane boundary effects, we will try reconstructing source coupling coefficients and/or the boundary conditions as a free parameter. Using the index of refraction as an additional parameter could also yield interesting physiological information and improve reconstructions. In addition, the use of scattering or absorption only reconstructions as an image prior for a full reconstruction is also an idea that is being explored.
 
-Interestingly, we have also found (see Figs.~5 and 6) that the image contrast,
-when averaged over the depth of a plane-parallel sample (we refer to
-this quantity as the projection), is not as sensitive to
-systematic errors encountered in image reconstruction as the
-individual slices drawn through the medium. Thus, under certain
-conditions, the nonlinearity of the inverse problem and the presence
-of a scattering contrast render our image reconstruction methods
-inadequate. Reconstructed slices show severe image artifacts in this
-case. The projection, however, is free from these artifacts and
-displays the target clearly. This finding may be significant since a
-projection of the type just discussed is similar to the usual
-radiographic projection, yet it displays the contrast specific to the
-near-infrared spectral range.
+In a different vein, and importantly, we also learned that upgrades in the instrument signal-to-noise ratio (SNR) will translate to improved reconstruction fidelity. To this end, we will explore hardware improvements such as pixel binning to decrease readout noise, increasing the cross-correlation frequency to reduce pink noise near zero frequency (e.g., even an increase from 1 Hz to 2 Hz should substantially reduce noise), increasing the modulation frequency to improve phase contrast (e.g., even an increase from 70 MHz to 85/90 MHz will improve phase-sensitivity and will better separate absorption and scattering contributions to the signal), increasing our data acquisition frame-rate, and increasing laser power (within allowed limits) and stability. The additional use of the measured DC signal from our heterodyne detection is also being explored to improve SNR and our image field-of-view. We will explore usage of calibration sources centered through the breast (to detect potential motional artifacts), and we will explore the usage of DOT measurements of the same breast with our two orthogonal views (frontal and sagittal). Finally, we could reduce the acquisition time significantly by selecting only those sources most needed for the reconstruction (this involves studying the full problem with 209 sources and then deleting sources and comparing the images); for example, if we could save a factor of 4 in time by using 60 well-chosen sources, then the systematics will be reduced, the time between the reference and patient measurements will be reduced, and we could add more wavelengths to detect other chromophores (if desired).
 
-Finally, we have developed and verified with experimental data an algebraic 
-image reconstruction method, which is well suited for the use with the data 
-sets restricted by the presence of the chest wall and capable of handling 
-data sets as large as $2\times 10^7$ independent measurements.
-
-\section{Limitations}
-
-\section{Future Directions}
+Once these improvements are implemented, and we gain more confidence in our reconstructions, the Gen3 imager will be utilized for focused work on several clinically applications. Examples of the latter that we are eager to address include imaging in the radiographically dense breast populations, imaging in the genetic high-risk populations, neoadjuvant chemotherapy monitoring, exploration of novel optical contrast agents (e.g., exogenous absorption and fluorescence contrast agents), construction of multi-modal malignancy parameters based on optical data and data from other medical imaging modalities, dynamic imaging (e.g., breast compression and decompression), and more.

@@ -1,0 +1,29 @@
+First I will go over a simple case for reconstructing images using the diffusion equation (\ref{DE}). We will see what it looks like for a heterogeneous case and generate a solution using the Rytov approach. For now let's concern ourselves with changes in absorption and assume that scattering is constant. If changes in our measured data is linked to changes in the optical property of the media then we can divide the absorption such that
+\begin{align}
+\mua({\bf r}) &= \mua^0+\delta\mua({\bf r})
+\end{align}
+We combine this with the diffusion equation (Eqn.~\ref{eqn:DE}) and move $\delta\mua$ and $\delta D$ terms to the RHS: 
+\begin{equation}
+\label{eqn:Homogdiff}
+\left[\nabla^2 D^0 + k_0^2 \right]\Phi({\bf r}_s,{\bf r})= -\frac{vS}{D}\delta({\bf r}-{\bf r}_s)+\frac{v}{D}\delta\mu_a({\bf r})\Phi({\bf r}_s,{\bf r})\ .
+\end{equation}
+This equation is similar to the homogeneous diffusion equation but with additional terms on the RHS due to changes in the light due to the changes in the optical properties. 
+The are two well known ways to approach this problem to solve for $\Phi$. There is the Born approach in which $\Phi$ is
+\begin{equation}
+\Phi({\bf r}) = \Phi_0 + \Phi_{sc}({\bf r})
+\end{equation}
+where $\Phi_0$ is the solution to the homogeneous part and $\Phi_{sc}$ the scattered part due to the perturbation. For the following section we use the Rytov approach in which
+\begin{equation}
+\label{eqn:rytov}
+\Phi({\bf r}) = \exp{[\phi_0({\bf r})+\phi_{sc}({\bf r})]} = \Phi_0 \exp{[\phi_{sc}({\bf r})]}
+\end{equation}
+where $\Phi_0$ is the fluence rate for the homogeneous background medium and $\exp{[\Phi_{sc}({\bf r})]}$ is the scattered component. Plugging in Eqn.~\ref{eqn:rytov} to \ref{eqn:Homogdiff} gives us: 
+\begin{equation}
+\label{eqn:Homogdiff2}
+\left[\nabla^2 D^0 + k_0^2 + \frac{v}{D}\delta\mua({\bf r})\right]\exp{[\phi_0({\bf r})+\phi_{sc}({\bf r})]}= -\frac{vS}{D}\delta({\bf r}-{\bf r}_s)\ .
+\end{equation}
+After the Rytov approximation is made) where $(\Delta\phi_{sc}({\bf r},{\bf r}_s)\ll \frac{v}{D}\delta\mua({\bf r})$ the solution is 
+\begin{equation}
+\phi_{sc}({\bf r},{\bf r}_s) = - \frac{1}{\Phi({\bf r}_d,{\bf r}_s)}\int_V G({\bf r}-{\bf r}_d)\Phi_0({\bf r},{\bf r}_s)\frac{v\delta\mua({\bf r})}{D} d^3{\bf r}.
+\end{equation}
+The above equation is called the Rytov solution where a detailed solution can be found in reference \cite{OLeary1996a}

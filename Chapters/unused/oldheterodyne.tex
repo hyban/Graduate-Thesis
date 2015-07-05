@@ -1,0 +1,30 @@
+\begin{equation}
+I_s(t) = I_{DC} + I_{AC}\cos(\omega_s t+\phi_I)
+\end{equation}
+
+where  $I_{DC}$ is the DC light intensity, $I_{AC}$ the AC light intensity and $\phi_s$ is the phase offset of the laser source. When the light passes through our breast tank diffusively through breast or intralipid solution the resulting transmitted light has the form
+
+\begin{equation}
+T(t) = I_{DC}A_{DC}({\bf r}) + I_{AC}A_{AC}\cos(\omega_s t +\phi_s+ \phi({\bf r}))
+\end{equation}
+
+where $A_{DC}$, $A_{AC}$, and $\phi$ are the spatially varying DC, AC, and phase information that we are measuring from the surface of our diffusive breast or intralipid solution after the light has travelled a distance $\bf{r}$ through the diffusive medium. On the detection side, we modulate the gain of the image intensifier at $\omega_{g}=70\,{\rm MHz} + 1 {\rm Hz}$ so that the image intensifier sensitivity is
+\begin{equation}
+G(t) = G_{DC} +G_{AC} \cos((\omega_s+\omega_{cc})t+\phi_G))
+\end{equation}
+\noindent
+where $G_{DC}$ is the DC amplitude, $G_{AC}$ the AC amplitude and $\phi_G$ is the phase offset of the image intensifier gain. The signal that is detected by the CCD after the image intensifier is then
+\begin{equation}
+S = I(t) \times G(t) = (I_{0} + I_{\omega}\cos(\omega_s t+\phi_I))(G_{0} +G_{\omega}\cos((\omega_s+\omega_{cc})t+\phi_G)).
+\label{4_signal}
+\end{equation}
+The CCD measures the light intensity out of the image intensifer at rate of $10\, {\rm frames/s}$ with frame transfer mode with an exposure time $\sim100\, {\rm ms}$ which in addition to the phosphor screen response time of the image intensifier of $\sim{\rm ms}$ acts as a low pass filter on the signal. Thus (Eqn \ref{4_signal}) simplifies to
+\begin{equation}
+\label{eqn:heterodyne}
+S  = I_{0}G_{0}A_{DC}({\bf r}) + I_{\omega}G_{\omega}A_{AC}\cos(\omega_{cc}t+\phi_I-\phi_G+\phi({\bf r})).
+\end{equation}
+where we are able to measure $I_{0}G_{0}A_{DC},\,I_{\omega}G_{\omega}A_{AC}$ and $\phi_I-\phi_G+\phi$ for each CCD pixel. In section Sec.~\ref{sec:datanorm}, I will show how we get $A_{DC}$, $A_{AC}$, and $\phi$ from these measurements.
+
+
+
+

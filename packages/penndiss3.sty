@@ -1,0 +1,371 @@
+%% DRB mods noted as 90* 
+
+%%% FEW LINES WERE EDITED, I DID NOT KEEP TRACK! Turgut Durduran
+% PENNDISS DOCUMENT-STYLE OPTION - released July, 1988
+%    for LaTeX version 2.09
+% Author: Haim Levkowitz (modified from the Stanford U. style)
+% University of Pennsylvania PhD thesis style -- option to the report style
+% Note: This file is the .STY file. The file penndiss.DOC serves as 
+% documentation.
+% Whenever there are discrepancies between the two file,
+% this is the CORRECT thing. It has been fine-tuned for the precise 
+% margin requirement. It ``passed the test'' on Friday, July 29, 1988, when
+% my dissertation, formated with it, was accepted.
+% Haim Levkowitz, July 30, 1988.
+% For an example, see [levkowitz.clr]dissroot.tex
+
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  All this Extra stuff is to modify regular latex stuff
+%
+% The following refers to /usr/local/lib/tex-3.0/inputs/[rep11.sty | report.sty]
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This (rep11.sty) makes a paragraph heading appear on a line by itself.
+% basically so it looks like a subsubSection heading but without a section 
+% number.
+
+\def\paragraph{\@startsection{paragraph}{4}{\z@}{-3.25ex plus
+ -1ex minus -.2ex}{1.5ex plus .2ex}{\normalsize\bf}}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is to include Appendices in the table of contents AND to
+% label the appendix itself.  It defines the commands:
+% "\appendix{_label_}  and \subappendix{_label_}
+%
+% Appendices will appear as Appendix A
+%
+%                           _label for Appen A_
+%
+%                           A.1  _subappendix label_
+%
+%  The Table of Contents will show the appendices at the "Chapter" level
+%  and the subappendix at the section level.
+%  
+%  A _label for Appen A_                                         34
+%     A.1  _subappendix label_ ................................. 35
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{appdx}
+\newcounter{subappdx}[appdx]
+\setcounter{appdx}{0}
+\setcounter{subappdx}{1}
+
+\def\theappendix{\Alph{appdx}}
+\def\thesubappendix{\arabic{subappdx}}
+\def\@appdxapp{Appendix}
+\def\l@appendix{\@dottedtocline{1}{1.5em}{2.3em}}
+\def\appendixmark#1{}
+
+\def\@makeappendixhead#1{ \vspace*{50pt} { \parindent 0pt \raggedright
+ \ifnum \c@secnumdepth >\m@ne \huge\bf \@appdxapp{} \theappendix \par
+ \vskip 20pt \fi \LARGE \bf #1\par
+ \nobreak \vskip 40pt } }
+
+\def\subappendix#1{\refstepcounter{subappdx}\section{#1}}
+
+\def\@appendix[#1]#2{
+   \def\thesection{\theappendix.\arabic{subappdx}}  % KLUDGE!!  redefine \thesection
+%   \ifnum \c@secnumdepth >\m@ne
+      \refstepcounter{appdx}
+      \refstepcounter{chapter}                 %reset so \section numbers correctly
+      \typeout{\@appdxapp\space\theappendix.}
+      \addcontentsline{toc}{chapter}{\protect\numberline{\theappendix}#1}
+%   \else
+%      \addcontentsline{toc}{chapter}{#1}
+%   \fi
+   \appendixmark{#1}
+   \addtocontents{lof}{\protect\addvspace{10pt}}
+   \addtocontents{lot}{\protect\addvspace{10pt}} 
+   \@afterheading
+   \@makeappendixhead{#2}
+}   % end of \@appendix
+
+\def\@sappendix#1{\@afterheading}
+
+\def\appendix{\clearpage \thispagestyle{plain} \global\@topnum\z@
+    \@afterindentfalse \secdef\@appendix\@sappendix} 
+
+
+% Modify the table of contents depth \tocdepth and \secnumdepth so 
+% that 1) *numbered* sections go down to include \subsubsection
+%             in other words you get Chapter 1, Section 1.1, subsection 1.3.4
+%             AND subsubsection 2.1.2.4
+% AND  2) "paragraph" is included in Contents but with no number.
+%             in other words after subsubsection 4.3.6.4 an intented heading
+%             appears in the contents WITHOUT A NUMBER! but DOES have a page number.
+%
+\addtocounter{secnumdepth}{1}  %%% does 1) above
+\addtocounter{tocdepth}{2}     %%% does 2) above
+
+%
+%
+%
+%
+
+\makeatletter
+\oddsidemargin 0.5in \evensidemargin 0.5in
+\marginparwidth 40pt \marginparsep 10pt
+\topmargin 0pt \headsep 0in
+% Original values that placed the pagination within
+% the 1in margin....no no no
+%\textheight 8.625in \textwidth 5.9375in
+\textheight 8.5in \textwidth 5.9375in
+\voffset=-.125in
+\hoffset=.0625in
+\flushbottom
+\brokenpenalty=10000
+\renewcommand{\baselinestretch}{1.5}
+
+%\def\cl@chapter{\@elt{section}\@elt{footnote}}
+%\def\thefigure{\@arabic\c@figure}
+%\def\thetable{\@arabic\c@table}
+%\def\theequation{\arabic{equation}}
+
+%% commented out 90720 as it threw an error with 'color' module
+% \def\@xfloat#1[#2]{\ifhmode \@bsphack\@floatpenalty -\@Mii\else
+%    \@floatpenalty-\@Miii\fi\def\@captype{#1}\ifinner
+%       \@parmoderr\@floatpenalty\z@
+%     \else\@next\@currbox\@freelist{\@tempcnta\csname % ftype@#1\endcsname
+%        \multiply\@tempcnta\@xxxii\advance\@tempcnta\sixt@@n
+%        \@tfor \@tempa :=#2\do
+%                         {\if\@tempa h\advance\@tempcnta \@ne\fi
+%                          \if\@tempa t\advance\@tempcnta \tw@\fi
+%                          \if\@tempa b\advance\@tempcnta 4\relax\fi
+%                          \if\@tempa p\advance\@tempcnta 8\relax\fi
+%          }\global\count\@currbox\@tempcnta}\@fltovf\fi
+%     \global\setbox\@currbox\vbox\bgroup 
+%     \def\baselinestretch{1}\@normalsize
+%     \boxmaxdepth\z@
+%     \hsize\columnwidth \@parboxrestore}
+%% replaced above with following based on 
+%% http://www.latex-community.org/forum/viewtopic.php?f=4&t=507&sid=91430da57bed2529f3cdb925fd8294f2&start=10
+%%      Redefine the macro used for floats (including figures and tables)
+%%      so that single spacing is used.
+%%      (Note \def\figure{\@float{figure}set single spacing} doesn't work
+%%      because figure has an optional argument)
+
+%% Fix from GT (RPI, thesis.cls)  03-18-2007 ve.
+
+\let\latex@xfloat=\@xfloat
+\def\@xfloat #1[#2]{%
+  \latex@xfloat #1[#2]%
+  \def \baselinestretch {1}\@normalsize  %%  GT: need \@normalsize?
+  \normalsize
+}
+%%
+\long\def\@footnotetext#1{\insert\footins{\def\baselinestretch{1}\footnotesize
+    \interlinepenalty\interfootnotelinepenalty 
+    \splittopskip\footnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+   \edef\@currentlabel{\csname p@footnote\endcsname\@thefnmark}\@makefntext
+    {\rule{\z@}{\footnotesep}\ignorespaces
+      #1\strut}}}
+
+
+\def\dept#1{\gdef\@dept{#1}}
+\def\superviser#1{\gdef\@superviser{#1}}
+\def\supervis@r{Superviser}
+\def\supervisor#1{\gdef\@supervisor{#1}\gdef\supervis@r{Supervisor}}
+\def\groupchair#1{\gdef\@groupchair{#1}}
+\def\memberA#1{\gdef\@memberA{#1}}
+\def\memberB#1{\gdef\@memberB{#1}}
+\def\memberC#1{\gdef\@memberC{#1}}
+\def\memberD#1{\gdef\@memberD{#1}}
+\def\submitdate#1{\gdef\@submitdate{#1}}
+\def\copyrightyear#1{\gdef\@copyrightyear{#1}} % \author, \title in report
+\def\@title{}\def\@author{}\def\@dept{computer and information science}
+\def\@superviser{}%
+\def\@groupchair{}%
+\def\@submitdate{\ifcase\the\month\or
+  January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or December\fi
+  \space \number\the\year}
+\ifnum\month=12
+    \@tempcnta=\year \advance\@tempcnta by 1
+    \edef\@copyrightyear{\number\the\@tempcnta}
+\else
+    \def\@copyrightyear{\number\the\year}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  
+% These set whether you want copyright, list of figures and list of tables pages
+%
+%%% ==>    \copyrighttrue \figurespagetrue \tablespagetrue
+%
+\newif\ifcopyright \newif\iffigurespage \newif\iftablespage
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\titlep{%
+				\clearpage
+        %\thispagestyle{empty}%
+        %\null\vskip.02in%
+        \begin{center}
+                {\LARGE\uppercase\expandafter{\@title}}
+                \vskip.15in
+                {\Large\expandafter{\@author}}
+                \vskip.15in
+                {\Large\expandafter{A DISSERTATION}}
+								\vskip.001in
+                {\expandafter{in}}
+                \vskip.001in
+                {\LARGE\expandafter{\@dept}}
+                \vskip .1in
+                Presented to the Faculties of the University of Pennsylvania in Partial\\
+								Fulfillment of the Requirements for the Degree of Doctor of Philosophy
+                \vskip0.001in
+                \centerline{\@copyrightyear}
+        \end{center}
+				
+        \vskip0.5in%
+        \hrule width7cm
+        \vskip.05in%
+        \noindent\@superviser \\
+        Supervisor of Dissertation\\
+        \vskip0.1in
+        \hrule width7cm \\
+        \vskip.05in%
+        \noindent\@groupchair \\
+        Graduate Group Chairperson \\
+        \vskip.001in
+        \noindent Dissertation Committee \\
+	    \noindent\@memberA\\
+	    \noindent\@memberB\\ 
+        \noindent\@memberC\\
+        \noindent\@memberD \\
+        }
+
+
+\def\copyrightpage{%
+        \thispagestyle{empty}%
+        \null\vfill
+        \begin{center}
+                \Large\copyright\ Copyright \@copyrightyear\\
+                % by\\% per upenn 110808
+                \@author\\
+        \end{center}
+        \vfill\newpage}
+
+\def\makeUMIabstract#1{%
+        \thispagestyle{empty}%
+        \titlep%
+        \newpage
+        \thispagestyle{empty}%
+    \begin{center}%
+      {\Huge\expandafter{ABSTRACT}}%Abstract}}%
+        \vskip0.3in%
+        {\Large\expandafter{\@title}}%
+        \vskip0.3in%
+        {\large\expandafter{\@author}}%
+
+        {\large\expandafter{\@superviser}}%
+    \end{center}%
+        \input{#1}%
+        \newpage
+        \addcontentsline{toc}{chapter}{Abstract} 
+        \setcounter{page}{1}%
+
+        }%
+
+\def\beforepreface{%
+        \pagestyle{empty}% plain}%
+        \pagenumbering{roman}%
+        \titlep%
+        \ifcopyright
+       \copyrightpage
+    \fi}
+
+\def\acknowlsection#1{%
+   \pagestyle{plain}%
+        \newpage
+   \begin{center}
+      {\Huge\expandafter{Acknowledgements}}%
+   \end{center}
+%   \addcontentsline{toc}{chapter}{Acknowledgements}
+        \input{#1}
+        }
+
+\def\dedicationsection#1{%
+   \pagestyle{plain}%
+        \newpage
+   \begin{center}
+      {\Huge\expandafter{Dedication}}%
+   \end{center}
+%   \addcontentsline{toc}{chapter}{Dedication}
+        \input{#1}
+        }
+
+\def\abstractsection#1{
+        \pagestyle{plain}
+        \newpage
+        \begin{center}
+      {\Huge\expandafter{ABSTRACT}}%Abstract}}
+                \vskip0.3in
+                {\Large\expandafter{SPATIALLY-DENSE, MULTI-SPECTRAL, FREQUENCY-DOMAIN DIFFUSE OPTICAL TOMOGRAPHY OF BREAST CANCER}}
+                \vskip0.3in
+                {\large\expandafter{Han Y. Ban}}
+
+                {\large\expandafter{Arjun G. Yodh}}
+        \end{center}
+%        \addcontentsline{toc}{chapter}{Abstract}
+        \input{#1}
+        }
+
+\def\makethebiblio#1{%
+   \pagestyle{plain}%
+   \addcontentsline{toc}{chapter}{Bibliography}
+        \begin{thebibliography}{DasguptaAetAalAAAA90}
+                \small
+                \renewcommand{\baselinestretch}{.9}
+        \input{#1}
+        \end{thebibliography}
+        }
+
+\def\prefacesection#1{%
+   %      \pagestyle{plain}%
+   % \begin{center}
+   %    {\Huge\expandafter{Preface}}
+   %      \end{center}
+   %      %\chapter*{#1}
+%        \addcontentsline{toc}{chapter}{Preface}
+}
+
+\def\afterpreface{\newpage
+        \tableofcontents
+        \newpage
+        \iftablespage
+                {\addvspace{10pt}
+                \let\saveaddvspace=\addvspace
+                \def\addvspace##1{}
+                \listoftables
+                \let\addvspace=\saveaddvspace}
+%                \addcontentsline{toc}{chapter}{List of Tables}
+                \newpage
+        \fi
+        \iffigurespage
+                {\addvspace{10pt}
+                \let\saveaddvspace=\addvspace
+                \def\addvspace##1{}
+                \listoffigures
+                \let\addvspace=\saveaddvspace}
+ %               \addcontentsline{toc}{chapter}{List of Figures}
+                \newpage
+        \fi
+        \pagenumbering{arabic}
+        \pagestyle{plain}}
+
+% Start with pagestyle{plain} in case front matter isn't processed
+\pagestyle{plain}
+
+
